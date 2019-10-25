@@ -1,10 +1,10 @@
-node_modules
-.virtualenvs
+/node_modules
+/.virtualenvs
 *.pyc
 *.pyo
 __pycache__/
 db.sqlite3
 migrations
-localspace/
+/localspace/
 Index.js
  
