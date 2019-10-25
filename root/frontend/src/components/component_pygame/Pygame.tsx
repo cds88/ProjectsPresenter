@@ -6,6 +6,7 @@ export default function Pygame() {
     return (
         <div>
             <div className="project-wrapper">
+                <div className="slanted-special slanted-B" />
                 <div className="slanted-container">
 
                     <div className="image-wrapper">

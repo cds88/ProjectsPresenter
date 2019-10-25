@@ -9,6 +9,22 @@ import Pygame from './components/component_pygame/Pygame';
 import Centertext from './components/component_centertext/Centertext';
 import './Styles.scss';
 import axios from 'axios';
+
+import {connect} from 'react-redux';
+
+import {AppState} from './reducers/ConfigureStore';
+import {Data} from './reducers/reducer_data/Data';
+interface LinkStateProps {
+    Data: Data[];
+}
+
+const mapStateToProps = (
+    state: AppState,
+    ownProps: MasterProps
+): LinkStateProps => ({
+    Data: state.DataReducer
+});
+
 export interface MasterProps {
 
 }
@@ -22,69 +38,39 @@ export interface Record {
     title: string;
     image: string;
 }
-class Master extends React.Component<MasterProps, MasterState> {
-
-    constructor(props: MasterProps) {
+type Props = MasterProps & LinkStateProps
+class Master extends React.Component<Props, MasterState> {
+    constructor(props: Props) {
         super(props);
         this.state = { records : null, isFetched:false} ;
     }
-
-    componentDidMount(){ 
-        
-        axios.get('/data/all/').then(response=> this.setState({records:response.data, isFetched:true}));
-     
-    }
-
- 
+    componentDidMount(){         
+        axios.get('/data/all/').then(response=> this.setState({records:response.data, isFetched:true}));     
+    } 
     handleClick=()=>{
        alert('its ok ');
     }
-    render() {
- 
+    render() { 
         return (
             <div className="master-wrapper">
-              
-              
 
+                
                 <div className="projects-container">
                 <Aliparser record={this.state.isFetched? this.state.records[3] : undefined} />
                 <Housecrawler/>  
                 <Mememax/>
-
-                
-                   
                    <Pygame/>
+                    <Centertext content={JSON.stringify(this.props.Data)}/>
 
-                   <Centertext/>
-       
-                
-               
-                
                 </div>
             </div>
         );
     }
 }
 
-export default Master;
+export default connect(mapStateToProps, null)( Master);
 
 
 
-
-const Wrapper = styled("div")`
-    width: 100%;
-    height: 100vh;
-    background: gray;
  
-    // display: grid;
-    // justify-content:center;
-    // align-items: center;
- 
-    
-
-
-
-`;
-
-
  

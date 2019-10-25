@@ -20,6 +20,7 @@ class Housecrawler extends React.Component<HousecrawlerProps, HousecrawlerState>
         return ( 
             <div>
                 <div className="project-wrapper">
+                    <div className="slanted-special slanted-C" />
                     <div className="slanted-container">
 
                         <div className="image-wrapper">

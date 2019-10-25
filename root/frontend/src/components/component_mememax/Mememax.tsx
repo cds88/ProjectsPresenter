@@ -17,6 +17,7 @@ class Mememax extends React.Component<MememaxProps, MememaxState> {
     // }
     render() { 
         return (<div className="project-wrapper">
+            <div className="slanted-special slanted-D" />
             <div className="slanted-container">
 
                 <div className="image-wrapper">

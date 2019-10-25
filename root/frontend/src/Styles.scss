@@ -13,6 +13,7 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
    width: 100%;
     height: 98vh;
     overflow: hidden;
+    animation: on-load 3s forwards 0s ease;
     
     &>h1{
         text-align: center; 
@@ -35,7 +36,7 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 
 
 .project-wrapper{
-  
+    position: relative;
     border-radius: 3px;
     box-sizing: border-box;
     height:500px;
@@ -51,7 +52,16 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     transition:1s;
  
     &:hover{
+        & .slanted-container{
+            animation: borders 1s  linear infinite alternate-reverse;
+        }
         background: black;
+        & .slanted-special{
+            height: 100px;
+            background: rgb(167, 167, 60);
+            border: 2px solid white;
+            animation: borders-slanted 1s  linear infinite alternate-reverse;
+        }
         & .grid-chess-container{
              transform: scale(2);
          background: yellowgreen;
@@ -105,7 +115,7 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     background: black;
     width: 300px;
     height:400px;
-    filter: blur(6px);
+    //filter: blur(6px);
     left:50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -118,4 +128,32 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     //     text-shadow: 33px 10px 5px black;
 
 
-   
+@keyframes on-load{
+    0%{
+    
+    opacity: 0;
+}
+100%{
+    
+    opacity: 1;
+
+
+}
+
+}
+@keyframes borders-slanted{
+    0%{
+        border: 2px solid white;
+    }
+    100%{
+        border: 2px solid green;
+    }
+}
+@keyframes borders{
+    0%{
+        border: 2px solid green;
+    }
+    100%{
+        border: 2px solid white;
+    }
+}

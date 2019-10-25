@@ -4,6 +4,8 @@ import Gridbg from '../component_gridbg/Gridbg';
  
 import {Record} from '../../Master';
 
+import {connect} from 'react-redux';
+import './Styles.scss';
 
 export interface AliparserProps {
   record?: Record
@@ -18,12 +20,17 @@ class Aliparser extends React.Component<AliparserProps, AliparserState> {
     //     super(props);
     //     this.state = { :  };
     // }
- 
+ handleClick=()=>{
+   alert('its ok');
+ }
  
     render() { 
 
         return ( 
             <div className="project-wrapper"> 
+            <div className="slanted-special slanted-A"  >
+              
+            </div>
                 
               <div className="slanted-container">
       
@@ -37,4 +44,4 @@ class Aliparser extends React.Component<AliparserProps, AliparserState> {
     }
 }
  
-export default Aliparser;
+export default connect(null, null)(Aliparser);
