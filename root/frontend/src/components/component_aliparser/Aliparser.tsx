@@ -1,6 +1,6 @@
 import * as React from 'react';
 
- 
+import Gridbg from '../component_gridbg/Gridbg';
  
 
 export interface AliparserProps {
@@ -18,9 +18,15 @@ class Aliparser extends React.Component<AliparserProps, AliparserState> {
     // }
     render() { 
         return ( 
-            <div> 
+            <div className="project-wrapper"> 
                 
-                <img src={require('../../../../../localspace/num2.png')} alt=""/>
+              <div className="slanted-container">
+
+                    <div className="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1571903753771-ce22acbc441c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=""/>
+                    </div>
+                    <Gridbg />
+              </div>
             </div>
          );
     }

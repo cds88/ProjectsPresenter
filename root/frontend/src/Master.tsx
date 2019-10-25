@@ -5,8 +5,9 @@ import styled from "styled-components";
 import Aliparser from './components/component_aliparser/Aliparser';
 import Housecrawler from './components/component_housecrawler/Housecrawler';
 import Mememax from './components/component_mememax/Mememax';
-
+import Pygame from './components/component_pygame/Pygame';
 import './Styles.scss';
+import axios from 'axios';
 export interface MasterProps {
 
 }
@@ -18,27 +19,30 @@ export interface MasterState {
 class Master extends React.Component<MasterProps, MasterState> {
 
 
+    componentDidMount(){ 
+        var data = axios.get('/data/all/').then(response=> response.data);
+     
+    }
+
     render() {
         return (
-            <Wrapper>
-                <h1 >MOJE PROJEKTY FULLSTACK TO </h1>
+            <div className="master-wrapper">
+                <h1 >MOJE PROJEKTY  TO </h1>
 
-                <div>
+                <div className="projects-container">
                 <Aliparser/>
                 <Housecrawler/>
                 <Mememax/>
 
                 
-                <div className="side-projects">
-                    <h1>Dodatkowe projekty</h1>
-                        
-                    <h2>smieszna gra z kwadracikami</h2>
-                    <h2>przeszukiwacz ogloszen o prace</h2>
+                   
+                   <Pygame/>
+       
+                
+               
                 
                 </div>
-                
-                </div>
-            </Wrapper>
+            </div>
         );
     }
 }
@@ -52,9 +56,10 @@ const Wrapper = styled("div")`
     width: 100%;
     height: 100vh;
     background: gray;
-    display: grid;
-    justify-content:center;
-    align-items: center;
+ 
+    // display: grid;
+    // justify-content:center;
+    // align-items: center;
  
     
 
