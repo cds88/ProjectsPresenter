@@ -23,7 +23,7 @@ class Housecrawler extends React.Component<HousecrawlerProps, HousecrawlerState>
                     <div className="slanted-container">
 
                         <div className="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1571903753771-ce22acbc441c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" />
+                            <img src="https://images.unsplash.com/photo-1571987906345-1b41e18ccf94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt=""  />
                         </div>
                         <Gridbg />
                     </div>

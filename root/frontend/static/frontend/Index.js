@@ -1952,7 +1952,7 @@ module.exports = {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".master-wrapper {\n  width: 100%;\n  height: 100vh;\n  background: gray; }\n  .master-wrapper > h1 {\n    text-align: center; }\n\n.projects-container {\n  width: 100%;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: repeat(2, 1fr); }\n\n.project-wrapper {\n  height: 500px;\n  border: 1px solid white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden; }\n\n.slanted-container {\n  overflow: hidden;\n  position: relative;\n  width: 300px;\n  height: 300px;\n  border: 2px solid white;\n  transform: rotate(45deg);\n  box-sizing: border-box;\n  transition: 1s; }\n  .slanted-container:hover {\n    background: yellowgreen; }\n  .slanted-container > .image-wrapper {\n    height: 400px;\n    width: 600px;\n    position: absolute;\n    overflow: hidden; }\n    .slanted-container > .image-wrapper > img {\n      object-fit: fill;\n      object-position: top right;\n      transform: rotate(-45deg) scale(1.2); }\n", ""]);
+exports.push([module.i, "html {\n  background: gray;\n  background-color: #485461;\n  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); }\n\n.master-wrapper {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 98vh;\n  overflow: hidden; }\n  .master-wrapper > h1 {\n    text-align: center; }\n\n.projects-container {\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(2, minmax(200px, auto));\n  grid-template-rows: repeat(2, 1fr); }\n\n.project-wrapper {\n  border-radius: 3px;\n  box-sizing: border-box;\n  height: 500px;\n  border: 1px solid white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  background: #2f2f2f;\n  margin: 0;\n  padding: 0;\n  transition: 1s; }\n  .project-wrapper:hover {\n    background: black; }\n    .project-wrapper:hover .grid-chess-container {\n      transform: scale(2);\n      background: yellowgreen;\n      opacity: 0.2; }\n      .project-wrapper:hover .grid-chess-container > div {\n        border: 1px solid transparent; }\n\n.slanted-container {\n  overflow: hidden;\n  position: relative;\n  width: 300px;\n  height: 300px;\n  border-radius: 5px;\n  border: 2px solid white;\n  transform: rotate(45deg);\n  box-sizing: border-box;\n  transition: 1s; }\n  .slanted-container > .image-wrapper {\n    height: 400px;\n    width: 600px;\n    position: absolute;\n    overflow: hidden; }\n    .slanted-container > .image-wrapper > img {\n      object-fit: fill;\n      object-position: top right;\n      transform: rotate(-45deg) scale(1.2); }\n\n.center-text {\n  position: fixed;\n  background: black;\n  width: 300px;\n  height: 400px;\n  filter: blur(6px);\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 1px solid white; }\n", ""]);
 
 
 /***/ }),
@@ -1966,7 +1966,7 @@ exports.push([module.i, ".master-wrapper {\n  width: 100%;\n  height: 100vh;\n  
 
 exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".grid-chess-container {\n  position: relative;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box; }\n  .grid-chess-container > div {\n    box-sizing: border-box;\n    position: relative;\n    top: 0;\n    border: 1px solid white;\n    display: block;\n    width: 100%;\n    height: 100%; }\n", ""]);
+exports.push([module.i, ".grid-chess-container {\n  position: relative;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  transition: 1s; }\n  .grid-chess-container > div {\n    transition: 1s;\n    box-sizing: border-box;\n    position: relative;\n    top: 0;\n    border: 1px solid white;\n    display: block;\n    width: 100%;\n    height: 100%; }\n", ""]);
 
 
 /***/ }),
@@ -38412,20 +38412,28 @@ const Aliparser_1 = __webpack_require__(/*! ./components/component_aliparser/Ali
 const Housecrawler_1 = __webpack_require__(/*! ./components/component_housecrawler/Housecrawler */ "./root/frontend/src/components/component_housecrawler/Housecrawler.tsx");
 const Mememax_1 = __webpack_require__(/*! ./components/component_mememax/Mememax */ "./root/frontend/src/components/component_mememax/Mememax.tsx");
 const Pygame_1 = __webpack_require__(/*! ./components/component_pygame/Pygame */ "./root/frontend/src/components/component_pygame/Pygame.tsx");
+const Centertext_1 = __webpack_require__(/*! ./components/component_centertext/Centertext */ "./root/frontend/src/components/component_centertext/Centertext.tsx");
 __webpack_require__(/*! ./Styles.scss */ "./root/frontend/src/Styles.scss");
 const axios_1 = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 class Master extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = () => {
+            alert('its ok ');
+        };
+        this.state = { records: null, isFetched: false };
+    }
     componentDidMount() {
-        var data = axios_1.default.get('/data/all/').then(response => response.data);
+        axios_1.default.get('/data/all/').then(response => this.setState({ records: response.data, isFetched: true }));
     }
     render() {
         return (React.createElement("div", { className: "master-wrapper" },
-            React.createElement("h1", null, "MOJE PROJEKTY  TO "),
             React.createElement("div", { className: "projects-container" },
-                React.createElement(Aliparser_1.default, null),
+                React.createElement(Aliparser_1.default, { record: this.state.isFetched ? this.state.records[3] : undefined }),
                 React.createElement(Housecrawler_1.default, null),
                 React.createElement(Mememax_1.default, null),
-                React.createElement(Pygame_1.default, null))));
+                React.createElement(Pygame_1.default, null),
+                React.createElement(Centertext_1.default, null))));
     }
 }
 exports.default = Master;
@@ -38504,6 +38512,25 @@ exports.default = Aliparser;
 
 /***/ }),
 
+/***/ "./root/frontend/src/components/component_centertext/Centertext.tsx":
+/*!**************************************************************************!*\
+  !*** ./root/frontend/src/components/component_centertext/Centertext.tsx ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function Centertext() {
+    return (React.createElement("div", { className: "center-text" }));
+}
+exports.default = Centertext;
+
+
+/***/ }),
+
 /***/ "./root/frontend/src/components/component_gridbg/Gridbg.tsx":
 /*!******************************************************************!*\
   !*** ./root/frontend/src/components/component_gridbg/Gridbg.tsx ***!
@@ -38519,7 +38546,7 @@ __webpack_require__(/*! ./Style.scss */ "./root/frontend/src/components/componen
 function Gridbg() {
     var rows = [];
     for (var i = 0; i < 6; i++) {
-        rows.push(React.createElement("div", null));
+        rows.push(React.createElement("div", { key: i }));
     }
     return (React.createElement("div", { className: "grid-chess-container" }, rows));
 }
@@ -38577,7 +38604,7 @@ class Housecrawler extends React.Component {
             React.createElement("div", { className: "project-wrapper" },
                 React.createElement("div", { className: "slanted-container" },
                     React.createElement("div", { className: "image-wrapper" },
-                        React.createElement("img", { src: "https://images.unsplash.com/photo-1571903753771-ce22acbc441c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt: "" })),
+                        React.createElement("img", { src: "https://images.unsplash.com/photo-1571987906345-1b41e18ccf94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt: "" })),
                     React.createElement(Gridbg_1.default, null)))));
     }
 }
@@ -38607,7 +38634,7 @@ class Mememax extends React.Component {
         return (React.createElement("div", { className: "project-wrapper" },
             React.createElement("div", { className: "slanted-container" },
                 React.createElement("div", { className: "image-wrapper" },
-                    React.createElement("img", { src: "https://images.unsplash.com/photo-1571903753771-ce22acbc441c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt: "" })),
+                    React.createElement("img", { src: "https://images.unsplash.com/photo-1569243963117-78bb6e7ff948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt: "" })),
                 React.createElement(Gridbg_1.default, null))));
     }
 }
@@ -38633,7 +38660,7 @@ function Pygame() {
         React.createElement("div", { className: "project-wrapper" },
             React.createElement("div", { className: "slanted-container" },
                 React.createElement("div", { className: "image-wrapper" },
-                    React.createElement("img", { src: "https://images.unsplash.com/photo-1571903753771-ce22acbc441c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt: "" })),
+                    React.createElement("img", { src: "https://images.unsplash.com/photo-1569261230225-e0d58c2342c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80", alt: "" })),
                 React.createElement(Gridbg_1.default, null)))));
 }
 exports.default = Pygame;

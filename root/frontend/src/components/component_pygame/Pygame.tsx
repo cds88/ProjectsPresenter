@@ -9,7 +9,7 @@ export default function Pygame() {
                 <div className="slanted-container">
 
                     <div className="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1571903753771-ce22acbc441c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" />
+                        <img src="https://images.unsplash.com/photo-1569261230225-e0d58c2342c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="" />
                     </div>
                     <Gridbg />
                 </div>

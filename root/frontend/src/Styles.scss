@@ -1,56 +1,87 @@
-.master-wrapper{
-   width: 100%;
-    height: 100vh;
+html{
     background: gray;
+ background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+.master-wrapper{
+ 
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    position: relative;
+    overflow: hidden;
+   width: 100%;
+    height: 98vh;
+    overflow: hidden;
+    
     &>h1{
         text-align: center; 
     }
+   
 
 }
 .projects-container{
-
+    box-sizing: border-box;
     width:100%;
- 
+    height:100%;
+    margin:0;
+    padding:0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(200px, auto));
     grid-template-rows: repeat(2, 1fr);
- 
+
 
 }
 
 
 .project-wrapper{
-
+  
+    border-radius: 3px;
+    box-sizing: border-box;
     height:500px;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
      overflow: hidden;
+     background: #2f2f2f;
      
-
-
+   margin:0;
+    padding:0;
+    transition:1s;
+ 
+    &:hover{
+        background: black;
+        & .grid-chess-container{
+             transform: scale(2);
+         background: yellowgreen;
+         opacity: 0.2;
+          &>div{
+             border: 1px solid transparent;
+         }
+        }
+    }
 
 }
 
 .slanted-container{
+    // filter:blur(0.2px);
      overflow: hidden;
         position: relative;
     width: 300px;
     height: 300px;
-            
+    border-radius: 5px;
     border:2px solid white;
      transform: rotate(45deg);
      box-sizing: border-box;
      transition: 1s;
-          &:hover{
-         background: yellowgreen;
-     }
+ 
      &>.image-wrapper{
         height:400px;
         width:600px;
          position: absolute;
          overflow: hidden;
+
        
          &>img{
             
@@ -58,10 +89,33 @@
             object-fit: fill;
             object-position: top right;
              transform: rotate(-45deg) scale(1.2);
+           
 
          }
 
  
      }
+ 
 
 }
+
+
+.center-text{
+    position: fixed;
+    background: black;
+    width: 300px;
+    height:400px;
+    filter: blur(6px);
+    left:50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid white;
+}
+
+
+    //     font-weight: 900;
+    //  -webkit-text-stroke: 0.9px rgb(124, 117, 117);
+    //     text-shadow: 33px 10px 5px black;
+
+
+   
