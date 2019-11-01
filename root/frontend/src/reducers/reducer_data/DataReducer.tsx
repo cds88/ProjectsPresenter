@@ -1,9 +1,10 @@
 import { Data} from './Data';
 import { DataActionTypes } from "./Actions";
-import { GET_DATA } from './Actions';
+import {  FETCH_DATA_BEGIN, FETCH_DATA_ERROR, FETCH_DATA_SUCCESS } from './Actions';
 
-const DataReducerDefaultState: Data[] = [
-    {id:1, title:"my_title", image:"image"}
+const DataReducerDefaultState: Data[] =[
+   
+
 ];
 
 const DataReducer = (
@@ -11,8 +12,13 @@ const DataReducer = (
     action: DataActionTypes
 ): Data[] => {
     switch (action.type) {
-        case GET_DATA:
-            return [...state];
+        case FETCH_DATA_BEGIN:
+          
+          
+            return state
+        case FETCH_DATA_SUCCESS:
+             
+            return [...state, ...action.results]
         default:
             return state;
     }

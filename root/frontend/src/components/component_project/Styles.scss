@@ -1,0 +1,44 @@
+.slanted-special{
+    width:100%;
+    height:0;
+    position: absolute;
+    z-index: 10;
+    background: black;
+   // border: 2px solid white;
+    transition: 1s;
+    &.slanted-A{
+       &h1{
+          transform: rotate(-45deg);
+       }
+       left: -400px;
+       top:0;
+
+       transform: rotate(-45deg);
+    
+    }
+    &.slanted-B{
+       left: 570px;
+       right:0;
+       transform: rotate(-45deg);
+    }
+ &.slanted-C{
+       right:-600px;
+       transform: rotate( -135deg);
+    }
+
+ &.slanted-D{
+        
+       
+       left: -550px;
+
+       transform: rotate( -135deg);
+    }
+
+}
+ 
+.video-wrapper{
+   transition: 1s;
+   position: absolute;
+   opacity: 0;
+  
+}

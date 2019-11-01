@@ -7,6 +7,8 @@ from .import views
 
 router = routers.DefaultRouter()
 router.register('all', views.projectViews, base_name='dane')
+
+router.register('image', views.imageViews, base_name="images") 
  
  
 
