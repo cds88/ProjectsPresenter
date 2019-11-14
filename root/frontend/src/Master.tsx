@@ -1,22 +1,18 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from "react";
 
-import styled from "styled-components";
- 
-import Centertext from './components/component_centertext/Centertext';
-import './Styles.scss';
-import axios from 'axios';
+import Centertext from "./components/component_centertext/Centertext";
+import "./styles/MasterStyles.scss";
 
-import ProjectComponent from './components/component_project/ProjectComponent';
+import ProjectComponent from "./components/component_project/ProjectComponent";
 import { ThunkDispatch } from "redux-thunk";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
 
-import {AppState} from './reducers/ConfigureStore';
-import {Data} from './reducers/reducer_data/Data';
-import {UserInterface} from './reducers/reducer_userinterface/UserInterface';
-import { AllAppActions} from './reducers/actions/AllActionsTypes';
-import {fetchBeginDispatch} from './reducers/actions/AllActions';
-import { Dispatch, bindActionCreators } from "redux";
+import { AppState } from "./reducers/ConfigureStore";
+import { Data } from "./reducers/reducer_data/Data";
+import { UserInterface } from "./reducers/reducer_userinterface/UserInterface";
+import { AllAppActions } from "./reducers/actions/AllActionsTypes";
+import { fetchBeginDispatch } from "./reducers/actions/AllActions";
+import { bindActionCreators } from "redux";
 interface LinkStateProps {
     Data: Data[];
     Userinterface: UserInterface;
@@ -30,20 +26,16 @@ const mapStateToProps = (
     Userinterface: state.InterfaceReducer
 });
 interface LinkDispatchProps {
-    TEST: () => void;
-     
+    fetch: () => void;
 }
 const mapDispatchToProps = (
     dispatch: ThunkDispatch<any, any, AllAppActions>,
     ownProps: MasterProps
 ): LinkDispatchProps => ({
-        TEST: bindActionCreators(fetchBeginDispatch, dispatch),
-    
+    fetch: bindActionCreators(fetchBeginDispatch, dispatch)
 });
 
-export interface MasterProps {
-
-}
+export interface MasterProps { }
 export interface MasterState {
     name?: string;
     records: Record[];
@@ -56,71 +48,57 @@ export interface Record {
     video: string;
 }
 
-type Props = MasterProps & LinkStateProps & LinkDispatchProps
-class Master extends React.Component<Props, MasterState> {
-    constructor(props: Props) {
-        super(props);
-        this.state = { records : null, isFetched:true} ;
-    }
-    componentDidMount(){         
-        this.props.TEST();    
-        document.body.style.backgroundColor = "";
-    } 
-     
+type Props = MasterProps & LinkStateProps & LinkDispatchProps;
+export const Master = (Props: Props) => {
+    React.useEffect(() => {
+        Props.fetch();
+        document.body.addEventListener("wheel", e => {
+            if (e.ctrlKey) {
+                e.preventDefault();
+            }
+        });
+    }, []);
 
-    mainClass=():string=>{
-        switch(this.props.Userinterface.active){
-            case 1:
-                document.body.style.backgroundColor = " #2c2c2c";
-                return "first-div"
-            case 2:
-                document.body.style.backgroundColor = "#2c2c2c";
-                return "first-div"
-            case 3:
-                document.body.style.backgroundColor = "#2c2c2c";
-                return "first-div"
-            case 4:
-                document.body.style.backgroundColor = "#2c2c2c";
-                return "first-div"
-            case 5:
-                document.body.style.backgroundColor = "black";
-                return "first-div"
-        }
-    }
+    return (
+        <div className="first-div">
+            <div className="master-wrapper">
+                {Props.Data.map((el, index) => {
+                    return (
+                        <img
+                            key={index}
+                            src={el.image}
+                            className={`background-GG ${
+                                Props.Userinterface.active === index + 1
+                                    ? "bgActive"
+                                    : "bgPassive"
+                                }`}
+                            alt=""
+                        />
+                    );
+                })}
 
-   
-    render() { 
-        const Results = this.props.Data
-        const Projects = Results.map((el)=>{
-            return <ProjectComponent index={el.id} selectedProject={this.props.Userinterface.active} Data={el}/>
-        })
-        
-        
-        return (
-            <div className={this.mainClass()} >
-            <div className="master-wrapper">   
-          
-                    <img src={`http://127.0.0.1:8000/media/proj${this.props.Userinterface.active}.jpg`}className="background-GG" alt=""/>
                 <div className="projects-container">
-                     
-                {Projects}
-   
-                 
-                    <Centertext isActivated={true}
-                        userInterface={this.props.Userinterface } 
-                        details={this.props.Data[this.props.Userinterface.active-1]}/>
-    
+                    {Props.Data.map((el, index) => {
+                        return (
+                            <ProjectComponent
+                                key={index}
+                                index={el.id}
+                                selectedProject={Props.Userinterface.active}
+                                Data={el}
+                            />
+                        );
+                    })}
 
+                    <Centertext
+                        isActivated={true}
+                        userInterface={Props.Userinterface}
+                        details={Props.Data[Props.Userinterface.active - 1]}
+                        titles={Props.Data.reduce((result, el)=>{return [...result,el.title] }, [] )  }
+                    />
                 </div>
             </div>
-            </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)( Master);
-
-
-
- 
- 
+export default connect(mapStateToProps, mapDispatchToProps)(Master);

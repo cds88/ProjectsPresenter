@@ -1948,58 +1948,44 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/Styles.scss":
-/*!********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/Styles.scss ***!
-  \********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/CentertextStyles.scss":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/CentertextStyles.scss ***!
+  \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".master-wrapper {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 98vh;\n  overflow: hidden;\n  animation: on-load 1s forwards 0s ease; }\n\n.background-GG {\n  width: 100%;\n  height: 100%;\n  position: fixed; }\n\n.main-curtain {\n  width: 100%;\n  height: 100%;\n  background: black;\n  z-index: 20300;\n  opacity: 0.4; }\n\n.projects-container {\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(2, minmax(200px, auto));\n  grid-template-rows: repeat(2, 1fr); }\n\n.project-wrapper {\n  position: relative;\n  border-radius: 3px;\n  box-sizing: border-box;\n  height: 500px;\n  border: 1px solid white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  background: rgba(0, 0, 0, 0.7);\n  margin: 0;\n  padding: 0; }\n  .project-wrapper > .curtain {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    color: transparent;\n    z-index: 40; }\n  .project-wrapper:hover {\n    opacity: 1; }\n    .project-wrapper:hover > .video-wrapper {\n      opacity: 1; }\n    .project-wrapper:hover > .curtain {\n      opacity: 0.87;\n      background: black; }\n    .project-wrapper:hover .slanted-container {\n      animation: borders 1s  linear infinite alternate-reverse;\n      transform: rotate(0); }\n      .project-wrapper:hover .slanted-container img {\n        transform: rotate(0); }\n    .project-wrapper:hover .slanted-special {\n      opacity: 1;\n      z-index: 60;\n      transition-delay: 0.5s;\n      height: 100px;\n      background: #161610;\n      border: 2px solid white;\n      animation: 1s borders-slanted 0  linear infinite alternate-reverse; }\n      .project-wrapper:hover .slanted-special:hover {\n        transition-delay: unset;\n        transition: 0.2;\n        background: blue; }\n      .project-wrapper:hover .slanted-special:active {\n        transition: unset;\n        background: red; }\n    .project-wrapper:hover .grid-chess-container {\n      background: transparent;\n      transform: scale(2);\n      background: yellowgreen;\n      opacity: 0.2; }\n      .project-wrapper:hover .grid-chess-container > div {\n        border: 1px solid transparent; }\n\n.slanted-container {\n  overflow: hidden;\n  position: relative;\n  width: 300px;\n  height: 300px;\n  border-radius: 5px;\n  border: 3px solid white;\n  transform: rotate(45deg);\n  box-sizing: border-box;\n  transition: 1s;\n  z-index: 60; }\n  .slanted-container > .image-wrapper {\n    height: 400px;\n    width: 600px;\n    position: absolute;\n    overflow: hidden;\n    object-fit: fill;\n    object-position: center; }\n    .slanted-container > .image-wrapper > .single-wrapper {\n      transform: rotate(-45deg) scale(1.1); }\n    .slanted-container > .image-wrapper .slider-img {\n      transition: 1s;\n      transform: rotate(-45deg) scale(1.2);\n      height: 100%;\n      width: auto;\n      object-fit: fill;\n      object-position: bottom; }\n\n@keyframes on-load {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes borders-slanted {\n  0% {\n    border: 2px solid white; }\n  100% {\n    border: 2px solid green; } }\n\n@keyframes borders {\n  0% {\n    border: 2px solid green; }\n  100% {\n    border: 2px solid white; } }\n\n@keyframes shine {\n  0% { }\n  100% {\n    background: blue; } }\n", ""]);
+exports.push([module.i, ".center-text {\n  overflow: hidden;\n  position: fixed;\n  background: black;\n  color: white;\n  z-index: 60;\n  width: 500px;\n  height: 350px;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 1px solid white;\n  font-size: 60px;\n  transition: 2s; }\n  .center-text > div > h1 {\n    position: absolute;\n    transition: 1s;\n    color: white;\n    font-size: 60px;\n    position: absolute; }\n  .center-text:hover {\n    background: #202020; }\n    .center-text:hover > div > h1 {\n      background: transparent;\n      opacity: 0;\n      color: purple; }\n  .center-text > .content-wrapper {\n    position: relative;\n    animation: on-load 1s linear; }\n    .center-text > .content-wrapper > .text-content {\n      width: 100%;\n      height: 100%;\n      position: relative; }\n      .center-text > .content-wrapper > .text-content > h3 {\n        margin: 0;\n        position: fixed;\n        left: 50%;\n        top: 0;\n        transform: translateX(-50%);\n        opacity: 0;\n        transition: 0.5s; }\n      .center-text > .content-wrapper > .text-content > h3.titleVisible {\n        opacity: 1; }\n      .center-text > .content-wrapper > .text-content > p {\n        position: fixed;\n        top: 50%;\n        text-align: center;\n        font-size: 20px;\n        opacity: 1;\n        transition: 1s;\n        margin: 0 30px; }\n      .center-text > .content-wrapper > .text-content > .paragraphVisible {\n        opacity: 1; }\n\n.loading-data {\n  animation: on-load 1s linear;\n  position: fixed;\n  left: 50%;\n  text-align: center;\n  transform: translateX(-50%); }\n\n@keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 16em; } }\n\n@keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n.center-text-background-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform: rotate(90deg); }\n\n.center-text-background {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: black;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  opacity: 0.4; }\n  .center-text-background > div {\n    display: block;\n    color: white;\n    box-sizing: border-box;\n    border: 1px solid white;\n    border-radius: 50%;\n    width: 100%;\n    height: 100%;\n    z-index: 10; }\n    .center-text-background > div:hover {\n      background: yellow; }\n\n.centerFooter {\n  transform: translateY(-100%);\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  display: flex;\n  flex-direction: row; }\n  .centerFooter > div {\n    margin: 3px;\n    margin-left: 3px;\n    margin-right: 9px; }\n\n.github {\n  height: 30px; }\n  .github > img {\n    background: white;\n    height: 100%;\n    border-radius: 50px; }\n    .github > img:hover {\n      background: brown; }\n\n.email {\n  height: 30px; }\n  .email > img {\n    transition: 1s;\n    background: white;\n    height: 100%;\n    border-radius: 50px; }\n    .email > img:hover {\n      background: yellowgreen; }\n\n.modalTransition-enter {\n  opacity: 0; }\n\n.modalTransition-enter-active {\n  opacity: 1;\n  transition: opacity 300ms, transform 300ms; }\n\n.modalTransition-exit {\n  opacity: 1; }\n\n.modalTransition-exit-active {\n  opacity: 0;\n  transition: opacity 300ms, transform 300ms; }\n", ""]);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_centertext/Styles.scss":
-/*!****************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_centertext/Styles.scss ***!
-  \****************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/MasterStyles.scss":
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/MasterStyles.scss ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".center-text {\n  overflow: hidden;\n  position: fixed;\n  background: black;\n  color: white;\n  z-index: 60;\n  width: 500px;\n  height: 350px;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 1px solid white;\n  font-size: 60px;\n  transition: 2s; }\n  .center-text > .video-wrapper {\n    position: absolute;\n    width: 100%;\n    height: 100%; }\n  .center-text > div > h1 {\n    position: absolute;\n    transition: 1s;\n    color: white;\n    font-size: 60px;\n    position: absolute; }\n  .center-text:hover {\n    background: #202020;\n    color: yellowgreen; }\n    .center-text:hover > div > h1 {\n      background: transparent;\n      opacity: 0;\n      color: purple; }\n  .center-text > .content-wrapper {\n    position: relative;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .center-text > .content-wrapper > .text-content {\n      width: 100%;\n      height: 100%; }\n      .center-text > .content-wrapper > .text-content > p {\n        font-size: 13px; }\n    .center-text > .content-wrapper > img {\n      border-right: 2px solid;\n      position: absolute;\n      width: 100%;\n      height: 100%; }\n    .center-text > .content-wrapper > .line {\n      position: relative;\n      width: 16em;\n      border-right: 2px solid rgba(255, 255, 255, 0.75);\n      overflow: hidden;\n      white-space: nowrap;\n      font-size: 20px;\n      transform: translateY(-50%);\n      letter-spacing: 1ch; }\n    .center-text > .content-wrapper > .anim-typewriter {\n      animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }\n\n@keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 16em; } }\n\n@keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n.center-text-background-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform: rotate(90deg); }\n\n.center-text-background {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: black;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  opacity: 0.4; }\n  .center-text-background > div {\n    display: block;\n    color: white;\n    box-sizing: border-box;\n    border: 1px solid white;\n    border-radius: 50%;\n    width: 100%;\n    height: 100%;\n    z-index: 10; }\n    .center-text-background > div:hover {\n      background: yellow; }\n", ""]);
+exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  overflow: hidden;\n  background: black;\n  height: 100%;\n  margin: 0; }\n\n.master-wrapper {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n  animation: on-load 1s forwards 0s ease; }\n\n.bgimageWrapper {\n  height: 100%;\n  position: absolute; }\n\n.bgPassive {\n  opacity: 0; }\n\n.background-GG {\n  overflow: hidden;\n  transition: 1s;\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\n.projects-container {\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(2, minmax(200px, auto));\n  grid-template-rows: repeat(2, 1fr); }\n\n.project-wrapper {\n  position: relative;\n  border-radius: 3px;\n  box-sizing: border-box;\n  height: 50vh;\n  border: 1px solid white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  padding: 0; }\n  .project-wrapper > .curtain {\n    opacity: 0.73;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    transition: 1s;\n    animation: on-load 5s forwards 0s ease;\n    clip-path: polygon(0% 0%, 0% 100%, 52% 100%, 26.4% 50.5%, 50.5% 4%, 73.5% 49%, 50% 95%, 46% 100%, 100% 100%, 100% 0%);\n    z-index: 0; }\n    .project-wrapper > .curtain > img {\n      width: 100%;\n      height: 100%;\n      opacity: 0.8; }\n  .project-wrapper:hover {\n    opacity: 1; }\n    .project-wrapper:hover > .curtain {\n      display: none;\n      opacity: 0; }\n    .project-wrapper:hover .shadowy {\n      opacity: 0.6; }\n    .project-wrapper:hover .slanted-container {\n      transform: rotate(0);\n      animation: re-appear 3s linear;\n      animation-fill-mode: forwards; }\n      .project-wrapper:hover .slanted-container img {\n        transform: rotate(0); }\n    .project-wrapper:hover .slanted-special {\n      opacity: 1;\n      z-index: 61;\n      transition-delay: 1.5s;\n      height: 100px;\n      background: #161610;\n      border: 2px solid white;\n      animation: 1s borders-slanted 0  linear infinite alternate-reverse; }\n      .project-wrapper:hover .slanted-special:hover {\n        transition-delay: unset;\n        transition: 0.2;\n        background: blue; }\n      .project-wrapper:hover .slanted-special:active {\n        transition: unset;\n        background: red; }\n    .project-wrapper:hover .grid-chess-container {\n      background: transparent;\n      transform: scale(2);\n      opacity: 0.2; }\n      .project-wrapper:hover .grid-chess-container > div {\n        border: 1px solid transparent; }\n\n.slanted-container {\n  overflow: hidden;\n  position: relative;\n  width: 33%;\n  height: 33vh;\n  border-radius: 5px;\n  transform: rotate(45deg);\n  box-sizing: border-box;\n  transition: 0.5s;\n  z-index: 59;\n  background: transparent; }\n  .slanted-container > .image-wrapper {\n    top: 25%;\n    height: 100vh;\n    width: 100%;\n    position: absolute;\n    overflow: hidden; }\n    .slanted-container > .image-wrapper > .single-wrapper {\n      transform: rotate(-45deg) scale(1.1); }\n    .slanted-container > .image-wrapper .slider-img {\n      filter: blur(1px);\n      transition: 1s; }\n\n.shadowy {\n  background: black;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  opacity: 0.0; }\n\n@keyframes on-load {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes re-appear {\n  0% { }\n  10% {\n    opacity: 0.5; }\n  30% {\n    opacity: 0; }\n  50% {\n    opacity: 0; }\n  70% {\n    width: 100%;\n    height: 100vh;\n    opacity: 0; }\n  100% {\n    width: 100%;\n    height: 100vh;\n    opacity: 1; } }\n\n@keyframes borders-slanted {\n  0% {\n    border: 2px solid white; }\n  100% {\n    border: 2px solid green; } }\n\n@keyframes borders {\n  0% {\n    border: 2px solid green; }\n  100% {\n    border: 2px solid white; } }\n\n@keyframes shine {\n  0% { }\n  100% {\n    background: blue; } }\n", ""]);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_project/Styles.scss":
-/*!*************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_project/Styles.scss ***!
-  \*************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/ProjectStyles.scss":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/ProjectStyles.scss ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".slanted-special {\n  width: 100%;\n  height: 0;\n  position: absolute;\n  z-index: 10;\n  background: black;\n  transition: 1s; }\n  .slanted-special.slanted-A {\n    left: -400px;\n    top: 0;\n    transform: rotate(-45deg); }\n    .slanted-special.slanted-Ah1 {\n      transform: rotate(-45deg); }\n  .slanted-special.slanted-B {\n    left: 570px;\n    right: 0;\n    transform: rotate(-45deg); }\n  .slanted-special.slanted-C {\n    right: -600px;\n    transform: rotate(-135deg); }\n  .slanted-special.slanted-D {\n    left: -550px;\n    transform: rotate(-135deg); }\n\n.video-wrapper {\n  transition: 1s;\n  position: absolute;\n  opacity: 0; }\n", ""]);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_project/components/Style.scss":
-/*!***********************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_project/components/Style.scss ***!
-  \***********************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
-// Module
-exports.push([module.i, ".grid-chess-container {\n  background: transparent;\n  position: relative;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  transition: 1s; }\n  .grid-chess-container > div {\n    transition: 1s;\n    box-sizing: border-box;\n    position: relative;\n    top: 0;\n    border: 2px solid white;\n    display: block;\n    width: 100%;\n    height: 100%; }\n", ""]);
+exports.push([module.i, ".slanted-special {\n  width: 100%;\n  height: 0;\n  position: absolute;\n  z-index: 10;\n  background: black;\n  transition: 1s; }\n  .slanted-special.slanted-1 {\n    left: -400px;\n    top: 0;\n    transform: rotate(-45deg); }\n    .slanted-special.slanted-1h1 {\n      transform: rotate(-45deg); }\n  .slanted-special.slanted-2 {\n    right: -650px;\n    transform: rotate(-135deg); }\n  .slanted-special.slanted-3 {\n    left: -500px;\n    transform: rotate(-135deg); }\n  .slanted-special.slanted-4 {\n    left: 500px;\n    right: 0;\n    transform: rotate(-45deg); }\n\n.video-wrapper {\n  transition: 1s;\n  position: absolute;\n  opacity: 0; }\n\n.grid-chess-container {\n  background: rgba(0, 0, 0, 0.09);\n  position: relative;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  transition: 1s; }\n  .grid-chess-container > div {\n    transition: 1s;\n    box-sizing: border-box;\n    position: relative;\n    top: 0;\n    border: 2px solid white;\n    display: block;\n    width: 100%;\n    height: 100%; }\n", ""]);
 
 
 /***/ }),
@@ -2173,151 +2159,6 @@ module.exports = function (url, needQuotes) {
 
   return url;
 };
-
-/***/ }),
-
-/***/ "./node_modules/deepmerge/dist/cjs.js":
-/*!********************************************!*\
-  !*** ./node_modules/deepmerge/dist/cjs.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var isMergeableObject = function isMergeableObject(value) {
-	return isNonNullObject(value)
-		&& !isSpecial(value)
-};
-
-function isNonNullObject(value) {
-	return !!value && typeof value === 'object'
-}
-
-function isSpecial(value) {
-	var stringValue = Object.prototype.toString.call(value);
-
-	return stringValue === '[object RegExp]'
-		|| stringValue === '[object Date]'
-		|| isReactElement(value)
-}
-
-// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
-var canUseSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for('react.element') : 0xeac7;
-
-function isReactElement(value) {
-	return value.$$typeof === REACT_ELEMENT_TYPE
-}
-
-function emptyTarget(val) {
-	return Array.isArray(val) ? [] : {}
-}
-
-function cloneUnlessOtherwiseSpecified(value, options) {
-	return (options.clone !== false && options.isMergeableObject(value))
-		? deepmerge(emptyTarget(value), value, options)
-		: value
-}
-
-function defaultArrayMerge(target, source, options) {
-	return target.concat(source).map(function(element) {
-		return cloneUnlessOtherwiseSpecified(element, options)
-	})
-}
-
-function getMergeFunction(key, options) {
-	if (!options.customMerge) {
-		return deepmerge
-	}
-	var customMerge = options.customMerge(key);
-	return typeof customMerge === 'function' ? customMerge : deepmerge
-}
-
-function getEnumerableOwnPropertySymbols(target) {
-	return Object.getOwnPropertySymbols
-		? Object.getOwnPropertySymbols(target).filter(function(symbol) {
-			return target.propertyIsEnumerable(symbol)
-		})
-		: []
-}
-
-function getKeys(target) {
-	return Object.keys(target).concat(getEnumerableOwnPropertySymbols(target))
-}
-
-function propertyIsOnObject(object, property) {
-	try {
-		return property in object
-	} catch(_) {
-		return false
-	}
-}
-
-// Protects from prototype poisoning and unexpected merging up the prototype chain.
-function propertyIsUnsafe(target, key) {
-	return propertyIsOnObject(target, key) // Properties are safe to merge if they don't exist in the target yet,
-		&& !(Object.hasOwnProperty.call(target, key) // unsafe if they exist up the prototype chain,
-			&& Object.propertyIsEnumerable.call(target, key)) // and also unsafe if they're nonenumerable.
-}
-
-function mergeObject(target, source, options) {
-	var destination = {};
-	if (options.isMergeableObject(target)) {
-		getKeys(target).forEach(function(key) {
-			destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
-		});
-	}
-	getKeys(source).forEach(function(key) {
-		if (propertyIsUnsafe(target, key)) {
-			return
-		}
-
-		if (!options.isMergeableObject(source[key]) || !propertyIsOnObject(target, key)) {
-			destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
-		} else {
-			destination[key] = getMergeFunction(key, options)(target[key], source[key], options);
-		}
-	});
-	return destination
-}
-
-function deepmerge(target, source, options) {
-	options = options || {};
-	options.arrayMerge = options.arrayMerge || defaultArrayMerge;
-	options.isMergeableObject = options.isMergeableObject || isMergeableObject;
-	// cloneUnlessOtherwiseSpecified is added to `options` so that custom arrayMerge()
-	// implementations can use it. The caller may not replace it.
-	options.cloneUnlessOtherwiseSpecified = cloneUnlessOtherwiseSpecified;
-
-	var sourceIsArray = Array.isArray(source);
-	var targetIsArray = Array.isArray(target);
-	var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
-
-	if (!sourceAndTargetTypesMatch) {
-		return cloneUnlessOtherwiseSpecified(source, options)
-	} else if (sourceIsArray) {
-		return options.arrayMerge(target, source, options)
-	} else {
-		return mergeObject(target, source, options)
-	}
-}
-
-deepmerge.all = function deepmergeAll(array, options) {
-	if (!Array.isArray(array)) {
-		throw new Error('first argument should be an array')
-	}
-
-	return array.reduce(function(prev, next) {
-		return deepmerge(prev, next, options)
-	}, {})
-};
-
-var deepmerge_1 = deepmerge;
-
-module.exports = deepmerge_1;
-
 
 /***/ }),
 
@@ -2930,82 +2771,6 @@ var json2mq = function (query) {
 };
 
 module.exports = json2mq;
-
-/***/ }),
-
-/***/ "./node_modules/load-script/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/load-script/index.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-module.exports = function load (src, opts, cb) {
-  var head = document.head || document.getElementsByTagName('head')[0]
-  var script = document.createElement('script')
-
-  if (typeof opts === 'function') {
-    cb = opts
-    opts = {}
-  }
-
-  opts = opts || {}
-  cb = cb || function() {}
-
-  script.type = opts.type || 'text/javascript'
-  script.charset = opts.charset || 'utf8';
-  script.async = 'async' in opts ? !!opts.async : true
-  script.src = src
-
-  if (opts.attrs) {
-    setAttributes(script, opts.attrs)
-  }
-
-  if (opts.text) {
-    script.text = '' + opts.text
-  }
-
-  var onend = 'onload' in script ? stdOnEnd : ieOnEnd
-  onend(script, cb)
-
-  // some good legacy browsers (firefox) fail the 'in' detection above
-  // so as a fallback we always set onload
-  // old IE will ignore this and new IE will set onload
-  if (!script.onload) {
-    stdOnEnd(script, cb);
-  }
-
-  head.appendChild(script)
-}
-
-function setAttributes(script, attrs) {
-  for (var attr in attrs) {
-    script.setAttribute(attr, attrs[attr]);
-  }
-}
-
-function stdOnEnd (script, cb) {
-  script.onload = function () {
-    this.onerror = this.onload = null
-    cb(null, script)
-  }
-  script.onerror = function () {
-    // this.onload = null here is necessary
-    // because even IE9 works not like others
-    this.onerror = this.onload = null
-    cb(new Error('Failed to load ' + this.src), script)
-  }
-}
-
-function ieOnEnd (script, cb) {
-  script.onreadystatechange = function () {
-    if (this.readyState != 'complete' && this.readyState != 'loaded') return
-    this.onreadystatechange = null
-    cb(null, script) // there is no way to catch loading errors in IE8
-  }
-}
-
 
 /***/ }),
 
@@ -32511,4401 +32276,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-player/lib/Player.js":
-/*!*************************************************!*\
-  !*** ./node_modules/react-player/lib/Player.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lib/props.js");
-
-var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lib/utils.js");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SEEK_ON_PLAY_EXPIRY = 5000;
-
-var Player =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Player, _Component);
-
-  function Player() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Player);
-
-    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
-      _args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Player)).call.apply(_getPrototypeOf2, [this].concat(_args)));
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isReady", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isPlaying", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isLoading", true);
-
-    _defineProperty(_assertThisInitialized(_this), "loadOnReady", null);
-
-    _defineProperty(_assertThisInitialized(_this), "startOnPlay", true);
-
-    _defineProperty(_assertThisInitialized(_this), "seekOnPlay", null);
-
-    _defineProperty(_assertThisInitialized(_this), "onDurationCalled", false);
-
-    _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function (key) {
-      if (!_this.player) return null;
-      return _this.player[key];
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "progress", function () {
-      if (_this.props.url && _this.player && _this.isReady) {
-        var playedSeconds = _this.getCurrentTime() || 0;
-
-        var loadedSeconds = _this.getSecondsLoaded();
-
-        var duration = _this.getDuration();
-
-        if (duration) {
-          var progress = {
-            playedSeconds: playedSeconds,
-            played: playedSeconds / duration
-          };
-
-          if (loadedSeconds !== null) {
-            progress.loadedSeconds = loadedSeconds;
-            progress.loaded = loadedSeconds / duration;
-          } // Only call onProgress if values have changed
-
-
-          if (progress.playedSeconds !== _this.prevPlayed || progress.loadedSeconds !== _this.prevLoaded) {
-            _this.props.onProgress(progress);
-          }
-
-          _this.prevPlayed = progress.playedSeconds;
-          _this.prevLoaded = progress.loadedSeconds;
-        }
-      }
-
-      _this.progressTimeout = setTimeout(_this.progress, _this.props.progressFrequency || _this.props.progressInterval);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleReady", function () {
-      if (!_this.mounted) return;
-      _this.isReady = true;
-      _this.isLoading = false;
-      var _this$props = _this.props,
-          onReady = _this$props.onReady,
-          playing = _this$props.playing,
-          volume = _this$props.volume,
-          muted = _this$props.muted;
-      onReady();
-
-      if (!muted && volume !== null) {
-        _this.player.setVolume(volume);
-      }
-
-      if (_this.loadOnReady) {
-        _this.player.load(_this.loadOnReady, true);
-
-        _this.loadOnReady = null;
-      } else if (playing) {
-        _this.player.play();
-      }
-
-      _this.handleDurationCheck();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handlePlay", function () {
-      _this.isPlaying = true;
-      _this.isLoading = false;
-      var _this$props2 = _this.props,
-          onStart = _this$props2.onStart,
-          onPlay = _this$props2.onPlay,
-          playbackRate = _this$props2.playbackRate;
-
-      if (_this.startOnPlay) {
-        if (_this.player.setPlaybackRate && playbackRate !== 1) {
-          _this.player.setPlaybackRate(playbackRate);
-        }
-
-        onStart();
-        _this.startOnPlay = false;
-      }
-
-      onPlay();
-
-      if (_this.seekOnPlay) {
-        _this.seekTo(_this.seekOnPlay);
-
-        _this.seekOnPlay = null;
-      }
-
-      _this.handleDurationCheck();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handlePause", function (e) {
-      _this.isPlaying = false;
-
-      if (!_this.isLoading) {
-        _this.props.onPause(e);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleEnded", function () {
-      var _this$props3 = _this.props,
-          activePlayer = _this$props3.activePlayer,
-          loop = _this$props3.loop,
-          onEnded = _this$props3.onEnded;
-
-      if (activePlayer.loopOnEnded && loop) {
-        _this.seekTo(0);
-      }
-
-      if (!loop) {
-        _this.isPlaying = false;
-        onEnded();
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleError", function () {
-      var _this$props4;
-
-      _this.isLoading = false;
-
-      (_this$props4 = _this.props).onError.apply(_this$props4, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleDurationCheck", function () {
-      clearTimeout(_this.durationCheckTimeout);
-
-      var duration = _this.getDuration();
-
-      if (duration) {
-        if (!_this.onDurationCalled) {
-          _this.props.onDuration(duration);
-
-          _this.onDurationCalled = true;
-        }
-      } else {
-        _this.durationCheckTimeout = setTimeout(_this.handleDurationCheck, 100);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleLoaded", function () {
-      // Sometimes we know loading has stopped but onReady/onPlay are never called
-      // so this provides a way for players to avoid getting stuck
-      _this.isLoading = false;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (player) {
-      if (player) {
-        _this.player = player;
-      }
-    });
-
-    return _this;
-  }
-
-  _createClass(Player, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true;
-      this.player.load(this.props.url);
-      this.progress();
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearTimeout(this.progressTimeout);
-      clearTimeout(this.durationCheckTimeout);
-
-      if (this.isReady) {
-        this.player.stop();
-      }
-
-      if (this.player.disablePIP) {
-        this.player.disablePIP();
-      }
-
-      this.mounted = false;
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this2 = this;
-
-      // Invoke player methods based on changed props
-      var _this$props5 = this.props,
-          url = _this$props5.url,
-          playing = _this$props5.playing,
-          volume = _this$props5.volume,
-          muted = _this$props5.muted,
-          playbackRate = _this$props5.playbackRate,
-          pip = _this$props5.pip,
-          loop = _this$props5.loop,
-          activePlayer = _this$props5.activePlayer;
-
-      if (!(0, _utils.isEqual)(prevProps.url, url)) {
-        if (this.isLoading && !activePlayer.forceLoad) {
-          console.warn("ReactPlayer: the attempt to load ".concat(url, " is being deferred until the player has loaded"));
-          this.loadOnReady = url;
-          return;
-        }
-
-        this.isLoading = true;
-        this.startOnPlay = true;
-        this.onDurationCalled = false;
-        this.player.load(url, this.isReady);
-      }
-
-      if (!prevProps.playing && playing && !this.isPlaying) {
-        this.player.play();
-      }
-
-      if (prevProps.playing && !playing && this.isPlaying) {
-        this.player.pause();
-      }
-
-      if (!prevProps.pip && pip && this.player.enablePIP) {
-        this.player.enablePIP();
-      }
-
-      if (prevProps.pip && !pip && this.player.disablePIP) {
-        this.player.disablePIP();
-      }
-
-      if (prevProps.volume !== volume && volume !== null) {
-        this.player.setVolume(volume);
-      }
-
-      if (prevProps.muted !== muted) {
-        if (muted) {
-          this.player.mute();
-        } else {
-          this.player.unmute();
-
-          if (volume !== null) {
-            // Set volume next tick to fix a bug with DailyMotion
-            setTimeout(function () {
-              return _this2.player.setVolume(volume);
-            });
-          }
-        }
-      }
-
-      if (prevProps.playbackRate !== playbackRate && this.player.setPlaybackRate) {
-        this.player.setPlaybackRate(playbackRate);
-      }
-
-      if (prevProps.loop !== loop && this.player.setLoop) {
-        this.player.setLoop(loop);
-      }
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      if (!this.isReady) return null;
-      return this.player.getDuration();
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      if (!this.isReady) return null;
-      return this.player.getCurrentTime();
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      if (!this.isReady) return null;
-      return this.player.getSecondsLoaded();
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount, type) {
-      var _this3 = this;
-
-      // When seeking before player is ready, store value and seek later
-      if (!this.isReady && amount !== 0) {
-        this.seekOnPlay = amount;
-        setTimeout(function () {
-          _this3.seekOnPlay = null;
-        }, SEEK_ON_PLAY_EXPIRY);
-        return;
-      }
-
-      var isFraction = !type ? amount > 0 && amount < 1 : type === 'fraction';
-
-      if (isFraction) {
-        // Convert fraction to seconds based on duration
-        var duration = this.player.getDuration();
-
-        if (!duration) {
-          console.warn('ReactPlayer: could not seek using fraction – duration not yet available');
-          return;
-        }
-
-        this.player.seekTo(duration * amount);
-        return;
-      }
-
-      this.player.seekTo(amount);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var Player = this.props.activePlayer;
-
-      if (!Player) {
-        return null;
-      }
-
-      return _react["default"].createElement(Player, _extends({}, this.props, {
-        ref: this.ref,
-        onReady: this.handleReady,
-        onPlay: this.handlePlay,
-        onPause: this.handlePause,
-        onEnded: this.handleEnded,
-        onLoaded: this.handleLoaded,
-        onError: this.handleError
-      }));
-    }
-  }]);
-
-  return Player;
-}(_react.Component);
-
-exports["default"] = Player;
-
-_defineProperty(Player, "displayName", 'Player');
-
-_defineProperty(Player, "propTypes", _props.propTypes);
-
-_defineProperty(Player, "defaultProps", _props.defaultProps);
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/Preview.js":
-/*!**************************************************!*\
-  !*** ./node_modules/react-player/lib/Preview.js ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var ICON_SIZE = '64px';
-
-var Preview =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Preview, _Component);
-
-  function Preview() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Preview);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Preview)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "state", {
-      image: null
-    });
-
-    return _this;
-  }
-
-  _createClass(Preview, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true;
-      this.fetchImage(this.props);
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this$props = this.props,
-          url = _this$props.url,
-          light = _this$props.light;
-
-      if (prevProps.url !== url || prevProps.light !== light) {
-        this.fetchImage(this.props);
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.mounted = false;
-    }
-  }, {
-    key: "fetchImage",
-    value: function fetchImage(_ref) {
-      var _this2 = this;
-
-      var url = _ref.url,
-          light = _ref.light;
-
-      if (typeof light === 'string') {
-        this.setState({
-          image: light
-        });
-        return;
-      }
-
-      this.setState({
-        image: null
-      });
-      return window.fetch("https://noembed.com/embed?url=".concat(url)).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        if (data.thumbnail_url && _this2.mounted) {
-          var image = data.thumbnail_url.replace('height=100', 'height=480');
-
-          _this2.setState({
-            image: image
-          });
-        }
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var onClick = this.props.onClick;
-      var image = this.state.image;
-      var flexCenter = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      };
-      var styles = {
-        preview: _objectSpread({
-          width: '100%',
-          height: '100%',
-          backgroundImage: image ? "url(".concat(image, ")") : undefined,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          cursor: 'pointer'
-        }, flexCenter),
-        shadow: _objectSpread({
-          background: 'radial-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)',
-          borderRadius: ICON_SIZE,
-          width: ICON_SIZE,
-          height: ICON_SIZE
-        }, flexCenter),
-        playIcon: {
-          borderStyle: 'solid',
-          borderWidth: '16px 0 16px 26px',
-          borderColor: 'transparent transparent transparent white',
-          marginLeft: '7px'
-        }
-      };
-      return _react["default"].createElement("div", {
-        style: styles.preview,
-        className: "react-player__preview",
-        onClick: onClick
-      }, _react["default"].createElement("div", {
-        style: styles.shadow,
-        className: "react-player__shadow"
-      }, _react["default"].createElement("div", {
-        style: styles.playIcon,
-        className: "react-player__play-icon"
-      })));
-    }
-  }]);
-
-  return Preview;
-}(_react.Component);
-
-exports["default"] = Preview;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/ReactPlayer.js":
-/*!******************************************************!*\
-  !*** ./node_modules/react-player/lib/ReactPlayer.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "FilePlayer", {
-  enumerable: true,
-  get: function get() {
-    return _FilePlayer["default"];
-  }
-});
-Object.defineProperty(exports, "YouTube", {
-  enumerable: true,
-  get: function get() {
-    return _YouTube["default"];
-  }
-});
-Object.defineProperty(exports, "SoundCloud", {
-  enumerable: true,
-  get: function get() {
-    return _SoundCloud["default"];
-  }
-});
-Object.defineProperty(exports, "Vimeo", {
-  enumerable: true,
-  get: function get() {
-    return _Vimeo["default"];
-  }
-});
-Object.defineProperty(exports, "Facebook", {
-  enumerable: true,
-  get: function get() {
-    return _Facebook["default"];
-  }
-});
-Object.defineProperty(exports, "Streamable", {
-  enumerable: true,
-  get: function get() {
-    return _Streamable["default"];
-  }
-});
-Object.defineProperty(exports, "Wistia", {
-  enumerable: true,
-  get: function get() {
-    return _Wistia["default"];
-  }
-});
-Object.defineProperty(exports, "Twitch", {
-  enumerable: true,
-  get: function get() {
-    return _Twitch["default"];
-  }
-});
-Object.defineProperty(exports, "DailyMotion", {
-  enumerable: true,
-  get: function get() {
-    return _DailyMotion["default"];
-  }
-});
-Object.defineProperty(exports, "Mixcloud", {
-  enumerable: true,
-  get: function get() {
-    return _Mixcloud["default"];
-  }
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lib/props.js");
-
-var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lib/utils.js");
-
-var _players = _interopRequireDefault(__webpack_require__(/*! ./players */ "./node_modules/react-player/lib/players/index.js"));
-
-var _Player4 = _interopRequireDefault(__webpack_require__(/*! ./Player */ "./node_modules/react-player/lib/Player.js"));
-
-var _Preview = _interopRequireDefault(__webpack_require__(/*! ./Preview */ "./node_modules/react-player/lib/Preview.js"));
-
-var _FilePlayer = _interopRequireWildcard(__webpack_require__(/*! ./players/FilePlayer */ "./node_modules/react-player/lib/players/FilePlayer.js"));
-
-var _preload = _interopRequireDefault(__webpack_require__(/*! ./preload */ "./node_modules/react-player/lib/preload.js"));
-
-var _YouTube = _interopRequireDefault(__webpack_require__(/*! ./players/YouTube */ "./node_modules/react-player/lib/players/YouTube.js"));
-
-var _SoundCloud = _interopRequireDefault(__webpack_require__(/*! ./players/SoundCloud */ "./node_modules/react-player/lib/players/SoundCloud.js"));
-
-var _Vimeo = _interopRequireDefault(__webpack_require__(/*! ./players/Vimeo */ "./node_modules/react-player/lib/players/Vimeo.js"));
-
-var _Facebook = _interopRequireDefault(__webpack_require__(/*! ./players/Facebook */ "./node_modules/react-player/lib/players/Facebook.js"));
-
-var _Streamable = _interopRequireDefault(__webpack_require__(/*! ./players/Streamable */ "./node_modules/react-player/lib/players/Streamable.js"));
-
-var _Wistia = _interopRequireDefault(__webpack_require__(/*! ./players/Wistia */ "./node_modules/react-player/lib/players/Wistia.js"));
-
-var _Twitch = _interopRequireDefault(__webpack_require__(/*! ./players/Twitch */ "./node_modules/react-player/lib/players/Twitch.js"));
-
-var _DailyMotion = _interopRequireDefault(__webpack_require__(/*! ./players/DailyMotion */ "./node_modules/react-player/lib/players/DailyMotion.js"));
-
-var _Mixcloud = _interopRequireDefault(__webpack_require__(/*! ./players/Mixcloud */ "./node_modules/react-player/lib/players/Mixcloud.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SUPPORTED_PROPS = Object.keys(_props.propTypes);
-var customPlayers = [];
-
-var ReactPlayer =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(ReactPlayer, _Component);
-
-  function ReactPlayer() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, ReactPlayer);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ReactPlayer)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "config", (0, _utils.getConfig)(_this.props, _props.defaultProps, true));
-
-    _defineProperty(_assertThisInitialized(_this), "state", {
-      showPreview: !!_this.props.light
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleClickPreview", function () {
-      _this.setState({
-        showPreview: false
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "showPreview", function () {
-      _this.setState({
-        showPreview: true
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "getDuration", function () {
-      if (!_this.player) return null;
-      return _this.player.getDuration();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "getCurrentTime", function () {
-      if (!_this.player) return null;
-      return _this.player.getCurrentTime();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "getSecondsLoaded", function () {
-      if (!_this.player) return null;
-      return _this.player.getSecondsLoaded();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function () {
-      var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'player';
-      if (!_this.player) return null;
-      return _this.player.getInternalPlayer(key);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "seekTo", function (fraction, type) {
-      if (!_this.player) return null;
-
-      _this.player.seekTo(fraction, type);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleReady", function () {
-      _this.props.onReady(_assertThisInitialized(_this));
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "wrapperRef", function (wrapper) {
-      _this.wrapper = wrapper;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "activePlayerRef", function (player) {
-      _this.player = player;
-    });
-
-    return _this;
-  }
-
-  _createClass(ReactPlayer, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      if (this.props.progressFrequency) {
-        var message = 'ReactPlayer: %cprogressFrequency%c is deprecated, please use %cprogressInterval%c instead';
-        console.warn(message, 'font-weight: bold', '', 'font-weight: bold', '');
-      }
-    }
-  }, {
-    key: "shouldComponentUpdate",
-    value: function shouldComponentUpdate(nextProps, nextState) {
-      return !(0, _utils.isEqual)(this.props, nextProps) || !(0, _utils.isEqual)(this.state, nextState);
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var light = this.props.light;
-      this.config = (0, _utils.getConfig)(this.props, _props.defaultProps);
-
-      if (!prevProps.light && light) {
-        this.setState({
-          showPreview: true
-        });
-      }
-
-      if (prevProps.light && !light) {
-        this.setState({
-          showPreview: false
-        });
-      }
-    }
-  }, {
-    key: "getActivePlayer",
-    value: function getActivePlayer(url) {
-      for (var _i = 0, _arr = [].concat(_toConsumableArray(customPlayers), _toConsumableArray(_players["default"])); _i < _arr.length; _i++) {
-        var _Player = _arr[_i];
-
-        if (_Player.canPlay(url)) {
-          return _Player;
-        }
-      } // Fall back to FilePlayer if nothing else can play the URL
-
-
-      return _FilePlayer.FilePlayer;
-    }
-  }, {
-    key: "renderActivePlayer",
-    value: function renderActivePlayer(url, activePlayer) {
-      if (!url) return null;
-      return _react["default"].createElement(_Player4["default"], _extends({}, this.props, {
-        key: activePlayer.displayName,
-        ref: this.activePlayerRef,
-        config: this.config,
-        activePlayer: activePlayer,
-        onReady: this.handleReady
-      }));
-    }
-  }, {
-    key: "sortPlayers",
-    value: function sortPlayers(a, b) {
-      // Retain player order to prevent weird iframe behaviour when switching players
-      if (a && b) {
-        return a.key < b.key ? -1 : 1;
-      }
-
-      return 0;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          url = _this$props.url,
-          controls = _this$props.controls,
-          style = _this$props.style,
-          width = _this$props.width,
-          height = _this$props.height,
-          light = _this$props.light,
-          Wrapper = _this$props.wrapper;
-      var showPreview = this.state.showPreview && url;
-      var otherProps = (0, _utils.omit)(this.props, SUPPORTED_PROPS, _props.DEPRECATED_CONFIG_PROPS);
-      var activePlayer = this.getActivePlayer(url);
-      var renderedActivePlayer = this.renderActivePlayer(url, activePlayer);
-      var preloadPlayers = (0, _preload["default"])(url, controls, this.config);
-      var players = [renderedActivePlayer].concat(_toConsumableArray(preloadPlayers)).sort(this.sortPlayers);
-
-      var preview = _react["default"].createElement(_Preview["default"], {
-        url: url,
-        light: light,
-        onClick: this.handleClickPreview
-      });
-
-      return _react["default"].createElement(Wrapper, _extends({
-        ref: this.wrapperRef,
-        style: _objectSpread({}, style, {
-          width: width,
-          height: height
-        })
-      }, otherProps), showPreview ? preview : players);
-    }
-  }]);
-
-  return ReactPlayer;
-}(_react.Component);
-
-exports["default"] = ReactPlayer;
-
-_defineProperty(ReactPlayer, "addCustomPlayer", function (player) {
-  customPlayers.push(player);
-});
-
-_defineProperty(ReactPlayer, "removeCustomPlayers", function () {
-  customPlayers = [];
-});
-
-_defineProperty(ReactPlayer, "displayName", 'ReactPlayer');
-
-_defineProperty(ReactPlayer, "propTypes", _props.propTypes);
-
-_defineProperty(ReactPlayer, "defaultProps", _props.defaultProps);
-
-_defineProperty(ReactPlayer, "canPlay", function (url) {
-  for (var _i2 = 0, _arr2 = [].concat(_toConsumableArray(customPlayers), _toConsumableArray(_players["default"])); _i2 < _arr2.length; _i2++) {
-    var _Player2 = _arr2[_i2];
-
-    if (_Player2.canPlay(url)) {
-      return true;
-    }
-  }
-
-  return false;
-});
-
-_defineProperty(ReactPlayer, "canEnablePIP", function (url) {
-  for (var _i3 = 0, _arr3 = [].concat(_toConsumableArray(customPlayers), _toConsumableArray(_players["default"])); _i3 < _arr3.length; _i3++) {
-    var _Player3 = _arr3[_i3];
-
-    if (_Player3.canEnablePIP && _Player3.canEnablePIP(url)) {
-      return true;
-    }
-  }
-
-  return false;
-});
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/DailyMotion.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-player/lib/players/DailyMotion.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.DailyMotion = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://api.dmcdn.net/all.js';
-var SDK_GLOBAL = 'DM';
-var SDK_GLOBAL_READY = 'dmAsyncInit';
-var MATCH_URL = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
-
-var DailyMotion =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(DailyMotion, _Component);
-
-  function DailyMotion() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, DailyMotion);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(DailyMotion)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "onDurationChange", function () {
-      var duration = _this.getDuration();
-
-      _this.props.onDuration(duration);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('setMuted', true);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('setMuted', false);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(DailyMotion, [{
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          controls = _this$props.controls,
-          config = _this$props.config,
-          onError = _this$props.onError,
-          playing = _this$props.playing;
-
-      var _url$match = url.match(MATCH_URL),
-          _url$match2 = _slicedToArray(_url$match, 2),
-          id = _url$match2[1];
-
-      if (this.player) {
-        this.player.load(id, {
-          start: (0, _utils.parseStartTime)(url),
-          autoplay: playing
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function (DM) {
-        return DM.player;
-      }).then(function (DM) {
-        if (!_this2.container) return;
-        var Player = DM.player;
-        _this2.player = new Player(_this2.container, {
-          width: '100%',
-          height: '100%',
-          video: id,
-          params: _objectSpread({
-            controls: controls,
-            autoplay: _this2.props.playing,
-            mute: _this2.props.muted,
-            start: (0, _utils.parseStartTime)(url),
-            origin: window.location.origin
-          }, config.dailymotion.params),
-          events: {
-            apiready: _this2.props.onReady,
-            seeked: function seeked() {
-              return _this2.props.onSeek(_this2.player.currentTime);
-            },
-            video_end: _this2.props.onEnded,
-            durationchange: _this2.onDurationChange,
-            pause: _this2.props.onPause,
-            playing: _this2.props.onPlay,
-            waiting: _this2.props.onBuffer,
-            error: function error(event) {
-              return onError(event);
-            }
-          }
-        });
-      }, onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.player.duration || null;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.player.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.player.bufferedTime;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return _react["default"].createElement("div", {
-        style: style
-      }, _react["default"].createElement("div", {
-        ref: this.ref
-      }));
-    }
-  }]);
-
-  return DailyMotion;
-}(_react.Component);
-
-exports.DailyMotion = DailyMotion;
-
-_defineProperty(DailyMotion, "displayName", 'DailyMotion');
-
-_defineProperty(DailyMotion, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-_defineProperty(DailyMotion, "loopOnEnded", true);
-
-var _default = (0, _singlePlayer["default"])(DailyMotion);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/Facebook.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/Facebook.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.Facebook = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = '//connect.facebook.net/en_US/sdk.js';
-var SDK_GLOBAL = 'FB';
-var SDK_GLOBAL_READY = 'fbAsyncInit';
-var MATCH_URL = /facebook\.com\/([^/?].+\/)?video(s|\.php)[/?].*$/;
-var PLAYER_ID_PREFIX = 'facebook-player-';
-
-var Facebook =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Facebook, _Component);
-
-  function Facebook() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Facebook);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Facebook)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "playerID", PLAYER_ID_PREFIX + (0, _utils.randomString)());
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    return _this;
-  }
-
-  _createClass(Facebook, [{
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      if (isReady) {
-        (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY).then(function (FB) {
-          return FB.XFBML.parse();
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY).then(function (FB) {
-        FB.init({
-          appId: _this2.props.config.facebook.appId,
-          xfbml: true,
-          version: 'v2.5'
-        });
-        FB.Event.subscribe('xfbml.render', function (msg) {
-          // Here we know the SDK has loaded, even if onReady/onPlay
-          // is not called due to a video that cannot be embedded
-          _this2.props.onLoaded();
-        });
-        FB.Event.subscribe('xfbml.ready', function (msg) {
-          if (msg.type === 'video' && msg.id === _this2.playerID) {
-            _this2.player = msg.instance;
-
-            _this2.player.subscribe('startedPlaying', _this2.props.onPlay);
-
-            _this2.player.subscribe('paused', _this2.props.onPause);
-
-            _this2.player.subscribe('finishedPlaying', _this2.props.onEnded);
-
-            _this2.player.subscribe('startedBuffering', _this2.props.onBuffer);
-
-            _this2.player.subscribe('finishedBuffering', _this2.props.onBufferEnd);
-
-            _this2.player.subscribe('error', _this2.props.onError);
-
-            if (!_this2.props.muted) {
-              // Player is muted by default
-              _this2.callPlayer('unmute');
-            }
-
-            _this2.props.onReady(); // For some reason Facebook have added `visibility: hidden`
-            // to the iframe when autoplay fails, so here we set it back
-
-
-            document.getElementById(_this2.playerID).querySelector('iframe').style.visibility = 'visible';
-          }
-        });
-      });
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentPosition');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return _react["default"].createElement("div", {
-        style: style,
-        id: this.playerID,
-        className: "fb-video",
-        "data-href": this.props.url,
-        "data-autoplay": this.props.playing ? 'true' : 'false',
-        "data-allowfullscreen": "true",
-        "data-controls": this.props.controls ? 'true' : 'false'
-      });
-    }
-  }]);
-
-  return Facebook;
-}(_react.Component);
-
-exports.Facebook = Facebook;
-
-_defineProperty(Facebook, "displayName", 'Facebook');
-
-_defineProperty(Facebook, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-_defineProperty(Facebook, "loopOnEnded", true);
-
-var _default = (0, _singlePlayer["default"])(Facebook);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/FilePlayer.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-player/lib/players/FilePlayer.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.FilePlayer = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var IOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-var AUDIO_EXTENSIONS = /\.(m4a|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i;
-var VIDEO_EXTENSIONS = /\.(mp4|og[gv]|webm|mov|m4v)($|\?)/i;
-var HLS_EXTENSIONS = /\.(m3u8)($|\?)/i;
-var HLS_SDK_URL = 'https://cdnjs.cloudflare.com/ajax/libs/hls.js/VERSION/hls.min.js';
-var HLS_GLOBAL = 'Hls';
-var DASH_EXTENSIONS = /\.(mpd)($|\?)/i;
-var DASH_SDK_URL = 'https://cdnjs.cloudflare.com/ajax/libs/dashjs/VERSION/dash.all.min.js';
-var DASH_GLOBAL = 'dashjs';
-var MATCH_DROPBOX_URL = /www\.dropbox\.com\/.+/;
-
-function canPlay(url) {
-  if (url instanceof Array) {
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = url[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var item = _step.value;
-
-        if (typeof item === 'string' && canPlay(item)) {
-          return true;
-        }
-
-        if (canPlay(item.src)) {
-          return true;
-        }
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-          _iterator["return"]();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
-
-    return false;
-  }
-
-  if ((0, _utils.isMediaStream)(url)) {
-    return true;
-  }
-
-  return AUDIO_EXTENSIONS.test(url) || VIDEO_EXTENSIONS.test(url) || HLS_EXTENSIONS.test(url) || DASH_EXTENSIONS.test(url);
-}
-
-function canEnablePIP(url) {
-  return canPlay(url) && !!document.pictureInPictureEnabled && !AUDIO_EXTENSIONS.test(url);
-}
-
-var FilePlayer =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(FilePlayer, _Component);
-
-  function FilePlayer() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, FilePlayer);
-
-    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
-      _args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(FilePlayer)).call.apply(_getPrototypeOf2, [this].concat(_args)));
-
-    _defineProperty(_assertThisInitialized(_this), "onReady", function () {
-      var _this$props;
-
-      return (_this$props = _this.props).onReady.apply(_this$props, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onPlay", function () {
-      var _this$props2;
-
-      return (_this$props2 = _this.props).onPlay.apply(_this$props2, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onBuffer", function () {
-      var _this$props3;
-
-      return (_this$props3 = _this.props).onBuffer.apply(_this$props3, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onBufferEnd", function () {
-      var _this$props4;
-
-      return (_this$props4 = _this.props).onBufferEnd.apply(_this$props4, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onPause", function () {
-      var _this$props5;
-
-      return (_this$props5 = _this.props).onPause.apply(_this$props5, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onEnded", function () {
-      var _this$props6;
-
-      return (_this$props6 = _this.props).onEnded.apply(_this$props6, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onError", function () {
-      var _this$props7;
-
-      return (_this$props7 = _this.props).onError.apply(_this$props7, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onEnablePIP", function () {
-      var _this$props8;
-
-      return (_this$props8 = _this.props).onEnablePIP.apply(_this$props8, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onDisablePIP", function (e) {
-      var _this$props9 = _this.props,
-          onDisablePIP = _this$props9.onDisablePIP,
-          playing = _this$props9.playing;
-      onDisablePIP(e);
-
-      if (playing) {
-        _this.play();
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onSeek", function (e) {
-      _this.props.onSeek(e.target.currentTime);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.player.muted = true;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.player.muted = false;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "renderSourceElement", function (source, index) {
-      if (typeof source === 'string') {
-        return _react["default"].createElement("source", {
-          key: index,
-          src: source
-        });
-      }
-
-      return _react["default"].createElement("source", _extends({
-        key: index
-      }, source));
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "renderTrack", function (track, index) {
-      return _react["default"].createElement("track", _extends({
-        key: index
-      }, track));
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (player) {
-      if (_this.player) {
-        // Store previous player to be used by removeListeners()
-        _this.prevPlayer = _this.player;
-      }
-
-      _this.player = player;
-    });
-
-    return _this;
-  }
-
-  _createClass(FilePlayer, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.addListeners(this.player);
-
-      if (IOS) {
-        this.player.load();
-      }
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      if (this.shouldUseAudio(this.props) !== this.shouldUseAudio(prevProps)) {
-        this.removeListeners(this.prevPlayer);
-        this.addListeners(this.player);
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.removeListeners(this.player);
-    }
-  }, {
-    key: "addListeners",
-    value: function addListeners(player) {
-      var playsinline = this.props.playsinline;
-      player.addEventListener('canplay', this.onReady);
-      player.addEventListener('play', this.onPlay);
-      player.addEventListener('waiting', this.onBuffer);
-      player.addEventListener('playing', this.onBufferEnd);
-      player.addEventListener('pause', this.onPause);
-      player.addEventListener('seeked', this.onSeek);
-      player.addEventListener('ended', this.onEnded);
-      player.addEventListener('error', this.onError);
-      player.addEventListener('enterpictureinpicture', this.onEnablePIP);
-      player.addEventListener('leavepictureinpicture', this.onDisablePIP);
-
-      if (playsinline) {
-        player.setAttribute('playsinline', '');
-        player.setAttribute('webkit-playsinline', '');
-        player.setAttribute('x5-playsinline', '');
-      }
-    }
-  }, {
-    key: "removeListeners",
-    value: function removeListeners(player) {
-      player.removeEventListener('canplay', this.onReady);
-      player.removeEventListener('play', this.onPlay);
-      player.removeEventListener('waiting', this.onBuffer);
-      player.removeEventListener('playing', this.onBufferEnd);
-      player.removeEventListener('pause', this.onPause);
-      player.removeEventListener('seeked', this.onSeek);
-      player.removeEventListener('ended', this.onEnded);
-      player.removeEventListener('error', this.onError);
-      player.removeEventListener('enterpictureinpicture', this.onEnablePIP);
-      player.removeEventListener('leavepictureinpicture', this.onDisablePIP);
-    } // Proxy methods to prevent listener leaks
-
-  }, {
-    key: "shouldUseAudio",
-    value: function shouldUseAudio(props) {
-      if (props.config.file.forceVideo) {
-        return false;
-      }
-
-      if (props.config.file.attributes.poster) {
-        return false; // Use <video> so that poster is shown
-      }
-
-      return AUDIO_EXTENSIONS.test(props.url) || props.config.file.forceAudio;
-    }
-  }, {
-    key: "shouldUseHLS",
-    value: function shouldUseHLS(url) {
-      return HLS_EXTENSIONS.test(url) && !IOS || this.props.config.file.forceHLS;
-    }
-  }, {
-    key: "shouldUseDASH",
-    value: function shouldUseDASH(url) {
-      return DASH_EXTENSIONS.test(url) || this.props.config.file.forceDASH;
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props$config$fi = this.props.config.file,
-          hlsVersion = _this$props$config$fi.hlsVersion,
-          dashVersion = _this$props$config$fi.dashVersion;
-
-      if (this.shouldUseHLS(url)) {
-        (0, _utils.getSDK)(HLS_SDK_URL.replace('VERSION', hlsVersion), HLS_GLOBAL).then(function (Hls) {
-          _this2.hls = new Hls(_this2.props.config.file.hlsOptions);
-
-          _this2.hls.on(Hls.Events.ERROR, function (e, data) {
-            _this2.props.onError(e, data, _this2.hls, Hls);
-          });
-
-          _this2.hls.loadSource(url);
-
-          _this2.hls.attachMedia(_this2.player);
-        });
-      }
-
-      if (this.shouldUseDASH(url)) {
-        (0, _utils.getSDK)(DASH_SDK_URL.replace('VERSION', dashVersion), DASH_GLOBAL).then(function (dashjs) {
-          _this2.dash = dashjs.MediaPlayer().create();
-
-          _this2.dash.initialize(_this2.player, url, _this2.props.playing);
-
-          _this2.dash.getDebug().setLogToBrowserConsole(false);
-        });
-      }
-
-      if (url instanceof Array) {
-        // When setting new urls (<source>) on an already loaded video,
-        // HTMLMediaElement.load() is needed to reset the media element
-        // and restart the media resource. Just replacing children source
-        // dom nodes is not enough
-        this.player.load();
-      } else if ((0, _utils.isMediaStream)(url)) {
-        try {
-          this.player.srcObject = url;
-        } catch (e) {
-          this.player.src = window.URL.createObjectURL(url);
-        }
-      }
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      var promise = this.player.play();
-
-      if (promise) {
-        promise["catch"](this.props.onError);
-      }
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.player.pause();
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.player.removeAttribute('src');
-
-      if (this.hls) {
-        this.hls.destroy();
-      }
-
-      if (this.dash) {
-        this.dash.reset();
-      }
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.player.currentTime = seconds;
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.player.volume = fraction;
-    }
-  }, {
-    key: "enablePIP",
-    value: function enablePIP() {
-      if (this.player.requestPictureInPicture && document.pictureInPictureElement !== this.player) {
-        this.player.requestPictureInPicture();
-      }
-    }
-  }, {
-    key: "disablePIP",
-    value: function disablePIP() {
-      if (document.exitPictureInPicture && document.pictureInPictureElement === this.player) {
-        document.exitPictureInPicture();
-      }
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.player.playbackRate = rate;
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      if (!this.player) return null;
-      var _this$player = this.player,
-          duration = _this$player.duration,
-          seekable = _this$player.seekable; // on iOS, live streams return Infinity for the duration
-      // so instead we use the end of the seekable timerange
-
-      if (duration === Infinity && seekable.length > 0) {
-        return seekable.end(seekable.length - 1);
-      }
-
-      return duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      if (!this.player) return null;
-      return this.player.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      if (!this.player) return null;
-      var buffered = this.player.buffered;
-
-      if (buffered.length === 0) {
-        return 0;
-      }
-
-      var end = buffered.end(buffered.length - 1);
-      var duration = this.getDuration();
-
-      if (end > duration) {
-        return duration;
-      }
-
-      return end;
-    }
-  }, {
-    key: "getSource",
-    value: function getSource(url) {
-      var useHLS = this.shouldUseHLS(url);
-      var useDASH = this.shouldUseDASH(url);
-
-      if (url instanceof Array || (0, _utils.isMediaStream)(url) || useHLS || useDASH) {
-        return undefined;
-      }
-
-      if (MATCH_DROPBOX_URL.test(url)) {
-        return url.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
-      }
-
-      return url;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props10 = this.props,
-          url = _this$props10.url,
-          playing = _this$props10.playing,
-          loop = _this$props10.loop,
-          controls = _this$props10.controls,
-          muted = _this$props10.muted,
-          config = _this$props10.config,
-          width = _this$props10.width,
-          height = _this$props10.height;
-      var useAudio = this.shouldUseAudio(this.props);
-      var Element = useAudio ? 'audio' : 'video';
-      var style = {
-        width: width === 'auto' ? width : '100%',
-        height: height === 'auto' ? height : '100%'
-      };
-      return _react["default"].createElement(Element, _extends({
-        ref: this.ref,
-        src: this.getSource(url),
-        style: style,
-        preload: "auto",
-        autoPlay: playing || undefined,
-        controls: controls,
-        muted: muted,
-        loop: loop
-      }, config.file.attributes), url instanceof Array && url.map(this.renderSourceElement), config.file.tracks.map(this.renderTrack));
-    }
-  }]);
-
-  return FilePlayer;
-}(_react.Component);
-
-exports.FilePlayer = FilePlayer;
-
-_defineProperty(FilePlayer, "displayName", 'FilePlayer');
-
-_defineProperty(FilePlayer, "canPlay", canPlay);
-
-_defineProperty(FilePlayer, "canEnablePIP", canEnablePIP);
-
-var _default = (0, _singlePlayer["default"])(FilePlayer);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/Mixcloud.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/Mixcloud.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.Mixcloud = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = '//widget.mixcloud.com/media/js/widgetApi.js';
-var SDK_GLOBAL = 'Mixcloud';
-var MATCH_URL = /mixcloud\.com\/([^/]+\/[^/]+)/;
-
-var Mixcloud =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Mixcloud, _Component);
-
-  function Mixcloud() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Mixcloud);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Mixcloud)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {// No volume support
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {// No volume support
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(Mixcloud, [{
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Mixcloud) {
-        _this2.player = Mixcloud.PlayerWidget(_this2.iframe);
-
-        _this2.player.ready.then(function () {
-          _this2.player.events.play.on(_this2.props.onPlay);
-
-          _this2.player.events.pause.on(_this2.props.onPause);
-
-          _this2.player.events.ended.on(_this2.props.onEnded);
-
-          _this2.player.events.error.on(_this2.props.error);
-
-          _this2.player.events.progress.on(function (seconds, duration) {
-            _this2.currentTime = seconds;
-            _this2.duration = duration;
-          });
-
-          _this2.props.onReady();
-        });
-      }, this.props.onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {// No volume support
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          url = _this$props.url,
-          config = _this$props.config;
-      var id = url.match(MATCH_URL)[1];
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      var query = (0, _utils.queryString)(_objectSpread({}, config.mixcloud.options, {
-        feed: "/".concat(id, "/")
-      })); // We have to give the iframe a key here to prevent a
-      // weird dialog appearing when loading a new track
-
-      return _react["default"].createElement("iframe", {
-        key: id,
-        ref: this.ref,
-        style: style,
-        src: "https://www.mixcloud.com/widget/iframe/?".concat(query),
-        frameBorder: "0"
-      });
-    }
-  }]);
-
-  return Mixcloud;
-}(_react.Component);
-
-exports.Mixcloud = Mixcloud;
-
-_defineProperty(Mixcloud, "displayName", 'Mixcloud');
-
-_defineProperty(Mixcloud, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-_defineProperty(Mixcloud, "loopOnEnded", true);
-
-var _default = (0, _singlePlayer["default"])(Mixcloud);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/SoundCloud.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-player/lib/players/SoundCloud.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.SoundCloud = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://w.soundcloud.com/player/api.js';
-var SDK_GLOBAL = 'SC';
-var MATCH_URL = /(soundcloud\.com|snd\.sc)\/.+$/;
-
-var SoundCloud =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(SoundCloud, _Component);
-
-  function SoundCloud() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, SoundCloud);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SoundCloud)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "fractionLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.setVolume(0);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      if (_this.props.volume !== null) {
-        _this.setVolume(_this.props.volume);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(SoundCloud, [{
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (SC) {
-        if (!_this2.iframe) return;
-        var _SC$Widget$Events = SC.Widget.Events,
-            PLAY = _SC$Widget$Events.PLAY,
-            PLAY_PROGRESS = _SC$Widget$Events.PLAY_PROGRESS,
-            PAUSE = _SC$Widget$Events.PAUSE,
-            FINISH = _SC$Widget$Events.FINISH,
-            ERROR = _SC$Widget$Events.ERROR;
-
-        if (!isReady) {
-          _this2.player = SC.Widget(_this2.iframe);
-
-          _this2.player.bind(PLAY, _this2.props.onPlay);
-
-          _this2.player.bind(PAUSE, _this2.props.onPause);
-
-          _this2.player.bind(PLAY_PROGRESS, function (e) {
-            _this2.currentTime = e.currentPosition / 1000;
-            _this2.fractionLoaded = e.loadedProgress;
-          });
-
-          _this2.player.bind(FINISH, function () {
-            return _this2.props.onEnded();
-          });
-
-          _this2.player.bind(ERROR, function (e) {
-            return _this2.props.onError(e);
-          });
-        }
-
-        _this2.player.load(url, _objectSpread({}, _this2.props.config.soundcloud.options, {
-          callback: function callback() {
-            _this2.player.getDuration(function (duration) {
-              _this2.duration = duration / 1000;
-
-              _this2.props.onReady();
-            });
-          }
-        }));
-      });
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seekTo', seconds * 1000);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.fractionLoaded * this.duration;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return _react["default"].createElement("iframe", {
-        ref: this.ref,
-        src: "https://w.soundcloud.com/player/?url=".concat(encodeURIComponent(this.props.url)),
-        style: style,
-        frameBorder: 0,
-        allow: "autoplay"
-      });
-    }
-  }]);
-
-  return SoundCloud;
-}(_react.Component);
-
-exports.SoundCloud = SoundCloud;
-
-_defineProperty(SoundCloud, "displayName", 'SoundCloud');
-
-_defineProperty(SoundCloud, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-_defineProperty(SoundCloud, "loopOnEnded", true);
-
-var _default = (0, _singlePlayer["default"])(SoundCloud);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/Streamable.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-player/lib/players/Streamable.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.Streamable = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = '//cdn.embed.ly/player-0.1.0.min.js';
-var SDK_GLOBAL = 'playerjs';
-var MATCH_URL = /streamable\.com\/([a-z0-9]+)$/;
-
-var Streamable =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Streamable, _Component);
-
-  function Streamable() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Streamable);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Streamable)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(Streamable, [{
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (playerjs) {
-        if (!_this2.iframe) return;
-        _this2.player = new playerjs.Player(_this2.iframe);
-
-        _this2.player.setLoop(_this2.props.loop);
-
-        _this2.player.on('ready', _this2.props.onReady);
-
-        _this2.player.on('play', _this2.props.onPlay);
-
-        _this2.player.on('pause', _this2.props.onPause);
-
-        _this2.player.on('seeked', _this2.props.onSeek);
-
-        _this2.player.on('ended', _this2.props.onEnded);
-
-        _this2.player.on('error', _this2.props.onError);
-
-        _this2.player.on('timeupdate', function (_ref) {
-          var duration = _ref.duration,
-              seconds = _ref.seconds;
-          _this2.duration = duration;
-          _this2.currentTime = seconds;
-        });
-
-        _this2.player.on('buffered', function (_ref2) {
-          var percent = _ref2.percent;
-
-          if (_this2.duration) {
-            _this2.secondsLoaded = _this2.duration * percent;
-          }
-        });
-
-        if (_this2.props.muted) {
-          _this2.player.mute();
-        }
-      }, this.props.onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('setCurrentTime', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.secondsLoaded;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var id = this.props.url.match(MATCH_URL)[1];
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return _react["default"].createElement("iframe", {
-        ref: this.ref,
-        src: "https://streamable.com/o/".concat(id),
-        frameBorder: "0",
-        scrolling: "no",
-        style: style,
-        allowFullScreen: true
-      });
-    }
-  }]);
-
-  return Streamable;
-}(_react.Component);
-
-exports.Streamable = Streamable;
-
-_defineProperty(Streamable, "displayName", 'Streamable');
-
-_defineProperty(Streamable, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-var _default = (0, _singlePlayer["default"])(Streamable);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/Twitch.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/Twitch.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.Twitch = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://player.twitch.tv/js/embed/v1.js';
-var SDK_GLOBAL = 'Twitch';
-var MATCH_VIDEO_URL = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
-var MATCH_CHANNEL_URL = /(?:www\.|go\.)?twitch\.tv\/([a-z0-9_]+)($|\?)/;
-var PLAYER_ID_PREFIX = 'twitch-player-';
-
-var Twitch =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Twitch, _Component);
-
-  function Twitch() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Twitch);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Twitch)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "playerID", PLAYER_ID_PREFIX + (0, _utils.randomString)());
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('setMuted', true);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('setMuted', false);
-    });
-
-    return _this;
-  }
-
-  _createClass(Twitch, [{
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          playsinline = _this$props.playsinline,
-          onError = _this$props.onError,
-          config = _this$props.config;
-      var isChannel = MATCH_CHANNEL_URL.test(url);
-      var id = isChannel ? url.match(MATCH_CHANNEL_URL)[1] : url.match(MATCH_VIDEO_URL)[1];
-
-      if (isReady) {
-        if (isChannel) {
-          this.player.setChannel(id);
-        } else {
-          this.player.setVideo('v' + id);
-        }
-
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Twitch) {
-        _this2.player = new Twitch.Player(_this2.playerID, _objectSpread({
-          video: isChannel ? '' : id,
-          channel: isChannel ? id : '',
-          height: '100%',
-          width: '100%',
-          playsinline: playsinline,
-          autoplay: _this2.props.playing,
-          muted: _this2.props.muted,
-          controls: _this2.props.controls
-        }, config.twitch.options));
-        var _Twitch$Player = Twitch.Player,
-            READY = _Twitch$Player.READY,
-            PLAYING = _Twitch$Player.PLAYING,
-            PAUSE = _Twitch$Player.PAUSE,
-            ENDED = _Twitch$Player.ENDED,
-            ONLINE = _Twitch$Player.ONLINE,
-            OFFLINE = _Twitch$Player.OFFLINE;
-
-        _this2.player.addEventListener(READY, _this2.props.onReady);
-
-        _this2.player.addEventListener(PLAYING, _this2.props.onPlay);
-
-        _this2.player.addEventListener(PAUSE, _this2.props.onPause);
-
-        _this2.player.addEventListener(ENDED, _this2.props.onEnded); // Prevent weird isLoading behaviour when streams are offline
-
-
-        _this2.player.addEventListener(ONLINE, _this2.props.onLoaded);
-
-        _this2.player.addEventListener(OFFLINE, _this2.props.onLoaded);
-      }, onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentTime');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return _react["default"].createElement("div", {
-        style: style,
-        id: this.playerID
-      });
-    }
-  }]);
-
-  return Twitch;
-}(_react.Component);
-
-exports.Twitch = Twitch;
-
-_defineProperty(Twitch, "displayName", 'Twitch');
-
-_defineProperty(Twitch, "canPlay", function (url) {
-  return MATCH_VIDEO_URL.test(url) || MATCH_CHANNEL_URL.test(url);
-});
-
-_defineProperty(Twitch, "loopOnEnded", true);
-
-var _default = (0, _singlePlayer["default"])(Twitch);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/Vimeo.js":
-/*!********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/Vimeo.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.Vimeo = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://player.vimeo.com/api/player.js';
-var SDK_GLOBAL = 'Vimeo';
-var MATCH_URL = /vimeo\.com\/.+/;
-var MATCH_FILE_URL = /vimeo\.com\/external\/[0-9]+\..+/;
-
-var Vimeo =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Vimeo, _Component);
-
-  function Vimeo() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Vimeo);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Vimeo)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.setVolume(0);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      if (_this.props.volume !== null) {
-        _this.setVolume(_this.props.volume);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(Vimeo, [{
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      this.duration = null;
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Vimeo) {
-        if (!_this2.container) return;
-        _this2.player = new Vimeo.Player(_this2.container, _objectSpread({
-          url: url,
-          autoplay: _this2.props.playing,
-          muted: _this2.props.muted,
-          loop: _this2.props.loop,
-          playsinline: _this2.props.playsinline,
-          controls: _this2.props.controls
-        }, _this2.props.config.vimeo.playerOptions));
-
-        _this2.player.ready().then(function () {
-          var iframe = _this2.container.querySelector('iframe');
-
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-        })["catch"](_this2.props.onError);
-
-        _this2.player.on('loaded', function () {
-          _this2.props.onReady();
-
-          _this2.refreshDuration();
-        });
-
-        _this2.player.on('play', function () {
-          _this2.props.onPlay();
-
-          _this2.refreshDuration();
-        });
-
-        _this2.player.on('pause', _this2.props.onPause);
-
-        _this2.player.on('seeked', function (e) {
-          return _this2.props.onSeek(e.seconds);
-        });
-
-        _this2.player.on('ended', _this2.props.onEnded);
-
-        _this2.player.on('error', _this2.props.onError);
-
-        _this2.player.on('timeupdate', function (_ref) {
-          var seconds = _ref.seconds;
-          _this2.currentTime = seconds;
-        });
-
-        _this2.player.on('progress', function (_ref2) {
-          var seconds = _ref2.seconds;
-          _this2.secondsLoaded = seconds;
-        });
-      }, this.props.onError);
-    }
-  }, {
-    key: "refreshDuration",
-    value: function refreshDuration() {
-      var _this3 = this;
-
-      this.player.getDuration().then(function (duration) {
-        _this3.duration = duration;
-      });
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      var promise = this.callPlayer('play');
-
-      if (promise) {
-        promise["catch"](this.props.onError);
-      }
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.callPlayer('unload');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('setCurrentTime', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('setPlaybackRate', rate);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.secondsLoaded;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        overflow: 'hidden',
-        display: display
-      };
-      return _react["default"].createElement("div", {
-        key: this.props.url,
-        ref: this.ref,
-        style: style
-      });
-    }
-  }]);
-
-  return Vimeo;
-}(_react.Component);
-
-exports.Vimeo = Vimeo;
-
-_defineProperty(Vimeo, "displayName", 'Vimeo');
-
-_defineProperty(Vimeo, "forceLoad", true);
-
-_defineProperty(Vimeo, "canPlay", function (url) {
-  if (MATCH_FILE_URL.test(url)) {
-    return false;
-  }
-
-  return MATCH_URL.test(url);
-});
-
-var _default = (0, _singlePlayer["default"])(Vimeo);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/Wistia.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/Wistia.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.Wistia = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = '//fast.wistia.com/assets/external/E-v1.js';
-var SDK_GLOBAL = 'Wistia';
-var MATCH_URL = /(?:wistia\.com|wi\.st)\/(?:medias|embed)\/(.*)$/;
-
-var Wistia =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Wistia, _Component);
-
-  function Wistia() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, Wistia);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Wistia)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    return _this;
-  }
-
-  _createClass(Wistia, [{
-    key: "getID",
-    value: function getID(url) {
-      return url && url.match(MATCH_URL)[1];
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          playing = _this$props.playing,
-          muted = _this$props.muted,
-          controls = _this$props.controls,
-          _onReady = _this$props.onReady,
-          onPlay = _this$props.onPlay,
-          onPause = _this$props.onPause,
-          onSeek = _this$props.onSeek,
-          onEnded = _this$props.onEnded,
-          config = _this$props.config,
-          onError = _this$props.onError;
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function () {
-        window._wq = window._wq || [];
-
-        window._wq.push({
-          id: _this2.getID(url),
-          options: _objectSpread({
-            autoPlay: playing,
-            silentAutoPlay: 'allow',
-            muted: muted,
-            controlsVisibleOnLoad: controls
-          }, config.wistia.options),
-          onReady: function onReady(player) {
-            _this2.player = player;
-
-            _this2.unbind();
-
-            _this2.player.bind('play', onPlay);
-
-            _this2.player.bind('pause', onPause);
-
-            _this2.player.bind('seek', onSeek);
-
-            _this2.player.bind('end', onEnded);
-
-            _onReady();
-          }
-        });
-      }, onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "unbind",
-    value: function unbind() {
-      var _this$props2 = this.props,
-          onPlay = _this$props2.onPlay,
-          onPause = _this$props2.onPause,
-          onSeek = _this$props2.onSeek,
-          onEnded = _this$props2.onEnded;
-      this.player.unbind('play', onPlay);
-      this.player.unbind('pause', onPause);
-      this.player.unbind('seek', onSeek);
-      this.player.unbind('end', onEnded);
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.unbind();
-      this.callPlayer('remove');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('time', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('volume', fraction);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('playbackRate', rate);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('duration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('time');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var id = this.getID(this.props.url);
-      var className = "wistia_embed wistia_async_".concat(id);
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return _react["default"].createElement("div", {
-        key: id,
-        className: className,
-        style: style
-      });
-    }
-  }]);
-
-  return Wistia;
-}(_react.Component);
-
-exports.Wistia = Wistia;
-
-_defineProperty(Wistia, "displayName", 'Wistia');
-
-_defineProperty(Wistia, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-_defineProperty(Wistia, "loopOnEnded", true);
-
-var _default = (0, _singlePlayer["default"])(Wistia);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/YouTube.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/YouTube.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.YouTube = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../utils */ "./node_modules/react-player/lib/utils.js");
-
-var _singlePlayer = _interopRequireDefault(__webpack_require__(/*! ../singlePlayer */ "./node_modules/react-player/lib/singlePlayer.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var SDK_URL = 'https://www.youtube.com/iframe_api';
-var SDK_GLOBAL = 'YT';
-var SDK_GLOBAL_READY = 'onYouTubeIframeAPIReady';
-var MATCH_URL = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})|youtube\.com\/playlist\?list=/;
-var MATCH_PLAYLIST = /list=([a-zA-Z0-9_-]+)/;
-
-function parsePlaylist(url) {
-  if (MATCH_PLAYLIST.test(url)) {
-    var _url$match = url.match(MATCH_PLAYLIST),
-        _url$match2 = _slicedToArray(_url$match, 2),
-        playlistId = _url$match2[1];
-
-    return {
-      listType: 'playlist',
-      list: playlistId
-    };
-  }
-
-  return {};
-}
-
-var YouTube =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(YouTube, _Component);
-
-  function YouTube() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, YouTube);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(YouTube)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "onStateChange", function (_ref) {
-      var data = _ref.data;
-      var _this$props = _this.props,
-          onPlay = _this$props.onPlay,
-          onPause = _this$props.onPause,
-          onBuffer = _this$props.onBuffer,
-          onBufferEnd = _this$props.onBufferEnd,
-          onEnded = _this$props.onEnded,
-          onReady = _this$props.onReady,
-          loop = _this$props.loop;
-      var _window$SDK_GLOBAL$Pl = window[SDK_GLOBAL].PlayerState,
-          PLAYING = _window$SDK_GLOBAL$Pl.PLAYING,
-          PAUSED = _window$SDK_GLOBAL$Pl.PAUSED,
-          BUFFERING = _window$SDK_GLOBAL$Pl.BUFFERING,
-          ENDED = _window$SDK_GLOBAL$Pl.ENDED,
-          CUED = _window$SDK_GLOBAL$Pl.CUED;
-
-      if (data === PLAYING) {
-        onPlay();
-        onBufferEnd();
-      }
-
-      if (data === PAUSED) onPause();
-      if (data === BUFFERING) onBuffer();
-
-      if (data === ENDED) {
-        var isPlaylist = !!_this.callPlayer('getPlaylist');
-
-        if (loop && !isPlaylist) {
-          _this.play(); // Only loop manually if not playing a playlist
-
-        }
-
-        onEnded();
-      }
-
-      if (data === CUED) onReady();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unMute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(YouTube, [{
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      var _this$props2 = this.props,
-          playing = _this$props2.playing,
-          muted = _this$props2.muted,
-          playsinline = _this$props2.playsinline,
-          controls = _this$props2.controls,
-          loop = _this$props2.loop,
-          config = _this$props2.config,
-          _onError = _this$props2.onError;
-      var _config$youtube = config.youtube,
-          playerVars = _config$youtube.playerVars,
-          embedOptions = _config$youtube.embedOptions;
-      var id = url && url.match(MATCH_URL)[1];
-
-      if (isReady) {
-        if (MATCH_PLAYLIST.test(url)) {
-          this.player.loadPlaylist(parsePlaylist(url));
-          return;
-        }
-
-        this.player.cueVideoById({
-          videoId: id,
-          startSeconds: (0, _utils.parseStartTime)(url) || playerVars.start,
-          endSeconds: (0, _utils.parseEndTime)(url) || playerVars.end
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function (YT) {
-        return YT.loaded;
-      }).then(function (YT) {
-        if (!_this2.container) return;
-        _this2.player = new YT.Player(_this2.container, _objectSpread({
-          width: '100%',
-          height: '100%',
-          videoId: id,
-          playerVars: _objectSpread({
-            autoplay: playing ? 1 : 0,
-            mute: muted ? 1 : 0,
-            controls: controls ? 1 : 0,
-            start: (0, _utils.parseStartTime)(url),
-            end: (0, _utils.parseEndTime)(url),
-            origin: window.location.origin,
-            playsinline: playsinline
-          }, parsePlaylist(url), {}, playerVars),
-          events: {
-            onReady: function onReady() {
-              if (loop) {
-                _this2.player.setLoop(true); // Enable playlist looping
-
-              }
-
-              _this2.props.onReady();
-            },
-            onStateChange: _this2.onStateChange,
-            onError: function onError(event) {
-              return _onError(event.data);
-            }
-          }
-        }, embedOptions));
-      }, _onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('playVideo');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pauseVideo');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      if (!document.body.contains(this.callPlayer('getIframe'))) return;
-      this.callPlayer('stopVideo');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount) {
-      this.callPlayer('seekTo', amount);
-
-      if (!this.props.playing) {
-        this.pause();
-      }
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('setPlaybackRate', rate);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentTime');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.callPlayer('getVideoLoadedFraction') * this.getDuration();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return _react["default"].createElement("div", {
-        style: style
-      }, _react["default"].createElement("div", {
-        ref: this.ref
-      }));
-    }
-  }]);
-
-  return YouTube;
-}(_react.Component);
-
-exports.YouTube = YouTube;
-
-_defineProperty(YouTube, "displayName", 'YouTube');
-
-_defineProperty(YouTube, "canPlay", function (url) {
-  return MATCH_URL.test(url);
-});
-
-var _default = (0, _singlePlayer["default"])(YouTube);
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/players/index.js":
-/*!********************************************************!*\
-  !*** ./node_modules/react-player/lib/players/index.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _YouTube = __webpack_require__(/*! ./YouTube */ "./node_modules/react-player/lib/players/YouTube.js");
-
-var _SoundCloud = __webpack_require__(/*! ./SoundCloud */ "./node_modules/react-player/lib/players/SoundCloud.js");
-
-var _Vimeo = __webpack_require__(/*! ./Vimeo */ "./node_modules/react-player/lib/players/Vimeo.js");
-
-var _Facebook = __webpack_require__(/*! ./Facebook */ "./node_modules/react-player/lib/players/Facebook.js");
-
-var _Streamable = __webpack_require__(/*! ./Streamable */ "./node_modules/react-player/lib/players/Streamable.js");
-
-var _Wistia = __webpack_require__(/*! ./Wistia */ "./node_modules/react-player/lib/players/Wistia.js");
-
-var _Twitch = __webpack_require__(/*! ./Twitch */ "./node_modules/react-player/lib/players/Twitch.js");
-
-var _DailyMotion = __webpack_require__(/*! ./DailyMotion */ "./node_modules/react-player/lib/players/DailyMotion.js");
-
-var _Mixcloud = __webpack_require__(/*! ./Mixcloud */ "./node_modules/react-player/lib/players/Mixcloud.js");
-
-var _FilePlayer = __webpack_require__(/*! ./FilePlayer */ "./node_modules/react-player/lib/players/FilePlayer.js");
-
-var _default = [_YouTube.YouTube, _SoundCloud.SoundCloud, _Vimeo.Vimeo, _Facebook.Facebook, _Streamable.Streamable, _Wistia.Wistia, _Twitch.Twitch, _DailyMotion.DailyMotion, _Mixcloud.Mixcloud, _FilePlayer.FilePlayer];
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/preload.js":
-/*!**************************************************!*\
-  !*** ./node_modules/react-player/lib/preload.js ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = renderPreloadPlayers;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _Player = _interopRequireDefault(__webpack_require__(/*! ./Player */ "./node_modules/react-player/lib/Player.js"));
-
-var _YouTube = __webpack_require__(/*! ./players/YouTube */ "./node_modules/react-player/lib/players/YouTube.js");
-
-var _SoundCloud = __webpack_require__(/*! ./players/SoundCloud */ "./node_modules/react-player/lib/players/SoundCloud.js");
-
-var _Vimeo = __webpack_require__(/*! ./players/Vimeo */ "./node_modules/react-player/lib/players/Vimeo.js");
-
-var _DailyMotion = __webpack_require__(/*! ./players/DailyMotion */ "./node_modules/react-player/lib/players/DailyMotion.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var PRELOAD_PLAYERS = [{
-  Player: _YouTube.YouTube,
-  configKey: 'youtube',
-  url: 'https://www.youtube.com/watch?v=GlCmAC4MHek'
-}, {
-  Player: _SoundCloud.SoundCloud,
-  configKey: 'soundcloud',
-  url: 'https://soundcloud.com/seucheu/john-cage-433-8-bit-version'
-}, {
-  Player: _Vimeo.Vimeo,
-  configKey: 'vimeo',
-  url: 'https://vimeo.com/300970506'
-}, {
-  Player: _DailyMotion.DailyMotion,
-  configKey: 'dailymotion',
-  url: 'http://www.dailymotion.com/video/xqdpyk'
-}];
-
-function renderPreloadPlayers(url, controls, config) {
-  var players = [];
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = PRELOAD_PLAYERS[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var player = _step.value;
-
-      if (!player.Player.canPlay(url) && config[player.configKey].preload) {
-        players.push(_react["default"].createElement(_Player["default"], {
-          key: player.Player.displayName,
-          activePlayer: player.Player,
-          url: player.url,
-          controls: controls,
-          playing: true,
-          muted: true,
-          display: "none"
-        }));
-      }
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-        _iterator["return"]();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  return players;
-}
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/props.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-player/lib/props.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.DEPRECATED_CONFIG_PROPS = exports.defaultProps = exports.propTypes = void 0;
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var string = _propTypes["default"].string,
-    bool = _propTypes["default"].bool,
-    number = _propTypes["default"].number,
-    array = _propTypes["default"].array,
-    oneOfType = _propTypes["default"].oneOfType,
-    shape = _propTypes["default"].shape,
-    object = _propTypes["default"].object,
-    func = _propTypes["default"].func;
-var propTypes = {
-  url: oneOfType([string, array, object]),
-  playing: bool,
-  loop: bool,
-  controls: bool,
-  volume: number,
-  muted: bool,
-  playbackRate: number,
-  width: oneOfType([string, number]),
-  height: oneOfType([string, number]),
-  style: object,
-  progressInterval: number,
-  playsinline: bool,
-  pip: bool,
-  light: oneOfType([bool, string]),
-  wrapper: oneOfType([string, func, shape({
-    render: func.isRequired
-  })]),
-  config: shape({
-    soundcloud: shape({
-      options: object,
-      preload: bool
-    }),
-    youtube: shape({
-      playerVars: object,
-      embedOptions: object,
-      preload: bool
-    }),
-    facebook: shape({
-      appId: string
-    }),
-    dailymotion: shape({
-      params: object,
-      preload: bool
-    }),
-    vimeo: shape({
-      playerOptions: object,
-      preload: bool
-    }),
-    file: shape({
-      attributes: object,
-      tracks: array,
-      forceVideo: bool,
-      forceAudio: bool,
-      forceHLS: bool,
-      forceDASH: bool,
-      hlsOptions: object,
-      hlsVersion: string,
-      dashVersion: string
-    }),
-    wistia: shape({
-      options: object
-    }),
-    mixcloud: shape({
-      options: object
-    }),
-    twitch: shape({
-      options: object
-    })
-  }),
-  onReady: func,
-  onStart: func,
-  onPlay: func,
-  onPause: func,
-  onBuffer: func,
-  onBufferEnd: func,
-  onEnded: func,
-  onError: func,
-  onDuration: func,
-  onSeek: func,
-  onProgress: func,
-  onEnablePIP: func,
-  onDisablePIP: func
-};
-exports.propTypes = propTypes;
-var defaultProps = {
-  playing: false,
-  loop: false,
-  controls: false,
-  volume: null,
-  muted: false,
-  playbackRate: 1,
-  width: '640px',
-  height: '360px',
-  style: {},
-  progressInterval: 1000,
-  playsinline: false,
-  pip: false,
-  light: false,
-  wrapper: 'div',
-  config: {
-    soundcloud: {
-      options: {
-        visual: true,
-        // Undocumented, but makes player fill container and look better
-        buying: false,
-        liking: false,
-        download: false,
-        sharing: false,
-        show_comments: false,
-        show_playcount: false
-      }
-    },
-    youtube: {
-      playerVars: {
-        playsinline: 1,
-        showinfo: 0,
-        rel: 0,
-        iv_load_policy: 3,
-        modestbranding: 1
-      },
-      embedOptions: {},
-      preload: false
-    },
-    facebook: {
-      appId: '1309697205772819'
-    },
-    dailymotion: {
-      params: {
-        api: 1,
-        'endscreen-enable': false
-      },
-      preload: false
-    },
-    vimeo: {
-      playerOptions: {
-        autopause: false,
-        byline: false,
-        portrait: false,
-        title: false
-      },
-      preload: false
-    },
-    file: {
-      attributes: {},
-      tracks: [],
-      forceVideo: false,
-      forceAudio: false,
-      forceHLS: false,
-      forceDASH: false,
-      hlsOptions: {},
-      hlsVersion: '0.10.1',
-      dashVersion: '2.9.2'
-    },
-    wistia: {
-      options: {}
-    },
-    mixcloud: {
-      options: {
-        hide_cover: 1
-      }
-    },
-    twitch: {
-      options: {}
-    }
-  },
-  onReady: function onReady() {},
-  onStart: function onStart() {},
-  onPlay: function onPlay() {},
-  onPause: function onPause() {},
-  onBuffer: function onBuffer() {},
-  onBufferEnd: function onBufferEnd() {},
-  onEnded: function onEnded() {},
-  onError: function onError() {},
-  onDuration: function onDuration() {},
-  onSeek: function onSeek() {},
-  onProgress: function onProgress() {},
-  onEnablePIP: function onEnablePIP() {},
-  onDisablePIP: function onDisablePIP() {}
-};
-exports.defaultProps = defaultProps;
-var DEPRECATED_CONFIG_PROPS = ['soundcloudConfig', 'youtubeConfig', 'facebookConfig', 'dailymotionConfig', 'vimeoConfig', 'fileConfig', 'wistiaConfig'];
-exports.DEPRECATED_CONFIG_PROPS = DEPRECATED_CONFIG_PROPS;
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/singlePlayer.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-player/lib/singlePlayer.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = createSinglePlayer;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lib/props.js");
-
-var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-player/lib/utils.js");
-
-var _Player = _interopRequireDefault(__webpack_require__(/*! ./Player */ "./node_modules/react-player/lib/Player.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SUPPORTED_PROPS = Object.keys(_props.propTypes);
-
-function createSinglePlayer(activePlayer) {
-  var _class, _temp;
-
-  return _temp = _class =
-  /*#__PURE__*/
-  function (_Component) {
-    _inherits(SinglePlayer, _Component);
-
-    function SinglePlayer() {
-      var _getPrototypeOf2;
-
-      var _this;
-
-      _classCallCheck(this, SinglePlayer);
-
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SinglePlayer)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-      _defineProperty(_assertThisInitialized(_this), "config", (0, _utils.getConfig)(_this.props, _props.defaultProps, true));
-
-      _defineProperty(_assertThisInitialized(_this), "getDuration", function () {
-        if (!_this.player) return null;
-        return _this.player.getDuration();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getCurrentTime", function () {
-        if (!_this.player) return null;
-        return _this.player.getCurrentTime();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getSecondsLoaded", function () {
-        if (!_this.player) return null;
-        return _this.player.getSecondsLoaded();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function () {
-        var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'player';
-        if (!_this.player) return null;
-        return _this.player.getInternalPlayer(key);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "seekTo", function (fraction, type) {
-        if (!_this.player) return null;
-
-        _this.player.seekTo(fraction, type);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "ref", function (player) {
-        _this.player = player;
-      });
-
-      return _this;
-    }
-
-    _createClass(SinglePlayer, [{
-      key: "shouldComponentUpdate",
-      value: function shouldComponentUpdate(nextProps) {
-        return !(0, _utils.isEqual)(this.props, nextProps);
-      }
-    }, {
-      key: "componentDidUpdate",
-      value: function componentDidUpdate() {
-        this.config = (0, _utils.getConfig)(this.props, _props.defaultProps);
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this$config$file = this.config.file,
-            forceVideo = _this$config$file.forceVideo,
-            forceAudio = _this$config$file.forceAudio,
-            forceHLS = _this$config$file.forceHLS,
-            forceDASH = _this$config$file.forceDASH;
-        var skipCanPlay = forceVideo || forceAudio || forceHLS || forceDASH;
-
-        if (!activePlayer.canPlay(this.props.url) && !skipCanPlay) {
-          return null;
-        }
-
-        var _this$props = this.props,
-            style = _this$props.style,
-            width = _this$props.width,
-            height = _this$props.height,
-            Wrapper = _this$props.wrapper;
-        var otherProps = (0, _utils.omit)(this.props, SUPPORTED_PROPS, _props.DEPRECATED_CONFIG_PROPS);
-        return _react["default"].createElement(Wrapper, _extends({
-          style: _objectSpread({}, style, {
-            width: width,
-            height: height
-          })
-        }, otherProps), _react["default"].createElement(_Player["default"], _extends({}, this.props, {
-          ref: this.ref,
-          activePlayer: activePlayer,
-          config: this.config
-        })));
-      }
-    }]);
-
-    return SinglePlayer;
-  }(_react.Component), _defineProperty(_class, "displayName", "".concat(activePlayer.displayName, "Player")), _defineProperty(_class, "propTypes", _props.propTypes), _defineProperty(_class, "defaultProps", _props.defaultProps), _defineProperty(_class, "canPlay", activePlayer.canPlay), _temp;
-}
-
-/***/ }),
-
-/***/ "./node_modules/react-player/lib/utils.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-player/lib/utils.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.parseStartTime = parseStartTime;
-exports.parseEndTime = parseEndTime;
-exports.randomString = randomString;
-exports.queryString = queryString;
-exports.getSDK = getSDK;
-exports.getConfig = getConfig;
-exports.omit = omit;
-exports.callPlayer = callPlayer;
-exports.isObject = isObject;
-exports.isEqual = isEqual;
-exports.isMediaStream = isMediaStream;
-
-var _loadScript = _interopRequireDefault(__webpack_require__(/*! load-script */ "./node_modules/load-script/index.js"));
-
-var _deepmerge = _interopRequireDefault(__webpack_require__(/*! deepmerge */ "./node_modules/deepmerge/dist/cjs.js"));
-
-var _props = __webpack_require__(/*! ./props */ "./node_modules/react-player/lib/props.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var MATCH_START_QUERY = /[?&#](?:start|t)=([0-9hms]+)/;
-var MATCH_END_QUERY = /[?&#]end=([0-9hms]+)/;
-var MATCH_START_STAMP = /(\d+)(h|m|s)/g;
-var MATCH_NUMERIC = /^\d+$/; // Parse YouTube URL for a start time param, ie ?t=1h14m30s
-// and return the start time in seconds
-
-function parseTimeParam(url, pattern) {
-  var match = url.match(pattern);
-
-  if (match) {
-    var stamp = match[1];
-
-    if (stamp.match(MATCH_START_STAMP)) {
-      return parseTimeString(stamp);
-    }
-
-    if (MATCH_NUMERIC.test(stamp)) {
-      return parseInt(stamp);
-    }
-  }
-
-  return undefined;
-}
-
-function parseTimeString(stamp) {
-  var seconds = 0;
-  var array = MATCH_START_STAMP.exec(stamp);
-
-  while (array !== null) {
-    var _array = array,
-        _array2 = _slicedToArray(_array, 3),
-        count = _array2[1],
-        period = _array2[2];
-
-    if (period === 'h') seconds += parseInt(count, 10) * 60 * 60;
-    if (period === 'm') seconds += parseInt(count, 10) * 60;
-    if (period === 's') seconds += parseInt(count, 10);
-    array = MATCH_START_STAMP.exec(stamp);
-  }
-
-  return seconds;
-}
-
-function parseStartTime(url) {
-  return parseTimeParam(url, MATCH_START_QUERY);
-}
-
-function parseEndTime(url) {
-  return parseTimeParam(url, MATCH_END_QUERY);
-} // http://stackoverflow.com/a/38622545
-
-
-function randomString() {
-  return Math.random().toString(36).substr(2, 5);
-}
-
-function queryString(object) {
-  return Object.keys(object).map(function (key) {
-    return "".concat(key, "=").concat(object[key]);
-  }).join('&');
-} // Util function to load an external SDK
-// or return the SDK if it is already loaded
-
-
-var requests = {};
-
-function getSDK(url, sdkGlobal) {
-  var sdkReady = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  var isLoaded = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function () {
-    return true;
-  };
-  var fetchScript = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : _loadScript["default"];
-
-  if (window[sdkGlobal] && isLoaded(window[sdkGlobal])) {
-    return Promise.resolve(window[sdkGlobal]);
-  }
-
-  return new Promise(function (resolve, reject) {
-    // If we are already loading the SDK, add the resolve and reject
-    // functions to the existing array of requests
-    if (requests[url]) {
-      requests[url].push({
-        resolve: resolve,
-        reject: reject
-      });
-      return;
-    }
-
-    requests[url] = [{
-      resolve: resolve,
-      reject: reject
-    }];
-
-    var onLoaded = function onLoaded(sdk) {
-      // When loaded, resolve all pending request promises
-      requests[url].forEach(function (request) {
-        return request.resolve(sdk);
-      });
-    };
-
-    if (sdkReady) {
-      var previousOnReady = window[sdkReady];
-
-      window[sdkReady] = function () {
-        if (previousOnReady) previousOnReady();
-        onLoaded(window[sdkGlobal]);
-      };
-    }
-
-    fetchScript(url, function (err) {
-      if (err) {
-        // Loading the SDK failed – reject all requests and
-        // reset the array of requests for this SDK
-        requests[url].forEach(function (request) {
-          return request.reject(err);
-        });
-        requests[url] = [];
-      } else if (!sdkReady) {
-        onLoaded(window[sdkGlobal]);
-      }
-    });
-  });
-}
-
-function getConfig(props, defaultProps, showWarning) {
-  var config = (0, _deepmerge["default"])(defaultProps.config, props.config);
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = _props.DEPRECATED_CONFIG_PROPS[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var p = _step.value;
-
-      if (props[p]) {
-        var key = p.replace(/Config$/, '');
-        config = (0, _deepmerge["default"])(config, _defineProperty({}, key, props[p]));
-
-        if (showWarning) {
-          var link = 'https://github.com/CookPete/react-player#config-prop';
-          var message = "ReactPlayer: %c".concat(p, " %cis deprecated, please use the config prop instead \u2013 ").concat(link);
-          console.warn(message, 'font-weight: bold', '');
-        }
-      }
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-        _iterator["return"]();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  return config;
-}
-
-function omit(object) {
-  var _ref;
-
-  for (var _len = arguments.length, arrays = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    arrays[_key - 1] = arguments[_key];
-  }
-
-  var omitKeys = (_ref = []).concat.apply(_ref, arrays);
-
-  var output = {};
-  var keys = Object.keys(object);
-
-  for (var _i2 = 0, _keys = keys; _i2 < _keys.length; _i2++) {
-    var key = _keys[_i2];
-
-    if (omitKeys.indexOf(key) === -1) {
-      output[key] = object[key];
-    }
-  }
-
-  return output;
-}
-
-function callPlayer(method) {
-  var _this$player;
-
-  // Util method for calling a method on this.player
-  // but guard against errors and console.warn instead
-  if (!this.player || !this.player[method]) {
-    var message = "ReactPlayer: ".concat(this.constructor.displayName, " player could not call %c").concat(method, "%c \u2013 ");
-
-    if (!this.player) {
-      message += 'The player was not available';
-    } else if (!this.player[method]) {
-      message += 'The method was not available';
-    }
-
-    console.warn(message, 'font-weight: bold', '');
-    return null;
-  }
-
-  for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-    args[_key2 - 1] = arguments[_key2];
-  }
-
-  return (_this$player = this.player)[method].apply(_this$player, args);
-}
-
-function isObject(val) {
-  return val !== null && _typeof(val) === 'object';
-} // Deep comparison of two objects but ignoring
-// functions, for use in shouldComponentUpdate
-
-
-function isEqual(a, b) {
-  if (typeof a === 'function' && typeof b === 'function') {
-    return true;
-  }
-
-  if (a instanceof Array && b instanceof Array) {
-    if (a.length !== b.length) {
-      return false;
-    }
-
-    for (var i = 0; i !== a.length; i++) {
-      if (!isEqual(a[i], b[i])) {
-        return false;
-      }
-    }
-
-    return true;
-  }
-
-  if (isObject(a) && isObject(b)) {
-    if (Object.keys(a).length !== Object.keys(b).length) {
-      return false;
-    }
-
-    for (var _i3 = 0, _Object$keys = Object.keys(a); _i3 < _Object$keys.length; _i3++) {
-      var key = _Object$keys[_i3];
-
-      if (!isEqual(a[key], b[key])) {
-        return false;
-      }
-    }
-
-    return true;
-  }
-
-  return a === b;
-}
-
-function isMediaStream(url) {
-  return typeof window !== 'undefined' && typeof window.MediaStream !== 'undefined' && url instanceof window.MediaStream;
-}
-
-/***/ }),
-
 /***/ "./node_modules/react-redux/es/components/Context.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/components/Context.js ***!
@@ -41310,6 +36680,1610 @@ var canUseDOM = function canUseDOM() {
 };
 
 exports.canUseDOM = canUseDOM;
+
+/***/ }),
+
+/***/ "./node_modules/react-typist/dist/Typist.js":
+/*!**************************************************!*\
+  !*** ./node_modules/react-typist/dist/Typist.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(2);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _Cursor = __webpack_require__(10);
+
+	var _Cursor2 = _interopRequireDefault(_Cursor);
+
+	var _Backspace = __webpack_require__(12);
+
+	var _Backspace2 = _interopRequireDefault(_Backspace);
+
+	var _Delay = __webpack_require__(13);
+
+	var _Delay2 = _interopRequireDefault(_Delay);
+
+	var _utils = __webpack_require__(14);
+
+	var utils = _interopRequireWildcard(_utils);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ACTION_CHARS = ['🔙', '⏰'];
+
+	var Typist = function (_Component) {
+	  _inherits(Typist, _Component);
+
+	  function Typist(props) {
+	    _classCallCheck(this, Typist);
+
+	    var _this = _possibleConstructorReturn(this, (Typist.__proto__ || Object.getPrototypeOf(Typist)).call(this, props));
+
+	    _this.state = {
+	      textLines: [],
+	      isDone: false
+	    };
+
+	    _this.onTypingDone = function () {
+	      if (!_this.mounted) {
+	        return;
+	      }
+	      _this.setState({ isDone: true });
+	      _this.props.onTypingDone();
+	    };
+
+	    _this.delayGenerator = function (line, lineIdx, character, charIdx) {
+	      var mean = _this.props.avgTypingDelay;
+	      var std = _this.props.stdTypingDelay;
+
+	      return _this.props.delayGenerator(mean, std, {
+	        line: line,
+	        lineIdx: lineIdx,
+	        character: character,
+	        charIdx: charIdx,
+	        defDelayGenerator: function defDelayGenerator() {
+	          var mn = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : mean;
+	          var st = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : std;
+	          return utils.gaussianRnd(mn, st);
+	        }
+	      });
+	    };
+
+	    _this.typeLine = function (line, lineIdx) {
+	      if (!_this.mounted) {
+	        return Promise.resolve();
+	      }
+
+	      var decoratedLine = line;
+	      var onLineTyped = _this.props.onLineTyped;
+
+
+	      if (utils.isBackspaceElement(line)) {
+	        if (line.props.delay > 0) {
+	          _this.introducedDelay = line.props.delay;
+	        }
+	        decoratedLine = String('🔙').repeat(line.props.count);
+	      } else if (utils.isDelayElement(line)) {
+	        _this.introducedDelay = line.props.ms;
+	        decoratedLine = '⏰';
+	      }
+
+	      return new Promise(function (resolve, reject) {
+	        _this.setState({ textLines: _this.state.textLines.concat(['']) }, function () {
+	          utils.eachPromise(decoratedLine, _this.typeCharacter, decoratedLine, lineIdx).then(function () {
+	            return onLineTyped(decoratedLine, lineIdx);
+	          }).then(resolve).catch(reject);
+	        });
+	      });
+	    };
+
+	    _this.typeCharacter = function (character, charIdx, line, lineIdx) {
+	      if (!_this.mounted) {
+	        return Promise.resolve();
+	      }
+	      var onCharacterTyped = _this.props.onCharacterTyped;
+
+
+	      return new Promise(function (resolve) {
+	        var textLines = _this.state.textLines.slice();
+
+	        utils.sleep(_this.introducedDelay).then(function () {
+	          _this.introducedDelay = null;
+
+	          var isBackspace = character === '🔙';
+	          var isDelay = character === '⏰';
+	          if (isDelay) {
+	            resolve();
+	            return;
+	          }
+
+	          if (isBackspace && lineIdx > 0) {
+	            var prevLineIdx = lineIdx - 1;
+	            var prevLine = textLines[prevLineIdx];
+
+	            for (var idx = prevLineIdx; idx >= 0; idx--) {
+	              if (prevLine.length > 0 && !ACTION_CHARS.includes(prevLine[0])) {
+	                break;
+	              }
+	              prevLineIdx = idx;
+	              prevLine = textLines[prevLineIdx];
+	            }
+
+	            textLines[prevLineIdx] = prevLine.substr(0, prevLine.length - 1);
+	          } else {
+	            textLines[lineIdx] += character;
+	          }
+
+	          _this.setState({ textLines: textLines }, function () {
+	            var delay = _this.delayGenerator(line, lineIdx, character, charIdx);
+	            onCharacterTyped(character, charIdx);
+	            setTimeout(resolve, delay);
+	          });
+	        });
+	      });
+	    };
+
+	    _this.mounted = false;
+	    _this.linesToType = [];
+	    _this.introducedDelay = null;
+
+	    if (props.children) {
+	      _this.linesToType = utils.extractTextFromElement(props.children);
+	    }
+	    return _this;
+	  }
+
+	  _createClass(Typist, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.mounted = true;
+	      var _props = this.props,
+	          children = _props.children,
+	          startDelay = _props.startDelay;
+
+	      if (children) {
+	        if (startDelay > 0 && typeof window !== 'undefined') {
+	          setTimeout(this.typeAllLines.bind(this), startDelay);
+	        } else {
+	          this.typeAllLines();
+	        }
+	      } else {
+	        this.onTypingDone();
+	      }
+	    }
+	  }, {
+	    key: 'shouldComponentUpdate',
+	    value: function shouldComponentUpdate(nextProps, nextState) {
+	      if (nextState.textLines.length !== this.state.textLines.length) {
+	        return true;
+	      }
+	      for (var idx = 0; idx < nextState.textLines.length; idx++) {
+	        var line = this.state.textLines[idx];
+	        var nextLine = nextState.textLines[idx];
+	        if (line !== nextLine) {
+	          return true;
+	        }
+	      }
+	      return this.state.isDone !== nextState.isDone;
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      this.mounted = false;
+	    }
+	  }, {
+	    key: 'typeAllLines',
+	    value: function typeAllLines() {
+	      var _this2 = this;
+
+	      var lines = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.linesToType;
+
+	      return utils.eachPromise(lines, this.typeLine).then(function () {
+	        return _this2.onTypingDone();
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props2 = this.props,
+	          className = _props2.className,
+	          cursor = _props2.cursor;
+	      var isDone = this.state.isDone;
+
+	      var innerTree = utils.cloneElementWithSpecifiedText({
+	        element: this.props.children,
+	        textLines: this.state.textLines
+	      });
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'Typist ' + className },
+	        innerTree,
+	        _react2.default.createElement(_Cursor2.default, _extends({ isDone: isDone }, cursor))
+	      );
+	    }
+	  }]);
+
+	  return Typist;
+	}(_react.Component);
+
+	Typist.propTypes = {
+	  children: _propTypes2.default.node,
+	  className: _propTypes2.default.string,
+	  avgTypingDelay: _propTypes2.default.number,
+	  stdTypingDelay: _propTypes2.default.number,
+	  startDelay: _propTypes2.default.number,
+	  cursor: _propTypes2.default.object,
+	  onCharacterTyped: _propTypes2.default.func,
+	  onLineTyped: _propTypes2.default.func,
+	  onTypingDone: _propTypes2.default.func,
+	  delayGenerator: _propTypes2.default.func
+	};
+	Typist.defaultProps = {
+	  className: '',
+	  avgTypingDelay: 70,
+	  stdTypingDelay: 25,
+	  startDelay: 0,
+	  cursor: {},
+	  onCharacterTyped: function onCharacterTyped() {},
+	  onLineTyped: function onLineTyped() {},
+	  onTypingDone: function onTypingDone() {},
+	  delayGenerator: utils.gaussianRnd
+	};
+	exports.default = Typist;
+
+
+	Typist.Backspace = _Backspace2.default;
+	Typist.Delay = _Delay2.default;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+	module.exports = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	if (true) {
+	  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+	    Symbol.for &&
+	    Symbol.for('react.element')) ||
+	    0xeac7;
+
+	  var isValidElement = function(object) {
+	    return typeof object === 'object' &&
+	      object !== null &&
+	      object.$$typeof === REACT_ELEMENT_TYPE;
+	  };
+
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = __webpack_require__(3)(isValidElement, throwOnDirectAccess);
+	} else {}
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	var emptyFunction = __webpack_require__(4);
+	var invariant = __webpack_require__(5);
+	var warning = __webpack_require__(6);
+
+	var ReactPropTypesSecret = __webpack_require__(7);
+	var checkPropTypes = __webpack_require__(8);
+
+	module.exports = function(isValidElement, throwOnDirectAccess) {
+	  /* global Symbol */
+	  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+	  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+	  /**
+	   * Returns the iterator method function contained on the iterable object.
+	   *
+	   * Be sure to invoke the function with the iterable as context:
+	   *
+	   *     var iteratorFn = getIteratorFn(myIterable);
+	   *     if (iteratorFn) {
+	   *       var iterator = iteratorFn.call(myIterable);
+	   *       ...
+	   *     }
+	   *
+	   * @param {?object} maybeIterable
+	   * @return {?function}
+	   */
+	  function getIteratorFn(maybeIterable) {
+	    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+	    if (typeof iteratorFn === 'function') {
+	      return iteratorFn;
+	    }
+	  }
+
+	  /**
+	   * Collection of methods that allow declaration and validation of props that are
+	   * supplied to React components. Example usage:
+	   *
+	   *   var Props = require('ReactPropTypes');
+	   *   var MyArticle = React.createClass({
+	   *     propTypes: {
+	   *       // An optional string prop named "description".
+	   *       description: Props.string,
+	   *
+	   *       // A required enum prop named "category".
+	   *       category: Props.oneOf(['News','Photos']).isRequired,
+	   *
+	   *       // A prop named "dialog" that requires an instance of Dialog.
+	   *       dialog: Props.instanceOf(Dialog).isRequired
+	   *     },
+	   *     render: function() { ... }
+	   *   });
+	   *
+	   * A more formal specification of how these methods are used:
+	   *
+	   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+	   *   decl := ReactPropTypes.{type}(.isRequired)?
+	   *
+	   * Each and every declaration produces a function with the same signature. This
+	   * allows the creation of custom validation functions. For example:
+	   *
+	   *  var MyLink = React.createClass({
+	   *    propTypes: {
+	   *      // An optional string or URI prop named "href".
+	   *      href: function(props, propName, componentName) {
+	   *        var propValue = props[propName];
+	   *        if (propValue != null && typeof propValue !== 'string' &&
+	   *            !(propValue instanceof URI)) {
+	   *          return new Error(
+	   *            'Expected a string or an URI for ' + propName + ' in ' +
+	   *            componentName
+	   *          );
+	   *        }
+	   *      }
+	   *    },
+	   *    render: function() {...}
+	   *  });
+	   *
+	   * @internal
+	   */
+
+	  var ANONYMOUS = '<<anonymous>>';
+
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+	  var ReactPropTypes = {
+	    array: createPrimitiveTypeChecker('array'),
+	    bool: createPrimitiveTypeChecker('boolean'),
+	    func: createPrimitiveTypeChecker('function'),
+	    number: createPrimitiveTypeChecker('number'),
+	    object: createPrimitiveTypeChecker('object'),
+	    string: createPrimitiveTypeChecker('string'),
+	    symbol: createPrimitiveTypeChecker('symbol'),
+
+	    any: createAnyTypeChecker(),
+	    arrayOf: createArrayOfTypeChecker,
+	    element: createElementTypeChecker(),
+	    instanceOf: createInstanceTypeChecker,
+	    node: createNodeChecker(),
+	    objectOf: createObjectOfTypeChecker,
+	    oneOf: createEnumTypeChecker,
+	    oneOfType: createUnionTypeChecker,
+	    shape: createShapeTypeChecker
+	  };
+
+	  /**
+	   * inlined Object.is polyfill to avoid requiring consumers ship their own
+	   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+	   */
+	  /*eslint-disable no-self-compare*/
+	  function is(x, y) {
+	    // SameValue algorithm
+	    if (x === y) {
+	      // Steps 1-5, 7-10
+	      // Steps 6.b-6.e: +0 != -0
+	      return x !== 0 || 1 / x === 1 / y;
+	    } else {
+	      // Step 6.a: NaN == NaN
+	      return x !== x && y !== y;
+	    }
+	  }
+	  /*eslint-enable no-self-compare*/
+
+	  /**
+	   * We use an Error-like object for backward compatibility as people may call
+	   * PropTypes directly and inspect their output. However, we don't use real
+	   * Errors anymore. We don't inspect their stack anyway, and creating them
+	   * is prohibitively expensive if they are created too often, such as what
+	   * happens in oneOfType() for any type before the one that matched.
+	   */
+	  function PropTypeError(message) {
+	    this.message = message;
+	    this.stack = '';
+	  }
+	  // Make `instanceof Error` still work for returned errors.
+	  PropTypeError.prototype = Error.prototype;
+
+	  function createChainableTypeChecker(validate) {
+	    if (true) {
+	      var manualPropTypeCallCache = {};
+	      var manualPropTypeWarningCount = 0;
+	    }
+	    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+	      componentName = componentName || ANONYMOUS;
+	      propFullName = propFullName || propName;
+
+	      if (secret !== ReactPropTypesSecret) {
+	        if (throwOnDirectAccess) {
+	          // New behavior only for users of `prop-types` package
+	          invariant(
+	            false,
+	            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	            'Use `PropTypes.checkPropTypes()` to call them. ' +
+	            'Read more at http://fb.me/use-check-prop-types'
+	          );
+	        } else if ( true && typeof console !== 'undefined') {
+	          // Old behavior for people using React.PropTypes
+	          var cacheKey = componentName + ':' + propName;
+	          if (
+	            !manualPropTypeCallCache[cacheKey] &&
+	            // Avoid spamming the console because they are often not actionable except for lib authors
+	            manualPropTypeWarningCount < 3
+	          ) {
+	            warning(
+	              false,
+	              'You are manually calling a React.PropTypes validation ' +
+	              'function for the `%s` prop on `%s`. This is deprecated ' +
+	              'and will throw in the standalone `prop-types` package. ' +
+	              'You may be seeing this warning due to a third-party PropTypes ' +
+	              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.',
+	              propFullName,
+	              componentName
+	            );
+	            manualPropTypeCallCache[cacheKey] = true;
+	            manualPropTypeWarningCount++;
+	          }
+	        }
+	      }
+	      if (props[propName] == null) {
+	        if (isRequired) {
+	          if (props[propName] === null) {
+	            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+	          }
+	          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+	        }
+	        return null;
+	      } else {
+	        return validate(props, propName, componentName, location, propFullName);
+	      }
+	    }
+
+	    var chainedCheckType = checkType.bind(null, false);
+	    chainedCheckType.isRequired = checkType.bind(null, true);
+
+	    return chainedCheckType;
+	  }
+
+	  function createPrimitiveTypeChecker(expectedType) {
+	    function validate(props, propName, componentName, location, propFullName, secret) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== expectedType) {
+	        // `propValue` being instance of, say, date/regexp, pass the 'object'
+	        // check, but we can offer a more precise error message here rather than
+	        // 'of type `object`'.
+	        var preciseType = getPreciseType(propValue);
+
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createAnyTypeChecker() {
+	    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
+	  }
+
+	  function createArrayOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+	      }
+	      var propValue = props[propName];
+	      if (!Array.isArray(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+	      }
+	      for (var i = 0; i < propValue.length; i++) {
+	        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+	        if (error instanceof Error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createElementTypeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      if (!isValidElement(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createInstanceTypeChecker(expectedClass) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!(props[propName] instanceof expectedClass)) {
+	        var expectedClassName = expectedClass.name || ANONYMOUS;
+	        var actualClassName = getClassName(props[propName]);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createEnumTypeChecker(expectedValues) {
+	    if (!Array.isArray(expectedValues)) {
+	       true ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : undefined;
+	      return emptyFunction.thatReturnsNull;
+	    }
+
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      for (var i = 0; i < expectedValues.length; i++) {
+	        if (is(propValue, expectedValues[i])) {
+	          return null;
+	        }
+	      }
+
+	      var valuesString = JSON.stringify(expectedValues);
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createObjectOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+	      }
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+	      }
+	      for (var key in propValue) {
+	        if (propValue.hasOwnProperty(key)) {
+	          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	          if (error instanceof Error) {
+	            return error;
+	          }
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createUnionTypeChecker(arrayOfTypeCheckers) {
+	    if (!Array.isArray(arrayOfTypeCheckers)) {
+	       true ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+	      return emptyFunction.thatReturnsNull;
+	    }
+
+	    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	      var checker = arrayOfTypeCheckers[i];
+	      if (typeof checker !== 'function') {
+	        warning(
+	          false,
+	          'Invalid argument supplid to oneOfType. Expected an array of check functions, but ' +
+	          'received %s at index %s.',
+	          getPostfixForTypeWarning(checker),
+	          i
+	        );
+	        return emptyFunction.thatReturnsNull;
+	      }
+	    }
+
+	    function validate(props, propName, componentName, location, propFullName) {
+	      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	        var checker = arrayOfTypeCheckers[i];
+	        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+	          return null;
+	        }
+	      }
+
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createNodeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!isNode(props[propName])) {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createShapeTypeChecker(shapeTypes) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+	      }
+	      for (var key in shapeTypes) {
+	        var checker = shapeTypes[key];
+	        if (!checker) {
+	          continue;
+	        }
+	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	        if (error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function isNode(propValue) {
+	    switch (typeof propValue) {
+	      case 'number':
+	      case 'string':
+	      case 'undefined':
+	        return true;
+	      case 'boolean':
+	        return !propValue;
+	      case 'object':
+	        if (Array.isArray(propValue)) {
+	          return propValue.every(isNode);
+	        }
+	        if (propValue === null || isValidElement(propValue)) {
+	          return true;
+	        }
+
+	        var iteratorFn = getIteratorFn(propValue);
+	        if (iteratorFn) {
+	          var iterator = iteratorFn.call(propValue);
+	          var step;
+	          if (iteratorFn !== propValue.entries) {
+	            while (!(step = iterator.next()).done) {
+	              if (!isNode(step.value)) {
+	                return false;
+	              }
+	            }
+	          } else {
+	            // Iterator will provide entry [k,v] tuples rather than values.
+	            while (!(step = iterator.next()).done) {
+	              var entry = step.value;
+	              if (entry) {
+	                if (!isNode(entry[1])) {
+	                  return false;
+	                }
+	              }
+	            }
+	          }
+	        } else {
+	          return false;
+	        }
+
+	        return true;
+	      default:
+	        return false;
+	    }
+	  }
+
+	  function isSymbol(propType, propValue) {
+	    // Native Symbol.
+	    if (propType === 'symbol') {
+	      return true;
+	    }
+
+	    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+	    if (propValue['@@toStringTag'] === 'Symbol') {
+	      return true;
+	    }
+
+	    // Fallback for non-spec compliant Symbols which are polyfilled.
+	    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+	      return true;
+	    }
+
+	    return false;
+	  }
+
+	  // Equivalent of `typeof` but with special handling for array and regexp.
+	  function getPropType(propValue) {
+	    var propType = typeof propValue;
+	    if (Array.isArray(propValue)) {
+	      return 'array';
+	    }
+	    if (propValue instanceof RegExp) {
+	      // Old webkits (at least until Android 4.0) return 'function' rather than
+	      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+	      // passes PropTypes.object.
+	      return 'object';
+	    }
+	    if (isSymbol(propType, propValue)) {
+	      return 'symbol';
+	    }
+	    return propType;
+	  }
+
+	  // This handles more types than `getPropType`. Only used for error messages.
+	  // See `createPrimitiveTypeChecker`.
+	  function getPreciseType(propValue) {
+	    if (typeof propValue === 'undefined' || propValue === null) {
+	      return '' + propValue;
+	    }
+	    var propType = getPropType(propValue);
+	    if (propType === 'object') {
+	      if (propValue instanceof Date) {
+	        return 'date';
+	      } else if (propValue instanceof RegExp) {
+	        return 'regexp';
+	      }
+	    }
+	    return propType;
+	  }
+
+	  // Returns a string that is postfixed to a warning about an invalid type.
+	  // For example, "undefined" or "of type array"
+	  function getPostfixForTypeWarning(value) {
+	    var type = getPreciseType(value);
+	    switch (type) {
+	      case 'array':
+	      case 'object':
+	        return 'an ' + type;
+	      case 'boolean':
+	      case 'date':
+	      case 'regexp':
+	        return 'a ' + type;
+	      default:
+	        return type;
+	    }
+	  }
+
+	  // Returns class name of the object, if any.
+	  function getClassName(propValue) {
+	    if (!propValue.constructor || !propValue.constructor.name) {
+	      return ANONYMOUS;
+	    }
+	    return propValue.constructor.name;
+	  }
+
+	  ReactPropTypes.checkPropTypes = checkPropTypes;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * 
+	 */
+
+	function makeEmptyFunction(arg) {
+	  return function () {
+	    return arg;
+	  };
+	}
+
+	/**
+	 * This function accepts and discards inputs; it has no side effects. This is
+	 * primarily useful idiomatically for overridable function endpoints which
+	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+	 */
+	var emptyFunction = function emptyFunction() {};
+
+	emptyFunction.thatReturns = makeEmptyFunction;
+	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+	emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+	emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+	emptyFunction.thatReturnsThis = function () {
+	  return this;
+	};
+	emptyFunction.thatReturnsArgument = function (arg) {
+	  return arg;
+	};
+
+	module.exports = emptyFunction;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+
+	'use strict';
+
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+
+	var validateFormat = function validateFormat(format) {};
+
+	if (true) {
+	  validateFormat = function validateFormat(format) {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
+	    }
+	  };
+	}
+
+	function invariant(condition, format, a, b, c, d, e, f) {
+	  validateFormat(format);
+
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error(format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
+	      error.name = 'Invariant Violation';
+	    }
+
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	}
+
+	module.exports = invariant;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+
+	'use strict';
+
+	var emptyFunction = __webpack_require__(4);
+
+	/**
+	 * Similar to invariant but only logs a warning if the condition is not met.
+	 * This can be used to log issues in development environments in critical
+	 * paths. Removing the logging code for production environments will keep the
+	 * same logic and follow the same code paths.
+	 */
+
+	var warning = emptyFunction;
+
+	if (true) {
+	  (function () {
+	    var printWarning = function printWarning(format) {
+	      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	        args[_key - 1] = arguments[_key];
+	      }
+
+	      var argIndex = 0;
+	      var message = 'Warning: ' + format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      });
+	      if (typeof console !== 'undefined') {
+	        console.error(message);
+	      }
+	      try {
+	        // --- Welcome to debugging React ---
+	        // This error was thrown as a convenience so that you can use this stack
+	        // to find the callsite that caused this warning to fire.
+	        throw new Error(message);
+	      } catch (x) {}
+	    };
+
+	    warning = function warning(condition, format) {
+	      if (format === undefined) {
+	        throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+	      }
+
+	      if (format.indexOf('Failed Composite propType: ') === 0) {
+	        return; // Ignore CompositeComponent proptype check.
+	      }
+
+	      if (!condition) {
+	        for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+	          args[_key2 - 2] = arguments[_key2];
+	        }
+
+	        printWarning.apply(undefined, [format].concat(args));
+	      }
+	    };
+	  })();
+	}
+
+	module.exports = warning;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+	module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	if (true) {
+	  var invariant = __webpack_require__(5);
+	  var warning = __webpack_require__(6);
+	  var ReactPropTypesSecret = __webpack_require__(7);
+	  var loggedTypeFailures = {};
+	}
+
+	/**
+	 * Assert that the values match with the type specs.
+	 * Error messages are memorized and will only be shown once.
+	 *
+	 * @param {object} typeSpecs Map of name to a ReactPropType
+	 * @param {object} values Runtime values that need to be type-checked
+	 * @param {string} location e.g. "prop", "context", "child context"
+	 * @param {string} componentName Name of the component for error messages.
+	 * @param {?Function} getStack Returns the component stack.
+	 * @private
+	 */
+	function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+	  if (true) {
+	    for (var typeSpecName in typeSpecs) {
+	      if (typeSpecs.hasOwnProperty(typeSpecName)) {
+	        var error;
+	        // Prop type validation may throw. In case they do, we don't want to
+	        // fail the render phase where it didn't fail before. So we log it.
+	        // After these have been cleaned up, we'll let them throw.
+	        try {
+	          // This is intentionally an invariant that gets caught. It's the same
+	          // behavior as without this statement except with a better message.
+	          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', location, typeSpecName);
+	          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+	        } catch (ex) {
+	          error = ex;
+	        }
+	        warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error);
+	        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+	          // Only monitor this failure once because there tends to be a lot of the
+	          // same error.
+	          loggedTypeFailures[error.message] = true;
+
+	          var stack = getStack ? getStack() : '';
+
+	          warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '');
+	        }
+	      }
+	    }
+	  }
+	}
+
+	module.exports = checkPropTypes;
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	var emptyFunction = __webpack_require__(4);
+	var invariant = __webpack_require__(5);
+	var ReactPropTypesSecret = __webpack_require__(7);
+
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    invariant(
+	      false,
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim
+	  };
+
+	  ReactPropTypes.checkPropTypes = emptyFunction;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(2);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	__webpack_require__(11);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Cursor = function (_Component) {
+	  _inherits(Cursor, _Component);
+
+	  function Cursor(props) {
+	    _classCallCheck(this, Cursor);
+
+	    var _this = _possibleConstructorReturn(this, (Cursor.__proto__ || Object.getPrototypeOf(Cursor)).call(this, props));
+
+	    _this._isReRenderingCursor = false;
+	    _this.state = {
+	      shouldRender: _this.props.show
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Cursor, [{
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      var _this2 = this;
+
+	      var shouldHide = !this.props.isDone && nextProps.isDone && this.props.hideWhenDone;
+	      if (shouldHide) {
+	        setTimeout(function () {
+	          return _this2.setState({ shouldRender: false });
+	        }, this.props.hideWhenDoneDelay);
+	      }
+	    }
+	  }, {
+	    key: 'componentDidUpdate',
+	    value: function componentDidUpdate() {
+	      var _props = this.props,
+	          show = _props.show,
+	          isDone = _props.isDone;
+
+	      if (!show) {
+	        return;
+	      }
+	      if (isDone) {
+	        return;
+	      }
+	      if (this._isReRenderingCursor) {
+	        return;
+	      }
+
+	      // In webkit and blink, rendering the cursor alongside the text as it
+	      // animates sometimes causes the text to stop rendering when it reaches
+	      // a new line break, even though the underlying DOM /does/ contain
+	      // the text. This seems to happen when the space available for the text is
+	      // at a specific width that makes it so the line break happens within a
+	      // word.
+	      // Using dev tools, when in this state, if you modify the dom or any style,
+	      // it immediately renders all of the text in its correct position.
+	      // Given that observation, this is a hackish solutions that re-renders the
+	      // cursor every time a character is rendered, just to ensure that the text
+	      // is rendered correctly.
+	      // See #13 and #15 for more details
+	      this._reRenderCursor();
+	    }
+	  }, {
+	    key: '_reRenderCursor',
+	    value: function _reRenderCursor() {
+	      var _this3 = this;
+
+	      this._isReRenderingCursor = true;
+	      this.setState({ shouldRender: false }, function () {
+	        _this3.setState({ shouldRender: true }, function () {
+	          _this3._isReRenderingCursor = false;
+	        });
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      if (this.state.shouldRender) {
+	        var className = this.props.blink ? ' Cursor--blinking' : '';
+	        return _react2.default.createElement(
+	          'span',
+	          { className: 'Cursor' + className },
+	          this.props.element
+	        );
+	      }
+	      return null;
+	    }
+	  }]);
+
+	  return Cursor;
+	}(_react.Component);
+
+	Cursor.propTypes = {
+	  blink: _propTypes2.default.bool,
+	  show: _propTypes2.default.bool,
+	  element: _propTypes2.default.node,
+	  hideWhenDone: _propTypes2.default.bool,
+	  hideWhenDoneDelay: _propTypes2.default.number,
+	  isDone: _propTypes2.default.bool
+	};
+	Cursor.defaultProps = {
+	  blink: true,
+	  show: true,
+	  element: '|',
+	  hideWhenDone: false,
+	  hideWhenDoneDelay: 1000,
+	  isDone: false
+	};
+	exports.default = Cursor;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(2);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Backspace = function Backspace() {
+	  return _react2.default.createElement('noscript', null);
+	};
+
+	Backspace.componentName = 'Backspace';
+
+	Backspace.propTypes = {
+	  count: _propTypes2.default.number,
+	  delay: _propTypes2.default.number
+	};
+
+	Backspace.defaultProps = {
+	  count: 1,
+	  delay: 0
+	};
+
+	exports.default = Backspace;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(2);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Delay = function Delay() {
+	  return _react2.default.createElement('noscript', null);
+	};
+
+	Delay.componentName = 'Delay';
+
+	Delay.propTypes = {
+	  ms: _propTypes2.default.number.isRequired
+	};
+
+	exports.default = Delay;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.sleep = undefined;
+
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+	exports.gaussianRnd = gaussianRnd;
+	exports.eachPromise = eachPromise;
+	exports.exclude = exclude;
+	exports.isBackspaceElement = isBackspaceElement;
+	exports.isDelayElement = isDelayElement;
+	exports.extractTextFromElement = extractTextFromElement;
+	exports.cloneElement = cloneElement;
+	exports.cloneElementWithSpecifiedText = cloneElementWithSpecifiedText;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	var sleep = exports.sleep = function sleep(val) {
+	  return new Promise(function (resolve) {
+	    return val != null ? setTimeout(resolve, val) : resolve();
+	  });
+	};
+
+	function gaussianRnd(mean, std) {
+	  var times = 12;
+	  var sum = 0;
+	  for (var idx = 0; idx < times; idx++) {
+	    sum += Math.random();
+	  }
+	  sum -= times / 2;
+	  return Math.round(sum * std) + mean;
+	}
+
+	function eachPromise(arr, iterator) {
+	  for (var _len = arguments.length, extraArgs = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+	    extraArgs[_key - 2] = arguments[_key];
+	  }
+
+	  var promiseReducer = function promiseReducer(prev, current, idx) {
+	    return prev.then(function () {
+	      return iterator.apply(undefined, [current, idx].concat(extraArgs));
+	    });
+	  };
+	  return Array.from(arr).reduce(promiseReducer, Promise.resolve());
+	}
+
+	function exclude(obj, keys) {
+	  var res = {};
+	  for (var key in obj) {
+	    if (keys.indexOf(key) === -1) {
+	      res[key] = obj[key];
+	    }
+	  }
+	  return res;
+	}
+
+	function isBackspaceElement(element) {
+	  return element && element.type && element.type.componentName === 'Backspace';
+	}
+
+	function isDelayElement(element) {
+	  return element && element.type && element.type.componentName === 'Delay';
+	}
+
+	function extractTextFromElement(element) {
+	  var stack = element ? [element] : [];
+	  var lines = [];
+
+	  while (stack.length > 0) {
+	    var current = stack.pop();
+	    if (_react2.default.isValidElement(current)) {
+	      if (isBackspaceElement(current) || isDelayElement(current)) {
+	        // If it is a `Backspace` or `Delay` element, we want to keep it in our
+	        // `textLines` state. These will serve as markers when updating the
+	        // state of the text
+	        lines.unshift(current);
+	      } else {
+	        _react2.default.Children.forEach(current.props.children, function (child) {
+	          stack.push(child);
+	        });
+	      }
+	    } else if (Array.isArray(current)) {
+	      var _iteratorNormalCompletion = true;
+	      var _didIteratorError = false;
+	      var _iteratorError = undefined;
+
+	      try {
+	        for (var _iterator = current[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	          var el = _step.value;
+
+	          stack.push(el);
+	        }
+	      } catch (err) {
+	        _didIteratorError = true;
+	        _iteratorError = err;
+	      } finally {
+	        try {
+	          if (!_iteratorNormalCompletion && _iterator.return) {
+	            _iterator.return();
+	          }
+	        } finally {
+	          if (_didIteratorError) {
+	            throw _iteratorError;
+	          }
+	        }
+	      }
+	    } else {
+	      lines.unshift(current);
+	    }
+	  }
+
+	  return lines;
+	}
+
+	function cloneElement(element, children) {
+	  var tag = element.type;
+	  var props = exclude(element.props, ['children']);
+	  var getMilliseconds = new Date().getUTCMilliseconds();
+	  var randomStamp = getMilliseconds + Math.random() + Math.random();
+	  // eslint-disable-next-line
+	  props.key = 'Typist-element-' + tag + '-' + randomStamp;
+	  return _react2.default.createElement.apply(_react2.default, [tag, props].concat(_toConsumableArray(children)));
+	}
+
+	function cloneElementWithSpecifiedTextAtIndex(element, textLines, textIdx) {
+	  if (textIdx >= textLines.length) {
+	    return [null, textIdx];
+	  }
+
+	  var idx = textIdx;
+	  var recurse = function recurse(el) {
+	    var _cloneElementWithSpec = cloneElementWithSpecifiedTextAtIndex(el, textLines, idx),
+	        _cloneElementWithSpec2 = _slicedToArray(_cloneElementWithSpec, 2),
+	        child = _cloneElementWithSpec2[0],
+	        advIdx = _cloneElementWithSpec2[1];
+
+	    idx = advIdx;
+	    return child;
+	  };
+
+	  var isNonTypistElement = _react2.default.isValidElement(element) && !(isBackspaceElement(element) || isDelayElement(element));
+
+	  if (isNonTypistElement) {
+	    var clonedChildren = _react2.default.Children.map(element.props.children, recurse) || [];
+	    return [cloneElement(element, clonedChildren), idx];
+	  }
+
+	  if (Array.isArray(element)) {
+	    var children = element.map(recurse);
+	    return [children, idx];
+	  }
+
+	  // Anything that isn't a React element or an Array is interpreted as text
+	  return [textLines[idx], idx + 1];
+	}
+
+	function cloneElementWithSpecifiedText(_ref) {
+	  var element = _ref.element,
+	      textLines = _ref.textLines;
+
+	  if (!element) {
+	    return undefined;
+	  }
+
+	  return cloneElementWithSpecifiedTextAtIndex(element, textLines, 0)[0];
+	}
+
+/***/ })
+/******/ ]);
 
 /***/ }),
 
@@ -47428,7 +44402,7 @@ ReactDOM.render(React.createElement(App_1.default, null), document.getElementByI
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const Centertext_1 = __webpack_require__(/*! ./components/component_centertext/Centertext */ "./root/frontend/src/components/component_centertext/Centertext.tsx");
-__webpack_require__(/*! ./Styles.scss */ "./root/frontend/src/Styles.scss");
+__webpack_require__(/*! ./styles/MasterStyles.scss */ "./root/frontend/src/styles/MasterStyles.scss");
 const ProjectComponent_1 = __webpack_require__(/*! ./components/component_project/ProjectComponent */ "./root/frontend/src/components/component_project/ProjectComponent.tsx");
 const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 const AllActions_1 = __webpack_require__(/*! ./reducers/actions/AllActions */ "./root/frontend/src/reducers/actions/AllActions.tsx");
@@ -47438,77 +44412,31 @@ const mapStateToProps = (state, ownProps) => ({
     Userinterface: state.InterfaceReducer
 });
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    TEST: redux_1.bindActionCreators(AllActions_1.fetchBeginDispatch, dispatch),
+    fetch: redux_1.bindActionCreators(AllActions_1.fetchBeginDispatch, dispatch)
 });
-class Master extends React.Component {
-    constructor(props) {
-        super(props);
-        this.mainClass = () => {
-            switch (this.props.Userinterface.active) {
-                case 1:
-                    document.body.style.backgroundColor = " #2c2c2c";
-                    return "first-div";
-                case 2:
-                    document.body.style.backgroundColor = "#2c2c2c";
-                    return "first-div";
-                case 3:
-                    document.body.style.backgroundColor = "#2c2c2c";
-                    return "first-div";
-                case 4:
-                    document.body.style.backgroundColor = "#2c2c2c";
-                    return "first-div";
-                case 5:
-                    document.body.style.backgroundColor = "black";
-                    return "first-div";
+exports.Master = (Props) => {
+    React.useEffect(() => {
+        Props.fetch();
+        document.body.addEventListener("wheel", e => {
+            if (e.ctrlKey) {
+                e.preventDefault();
             }
-        };
-        this.state = { records: null, isFetched: true };
-    }
-    componentDidMount() {
-        this.props.TEST();
-        document.body.style.backgroundColor = "";
-    }
-    render() {
-        const Results = this.props.Data;
-        const Projects = Results.map((el) => {
-            return React.createElement(ProjectComponent_1.default, { index: el.id, selectedProject: this.props.Userinterface.active, Data: el });
         });
-        return (React.createElement("div", { className: this.mainClass() },
-            React.createElement("div", { className: "master-wrapper" },
-                React.createElement("img", { src: `http://127.0.0.1:8000/media/proj${this.props.Userinterface.active}.jpg`, className: "background-GG", alt: "" }),
-                React.createElement("div", { className: "projects-container" },
-                    Projects,
-                    React.createElement(Centertext_1.default, { isActivated: true, userInterface: this.props.Userinterface, details: this.props.Data[this.props.Userinterface.active - 1] })))));
-    }
-}
-exports.default = react_redux_1.connect(mapStateToProps, mapDispatchToProps)(Master);
-
-
-/***/ }),
-
-/***/ "./root/frontend/src/Styles.scss":
-/*!***************************************!*\
-  !*** ./root/frontend/src/Styles.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Styles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/Styles.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
+    }, []);
+    return (React.createElement("div", { className: "first-div" },
+        React.createElement("div", { className: "master-wrapper" },
+            Props.Data.map((el, index) => {
+                return (React.createElement("img", { key: index, src: el.image, className: `background-GG ${Props.Userinterface.active === index + 1
+                        ? "bgActive"
+                        : "bgPassive"}`, alt: "" }));
+            }),
+            React.createElement("div", { className: "projects-container" },
+                Props.Data.map((el, index) => {
+                    return (React.createElement(ProjectComponent_1.default, { key: index, index: el.id, selectedProject: Props.Userinterface.active, Data: el }));
+                }),
+                React.createElement(Centertext_1.default, { isActivated: true, userInterface: Props.Userinterface, details: Props.Data[Props.Userinterface.active - 1], titles: Props.Data.reduce((result, el) => { return [...result, el.title]; }, []) })))));
+};
+exports.default = react_redux_1.connect(mapStateToProps, mapDispatchToProps)(exports.Master);
 
 
 /***/ }),
@@ -47524,10 +44452,11 @@ if (content.locals) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-__webpack_require__(/*! ./Styles.scss */ "./root/frontend/src/components/component_centertext/Styles.scss");
+__webpack_require__(/*! ../../styles/CentertextStyles.scss */ "./root/frontend/src/styles/CentertextStyles.scss");
 const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 const AllActions_1 = __webpack_require__(/*! ../../reducers/actions/AllActions */ "./root/frontend/src/reducers/actions/AllActions.tsx");
+const react_typist_1 = __webpack_require__(/*! react-typist */ "./node_modules/react-typist/dist/Typist.js");
 const mapDispatchToProps = (dispatch, ownProps) => ({
     selectProject: redux_1.bindActionCreators(AllActions_1.selectActive, dispatch)
 });
@@ -47535,54 +44464,71 @@ const Centertext = (Props) => {
     const handleClick = () => {
         Props.selectProject(5);
     };
-    const centerContent = () => {
-        if (Props.details) {
-            return Props.details.textcontent;
-        }
-        else {
-            return "NOT YET";
-        }
-    };
-    switch (Props.isActivated) {
-        case true:
-            return (React.createElement("div", { className: "center-text", onMouseOver: handleClick },
-                React.createElement("div", { className: "content-wrapper" },
-                    React.createElement("div", { className: "text-content" },
-                        React.createElement("p", null,
-                            " ",
-                            centerContent())))));
-        case false:
-            return (React.createElement("div", { className: "center-text" }));
+    if (!Props.details) {
+        return (React.createElement("div", { className: "center-text" },
+            React.createElement("h4", { className: "loading-data" }, "Loading")));
     }
+    console.log(Props.userInterface.active);
+    const [counter, setCounter] = React.useState(0);
+    const myParagraphs = Props.details.textcontent.split('.');
+    const [paragraphIndex, setParagraphIndex] = React.useState(0);
+    React.useEffect(() => {
+        setCounter(counter + 1);
+        setParagraphIndex(0);
+    }, [Props.details]);
+    return (React.createElement("div", { className: "center-text", onMouseOver: handleClick },
+        React.createElement("div", { className: "content-wrapper" },
+            React.createElement("div", { className: "text-content" },
+                Props.titles.map((el, index) => {
+                    return React.createElement("h3", { key: index, className: (index + 1) === Props.userInterface.active ?
+                            "titleVisible" : "" },
+                        " ",
+                        el);
+                }),
+                React.createElement("p", null,
+                    React.createElement(react_typist_1.default, { key: counter + "_" + paragraphIndex, onTypingDone: () => setTimeout(() => {
+                            setParagraphIndex((paragraphIndex + 1) % myParagraphs.length);
+                        }, 1000) },
+                        "  ",
+                        myParagraphs[paragraphIndex],
+                        "."),
+                    " "))),
+        React.createElement("div", { className: "centerFooter" },
+            React.createElement("div", { className: "email" },
+                React.createElement("img", { src: "https://www.stickpng.com/assets/images/584856b4e0bb315b0f7675ac.png", alt: "" })),
+            React.createElement("a", { href: "https://github.com/cds88" },
+                React.createElement("div", { className: "github" },
+                    React.createElement("img", { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSM2zjm1dX5GI-hVrQBAKzB8YfNO8WSVbL_cWUTCwyq2oF98Ahvg&s", alt: "" }))))));
 };
 exports.default = react_redux_1.connect(null, mapDispatchToProps)(Centertext);
-
-
-/***/ }),
-
-/***/ "./root/frontend/src/components/component_centertext/Styles.scss":
-/*!***********************************************************************!*\
-  !*** ./root/frontend/src/components/component_centertext/Styles.scss ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js!./Styles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_centertext/Styles.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
+// const myParagraphs = Props.details.textcontent.split('.')
+// const [paragraphIndex, setParagraphIndex] = React.useState(0);
+// React.useEffect(
+//     () => {
+//         let interval = setInterval(() => {
+//             setParagraphIndex((paragraphIndex + 1) % myParagraphs.length);
+//             clearInterval(interval);
+//         }, 7000)
+//     })
+// {
+//     myParagraphs.map(
+//         (el, index) => {
+//             return <p
+//                 key={index}
+//                 className={index === paragraphIndex ? "paragraphVisible" : ""}>
+//                 <Typist> {el} </Typist></p>
+//         })
+// }
+// React.useEffect(
+//     () => {
+//         let interval = setInterval(() => {
+//             setParagraphIndex((paragraphIndex + 1) % myParagraphs.length);
+//             // clearInterval(interval);
+//         }, 4000);
+//         return () => {
+//             clearInterval(interval)
+//         }
+//     })
 
 
 /***/ }),
@@ -47599,11 +44545,10 @@ if (content.locals) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const Gridbg_1 = __webpack_require__(/*! ./components/Gridbg */ "./root/frontend/src/components/component_project/components/Gridbg.tsx");
 const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-__webpack_require__(/*! ./Styles.scss */ "./root/frontend/src/components/component_project/Styles.scss");
+__webpack_require__(/*! ../../styles/ProjectStyles.scss */ "./root/frontend/src/styles/ProjectStyles.scss");
 const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 const AllActions_1 = __webpack_require__(/*! ../../reducers/actions/AllActions */ "./root/frontend/src/reducers/actions/AllActions.tsx");
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-const Player_1 = __webpack_require__(/*! ./components/Player */ "./root/frontend/src/components/component_project/components/Player.tsx");
 const react_slick_1 = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
 __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
 __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
@@ -47611,81 +44556,24 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     selectProject: redux_1.bindActionCreators(AllActions_1.selectActive, dispatch)
 });
 const ProjectComponent = (Props) => {
-    const slantedType = () => {
-        switch (Props.index) {
-            case 1:
-                return "slanted-special slanted-A";
-            case 2:
-                return "slanted-special slanted-C";
-            case 3:
-                return "slanted-special slanted-D";
-            case 4:
-                return "slanted-special slanted-B";
-        }
-    };
-    const player = () => {
-        if (Props.selectedProject === Props.index) {
-            return (React.createElement("div", { className: "video-wrapper" },
-                React.createElement(Player_1.default, { url: Props.Data.video })));
-        }
-        else {
-            return (null);
-        }
-    };
-    const myImagesList = Props.Data.images;
-    const images = () => myImagesList.map(el => {
-        return React.createElement("img", { src: el.image, key: el.id, className: "slider-img" });
-    });
-    const imageGallery = () => {
-        if (Props.selectedProject === Props.index) {
-            return (React.createElement("div", { className: "image-wrapper" },
-                React.createElement(react_slick_1.default, { speed: 150, slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false, arrows: false, autoplay: true }, images())));
-        }
-        else {
-            return (React.createElement("div", { className: "image-wrapper" },
-                React.createElement("div", { className: "single-wrapper" })));
-        }
-    };
-    const handleClick = () => {
+    const handleHover = () => {
         Props.selectProject(Props.index);
     };
     return (React.createElement("div", null,
-        React.createElement("div", { className: "project-wrapper", onMouseOver: handleClick },
-            React.createElement("div", { className: "curtain" }),
-            React.createElement("div", { className: slantedType() }),
-            player(),
+        React.createElement("div", { className: "project-wrapper", onMouseOver: handleHover },
+            React.createElement("div", { className: "shadowy" }),
+            React.createElement("div", { className: "curtain" },
+                React.createElement("img", { src: "https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", alt: "" })),
             React.createElement("div", { className: "slanted-container" },
-                imageGallery(),
+                Props.selectedProject === Props.index ? React.createElement("div", { className: "image-wrapper" },
+                    React.createElement(react_slick_1.default, { speed: 150, slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false, arrows: false, autoplay: true }, Props.Data.images.map(el => {
+                        return (React.createElement("img", { src: el.image, key: el.id, className: "slider-img" }));
+                    }))) :
+                    React.createElement("div", { className: "image-wrapper" },
+                        React.createElement("div", { className: "single-wrapper" })),
                 React.createElement(Gridbg_1.default, null)))));
 };
 exports.default = react_redux_1.connect(null, mapDispatchToProps)(ProjectComponent);
-
-
-/***/ }),
-
-/***/ "./root/frontend/src/components/component_project/Styles.scss":
-/*!********************************************************************!*\
-  !*** ./root/frontend/src/components/component_project/Styles.scss ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js!./Styles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_project/Styles.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
 
 
 /***/ }),
@@ -47701,7 +44589,6 @@ if (content.locals) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-__webpack_require__(/*! ./Style.scss */ "./root/frontend/src/components/component_project/components/Style.scss");
 function Gridbg() {
     var rows = [];
     for (var i = 0; i < 6; i++) {
@@ -47710,63 +44597,6 @@ function Gridbg() {
     return (React.createElement("div", { className: "grid-chess-container" }, rows));
 }
 exports.default = Gridbg;
-
-
-/***/ }),
-
-/***/ "./root/frontend/src/components/component_project/components/Player.tsx":
-/*!******************************************************************************!*\
-  !*** ./root/frontend/src/components/component_project/components/Player.tsx ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-const react_player_1 = __webpack_require__(/*! react-player */ "./node_modules/react-player/lib/ReactPlayer.js");
-function Player(Props) {
-    let videoClass = '';
-    react_1.useEffect(() => {
-        videoClass = "video-class";
-        // returned function will be called on component unmount 
-        return () => {
-            videoClass = "video-class pasyw";
-        };
-    }, []);
-    const [inProp, setInProp] = react_1.useState(false);
-    return (React.createElement(react_player_1.default, { url: Props.url, playing: true, loop: true, width: "100%", height: "100%", volume: 0, muted: true }));
-}
-exports.default = Player;
-
-
-/***/ }),
-
-/***/ "./root/frontend/src/components/component_project/components/Style.scss":
-/*!******************************************************************************!*\
-  !*** ./root/frontend/src/components/component_project/components/Style.scss ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/sass-loader/dist/cjs.js!./Style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/components/component_project/components/Style.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
 
 
 /***/ }),
@@ -47912,6 +44742,87 @@ const InterfaceReducer = (state = InterfaceReducerDefaultState, action) => {
     }
 };
 exports.InterfaceReducer = InterfaceReducer;
+
+
+/***/ }),
+
+/***/ "./root/frontend/src/styles/CentertextStyles.scss":
+/*!********************************************************!*\
+  !*** ./root/frontend/src/styles/CentertextStyles.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./CentertextStyles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/CentertextStyles.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./root/frontend/src/styles/MasterStyles.scss":
+/*!****************************************************!*\
+  !*** ./root/frontend/src/styles/MasterStyles.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./MasterStyles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/MasterStyles.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./root/frontend/src/styles/ProjectStyles.scss":
+/*!*****************************************************!*\
+  !*** ./root/frontend/src/styles/ProjectStyles.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./ProjectStyles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/ProjectStyles.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
 
 
 /***/ })

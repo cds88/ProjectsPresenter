@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import styled from 'styled-components';
 
-import './Style.scss';
+ 
 
 export default function Gridbg() {
     var rows = [];

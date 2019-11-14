@@ -4,7 +4,6 @@ export interface Data {
     images: Image[];
     textcontent:string;
     title: string;
-    video: string;
     url: string;
 }   
 

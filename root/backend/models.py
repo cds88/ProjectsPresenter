@@ -4,7 +4,6 @@ from django.db import models
 class Project(models.Model):
     title = models.TextField()
     image = models.ImageField(blank=True)
-    video = models.FileField( blank=True)
     textcontent = models.TextField(blank=True)
     url = models.URLField(blank=True)
     

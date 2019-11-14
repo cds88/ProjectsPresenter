@@ -2,27 +2,26 @@
 
 import Gridbg from './components/Gridbg';
 
-import { Record } from '../../Master';
+ 
 
 import { connect } from 'react-redux';
 
-import './Styles.scss';
+import '../../styles/ProjectStyles.scss';
 
 import {Data} from '../../reducers/reducer_data/Data';
-import ReactPlayer from 'react-player';
+ 
 
 import { ThunkDispatch } from 'redux-thunk';
 
-import { Dispatch, bindActionCreators } from 'redux';
-
-import { UserInterface } from '../../reducers/reducer_userinterface/UserInterface';
-import { AppActions } from '../../reducers/reducer_data/Actions';
+import {  bindActionCreators } from 'redux';
+ 
+ 
 import { AllAppActions } from '../../reducers/actions/AllActionsTypes';
 
 import { selectActive } from '../../reducers/actions/AllActions';
 import * as React from 'react';
 
-import Player from './components/Player';
+ 
 
 import Slider from 'react-slick'; 
 import "slick-carousel/slick/slick.css";
@@ -52,82 +51,48 @@ type Props = ProjectProps & LinkDispatchProps;
 
 const ProjectComponent=(Props: Props) =>{
  
-    const slantedType=()=>{
-        switch(Props.index){
-            case 1:
-                return "slanted-special slanted-A"
-            case 2:
-                return "slanted-special slanted-C"
-            case 3:
-                return "slanted-special slanted-D"
-            case 4:
-                return "slanted-special slanted-B"
-        }
-    }
-    
-    const player=()=>{
-   
-        if (Props.selectedProject===Props.index){
-            return(
-            <div className="video-wrapper">
-               <Player url={Props.Data.video}/>  
-          
-            </div> 
-            )
-            } 
-        else{
-            return(
-                null
-            )
-        }
-    }
  
-    const myImagesList = Props.Data.images
-    const images = ()=> myImagesList.map(el=>{
-            return <img src={el.image} key={el.id} className="slider-img"/>
-        })
-    const imageGallery = () => {
-        if (Props.selectedProject === Props.index) {
-            return (
-                <div className="image-wrapper">
-
-                    <Slider speed={150} slidesToShow={1} slidesToScroll={1} infinite={true} dots={false} arrows={false} autoplay={true}>
-                          {images()}
-                    </Slider>
-                </div>
-            )
-        }else{
-            return(
-                <div className="image-wrapper">
-                    <div className="single-wrapper">
-                    {/* <img src={Props.Data.image} alt=""/> */}
-                    </div>
-                </div>
-            )
-        }
-    }
-    const handleClick = () => {
+ 
+  
+    const handleHover = () => {
         Props.selectProject(Props.index);
-       
-       
     }   
- 
     return (
         <div>
-            <div className="project-wrapper" onMouseOver={handleClick}>
-              
-                <div className="curtain"></div>
-                <div className={slantedType()} />
-              {player()}
-               
+            <div className="project-wrapper" onMouseOver={handleHover}>
+                <div className="shadowy"></div>
+                <div className="curtain">
+                    <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=""/>
+                </div>               
+                {/* <a href={Props.Data.url}> 
+                <div className={`slanted-special slanted-${Props.index}`}  />                                        
+                                   
+                </a>              */}
                 <div className="slanted-container">
-                    {imageGallery()}
+                    {Props.selectedProject === Props.index ? <div className="image-wrapper">
+
+                        <Slider speed={150} slidesToShow={1} slidesToScroll={1} infinite={true} dots={false} arrows={false} autoplay={true}>
+                            {Props.Data.images.map(el => {
+                                return (
+                                    <img src={el.image} key={el.id} className="slider-img" />
+
+                                )
+                            })}
+                        </Slider>
+                    </div> : 
+                    <div className="image-wrapper">
+                            <div className="single-wrapper">
+
+                            </div>
+                        </div>
+                        }
                    
                     <Gridbg />
                     
                 </div>
 
             </div>
+       
         </div>
     )
 }
