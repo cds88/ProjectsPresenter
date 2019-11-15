@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+
 html{
     height:100%;
 }
@@ -28,17 +31,16 @@ margin:0;}
 }
 .bgPassive{
     opacity: 0;
+   
 }
-
-.background-GG{
+ 
+.mainBackgroundImage{
     overflow:hidden;
     transition:1s;
     width: 100vw;
     height:100vh;
     position: fixed;
  
-    // opacity: 0.5;
-    
  
 
 }
@@ -54,35 +56,50 @@ margin:0;}
     grid-template-rows: repeat(2, 1fr);
 }
  
+  .image-wrapper{
+     
+   
+        
+        height:100%;
+        width:100%;
+         position: absolute;
+         overflow: hidden;
+ 
+         
+         & .slider-img{
+              filter: blur(1px);
+      
+    
+
+         }
+
+ 
+     }
+ 
 .project-wrapper{
     position: relative;
     border-radius: 3px;
     box-sizing: border-box;
     height:50vh;
-  //  width:900px;
+ 
     border: 1px solid white;
     display: flex;
+    
     justify-content: center;
     align-items: center;
      overflow: hidden;
-   //  margin: auto;
-      
-     // background: transparent;
-   //   background: #2f2f2f;
- //  background: rgba(0, 0, 0, 0.4);
-     
-     // margin:0;
+ 
     padding:0;
  
-    // transition:0.5s;
+ 
   
     &>.curtain{
          opacity:0.73;
-       // background: black;
+ 
         position: absolute;
         width:100%;
         height:100%;
-        transition: 1s;
+     
      animation: on-load 5s forwards 0s ease;
 
         
@@ -101,7 +118,7 @@ clip-path: polygon(
     
      );
        
-       // transition: 1s;
+     
         z-index:0;
         &>img{
             width:100%;
@@ -122,40 +139,8 @@ clip-path: polygon(
                 opacity:0.6;
         }
 
-        & .slanted-container{
-         
-            
-            transform: rotate(0);
-     
-          
-            animation: re-appear 3s linear;
-            animation-fill-mode: forwards;
-    
-            & img{
-                transform: rotate(0);
-            }
-        }
-       
-        & .slanted-special{
-           
-                 opacity:  1;
-            z-index:61;
-             transition-delay: 1.5s;
-            height: 100px;
-            background: rgb(22, 22, 16);
-            border: 2px solid white;
-            animation: 1s borders-slanted 0  linear infinite alternate-reverse;
-            //   background: yellow;
-            &:hover{
-               transition-delay: unset;
-               transition: 0.2;
-                background: blue;
-            }
-            &:active{
-                transition: unset;
-                background: red;
-            }
-        }
+  
+   
         & .grid-chess-container{
             background: transparent;
              transform: scale(2);
@@ -168,10 +153,17 @@ clip-path: polygon(
     }
 
 }
+.passwordProvider{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    color: white;
+    z-index:10;
+    margin-left: 10px;
 
+}
 .slanted-container{
   
-    // filter:blur(0.2px);
      overflow: hidden;
         position: relative;
     width: 33%;
@@ -184,43 +176,112 @@ clip-path: polygon(
     z-index:59;
     background: transparent;
     
- 
-     &>.image-wrapper{
-        // height:400px;
-        // width:600px;
-        top:25%;
-        
-        height:100vh;
-        width:100%;
-         position: absolute;
-         overflow: hidden;
-        
-        //    object-fit: fill;
-        //      object-position: center;
-             &>.single-wrapper{
-                transform: rotate(-45deg) scale(1.1);
-             }
-         & .slider-img{
-              filter: blur(1px);
-            transition: 1s;
-            // object-fit: fill;
-            // object-position: top right;
-        //    transform: rotate(-45deg) scale(1.2);
-             // transform: rotate(-45deg) translateY(-50%) scale(0.7);
-       
-            //     height:100%;
-            //     width: auto;
-            //    object-fit: fill;
-            //  object-position: bottom;
-             
-           
+  
 
-         }
-
+&>.grid-chess-container{
+    background: rgba(0,0,0,0.09);
  
-     }
+    
+    position: relative; 
+    padding:0;
+    display:grid;
+        grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100%, auto);
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    transition:0.4s;
+    
+    &>div{
+     
+   
+        transition: 1s;
+        box-sizing: border-box;
+        position: relative;
+        top:0;
+        border: 2px solid white;
+        display: block;
+        width: 100%;
+        height:100%;
+    }
+}
  
 
+ 
+
+}
+.linkWrapper-type1{
+    position: absolute;
+    
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background: black;
+    top:0;
+    left:0;
+    margin: 1em;
+}
+ 
+ 
+
+    
+.linkWrapper-type2{
+    position: absolute;
+    
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background: black;
+    right:0;
+    top:0;
+    margin: 1em;
+}
+ 
+.linkWrapper-type3{
+    position: absolute;
+    
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background: black;
+    left:0;
+    bottom:0;
+    margin: 1em;
+}
+.linkWrapper-type4{
+    position: absolute;
+    
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    background: black;
+    right: 0;
+    bottom:0;
+    margin: 1em;
+}
+.linkWrapper{
+    background: black;
+    color: white;
+    z-index:70;
+    transition: 0.5s;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    &>a{
+        color: white;
+    }
+    
+    &:hover{
+        background: yellow;
+        border: 2px solid black;
+        &>a{
+            color: black;
+        }
+
+    }
+ 
 }
 .shadowy{
     background:black;
@@ -230,20 +291,7 @@ clip-path: polygon(
     opacity: 0.0;
     
 }
-// .video-class{
-//     transition:all 1s ease;
-//     opacity: 1;
-//     & .pasyw{
-//         opacity: 0;
-//     }
-
-// }
-
-
-    //     font-weight: 900;
-    //  -webkit-text-stroke: 0.9px rgb(124, 117, 117);
-    //     text-shadow: 33px 10px 5px black;
-
+ 
 
 @keyframes on-load{ 
     0%{

@@ -1,8 +1,7 @@
 import * as React from 'react';
-import ReactPlayer from 'react-player';
-import GridBackground from './components/GridBackground';
+ 
 import '../../styles/CentertextStyles.scss';
-import { Record } from '../../Master';
+ 
 
 import { connect } from 'react-redux';
 
@@ -10,17 +9,16 @@ import { connect } from 'react-redux';
 
 import { ThunkDispatch } from 'redux-thunk';
 
-import { Dispatch, bindActionCreators } from 'redux';
+import {   bindActionCreators } from 'redux';
 
 import { UserInterface } from '../../reducers/reducer_userinterface/UserInterface';
-import { AppActions } from '../../reducers/reducer_data/Actions';
+ 
 import { AllAppActions } from '../../reducers/actions/AllActionsTypes';
 import { Data } from '../../reducers/reducer_data/Data';
 import { selectActive } from '../../reducers/actions/AllActions';
-import { AppState } from '../../reducers/ConfigureStore';
-import  { AllActionTypes} from '../../reducers/actions/AllActionsTypes';
+ 
 import Typist from 'react-typist';
-import {CSSTransition, TransitionGroup} from 'react-transition-group';
+ 
 export interface CentertextProps{
     
     isActivated: boolean;
@@ -55,8 +53,8 @@ const Centertext=(Props:Props) =>{
 
     if(!Props.details){
         return(
-            <div className="center-text"> 
-            <h4 className="loading-data">Loading 
+            <div className="center-text center-loading"> 
+            <h4 className="loading-data">LOADING 
                 </h4>
             </div>
         )

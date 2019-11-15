@@ -52,11 +52,7 @@ type Props = MasterProps & LinkStateProps & LinkDispatchProps;
 export const Master = (Props: Props) => {
     React.useEffect(() => {
         Props.fetch();
-        document.body.addEventListener("wheel", e => {
-            if (e.ctrlKey) {
-                e.preventDefault();
-            }
-        });
+         
     }, []);
 
     return (
@@ -67,7 +63,7 @@ export const Master = (Props: Props) => {
                         <img
                             key={index}
                             src={el.image}
-                            className={`background-GG ${
+                            className={`mainBackgroundImage ${
                                 Props.Userinterface.active === index + 1
                                     ? "bgActive"
                                     : "bgPassive"

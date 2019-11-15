@@ -1957,7 +1957,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".center-text {\n  overflow: hidden;\n  position: fixed;\n  background: black;\n  color: white;\n  z-index: 60;\n  width: 500px;\n  height: 350px;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 1px solid white;\n  font-size: 60px;\n  transition: 2s; }\n  .center-text > div > h1 {\n    position: absolute;\n    transition: 1s;\n    color: white;\n    font-size: 60px;\n    position: absolute; }\n  .center-text:hover {\n    background: #202020; }\n    .center-text:hover > div > h1 {\n      background: transparent;\n      opacity: 0;\n      color: purple; }\n  .center-text > .content-wrapper {\n    position: relative;\n    animation: on-load 1s linear; }\n    .center-text > .content-wrapper > .text-content {\n      width: 100%;\n      height: 100%;\n      position: relative; }\n      .center-text > .content-wrapper > .text-content > h3 {\n        margin: 0;\n        position: fixed;\n        left: 50%;\n        top: 0;\n        transform: translateX(-50%);\n        opacity: 0;\n        transition: 0.5s; }\n      .center-text > .content-wrapper > .text-content > h3.titleVisible {\n        opacity: 1; }\n      .center-text > .content-wrapper > .text-content > p {\n        position: fixed;\n        top: 50%;\n        text-align: center;\n        font-size: 20px;\n        opacity: 1;\n        transition: 1s;\n        margin: 0 30px; }\n      .center-text > .content-wrapper > .text-content > .paragraphVisible {\n        opacity: 1; }\n\n.loading-data {\n  animation: on-load 1s linear;\n  position: fixed;\n  left: 50%;\n  text-align: center;\n  transform: translateX(-50%); }\n\n@keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 16em; } }\n\n@keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n.center-text-background-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform: rotate(90deg); }\n\n.center-text-background {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: black;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  opacity: 0.4; }\n  .center-text-background > div {\n    display: block;\n    color: white;\n    box-sizing: border-box;\n    border: 1px solid white;\n    border-radius: 50%;\n    width: 100%;\n    height: 100%;\n    z-index: 10; }\n    .center-text-background > div:hover {\n      background: yellow; }\n\n.centerFooter {\n  transform: translateY(-100%);\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  display: flex;\n  flex-direction: row; }\n  .centerFooter > div {\n    margin: 3px;\n    margin-left: 3px;\n    margin-right: 9px; }\n\n.github {\n  height: 30px; }\n  .github > img {\n    background: white;\n    height: 100%;\n    border-radius: 50px; }\n    .github > img:hover {\n      background: brown; }\n\n.email {\n  height: 30px; }\n  .email > img {\n    transition: 1s;\n    background: white;\n    height: 100%;\n    border-radius: 50px; }\n    .email > img:hover {\n      background: yellowgreen; }\n\n.modalTransition-enter {\n  opacity: 0; }\n\n.modalTransition-enter-active {\n  opacity: 1;\n  transition: opacity 300ms, transform 300ms; }\n\n.modalTransition-exit {\n  opacity: 1; }\n\n.modalTransition-exit-active {\n  opacity: 0;\n  transition: opacity 300ms, transform 300ms; }\n", ""]);
+exports.push([module.i, ".center-text {\n  overflow: hidden;\n  position: fixed;\n  background: black;\n  color: white;\n  z-index: 60;\n  width: 500px;\n  height: 350px;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 1px solid white;\n  transition: 2s;\n  font-family: 'Slabo 27px', serif; }\n  .center-text:hover {\n    background: #202020; }\n  .center-text > .content-wrapper {\n    position: relative;\n    animation: on-load 1s linear; }\n    .center-text > .content-wrapper > .text-content {\n      width: 100%;\n      height: 100%;\n      position: relative; }\n      .center-text > .content-wrapper > .text-content > h3 {\n        font-size: 66px;\n        margin: 0;\n        position: fixed;\n        left: 50%;\n        top: 0;\n        transform: translateX(-50%);\n        opacity: 0;\n        transition: 0.5s; }\n      .center-text > .content-wrapper > .text-content > h3.titleVisible {\n        opacity: 1; }\n      .center-text > .content-wrapper > .text-content > p {\n        position: fixed;\n        top: 40%;\n        text-align: center;\n        font-size: 23px;\n        opacity: 1;\n        transition: 1s;\n        margin: 0 30px; }\n      .center-text > .content-wrapper > .text-content > .paragraphVisible {\n        opacity: 1; }\n\n.loading-data {\n  animation: on-load 1s linear;\n  position: fixed;\n  left: 50%;\n  text-align: center;\n  transform: translateX(-50%);\n  font-size: 56px; }\n\n.center-loading {\n  display: grid;\n  justify-content: center;\n  align-items: center; }\n\n.centerFooter {\n  margin: 5px;\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  display: flex;\n  flex-direction: row; }\n  .centerFooter > div {\n    margin: 3px;\n    margin-left: 3px;\n    margin-right: 9px; }\n\n.github {\n  height: 30px; }\n  .github > img {\n    background: white;\n    height: 100%;\n    border-radius: 50px; }\n    .github > img:hover {\n      background: brown; }\n\n.email {\n  height: 30px; }\n  .email > img {\n    transition: 1s;\n    background: white;\n    height: 100%;\n    border-radius: 50px; }\n    .email > img:hover {\n      background: yellowgreen; }\n", ""]);
 
 
 /***/ }),
@@ -1970,22 +1970,10 @@ exports.push([module.i, ".center-text {\n  overflow: hidden;\n  position: fixed;
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Slabo+27px&display=swap);", ""]);
 // Module
-exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  overflow: hidden;\n  background: black;\n  height: 100%;\n  margin: 0; }\n\n.master-wrapper {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n  animation: on-load 1s forwards 0s ease; }\n\n.bgimageWrapper {\n  height: 100%;\n  position: absolute; }\n\n.bgPassive {\n  opacity: 0; }\n\n.background-GG {\n  overflow: hidden;\n  transition: 1s;\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\n.projects-container {\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(2, minmax(200px, auto));\n  grid-template-rows: repeat(2, 1fr); }\n\n.project-wrapper {\n  position: relative;\n  border-radius: 3px;\n  box-sizing: border-box;\n  height: 50vh;\n  border: 1px solid white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  padding: 0; }\n  .project-wrapper > .curtain {\n    opacity: 0.73;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    transition: 1s;\n    animation: on-load 5s forwards 0s ease;\n    clip-path: polygon(0% 0%, 0% 100%, 52% 100%, 26.4% 50.5%, 50.5% 4%, 73.5% 49%, 50% 95%, 46% 100%, 100% 100%, 100% 0%);\n    z-index: 0; }\n    .project-wrapper > .curtain > img {\n      width: 100%;\n      height: 100%;\n      opacity: 0.8; }\n  .project-wrapper:hover {\n    opacity: 1; }\n    .project-wrapper:hover > .curtain {\n      display: none;\n      opacity: 0; }\n    .project-wrapper:hover .shadowy {\n      opacity: 0.6; }\n    .project-wrapper:hover .slanted-container {\n      transform: rotate(0);\n      animation: re-appear 3s linear;\n      animation-fill-mode: forwards; }\n      .project-wrapper:hover .slanted-container img {\n        transform: rotate(0); }\n    .project-wrapper:hover .slanted-special {\n      opacity: 1;\n      z-index: 61;\n      transition-delay: 1.5s;\n      height: 100px;\n      background: #161610;\n      border: 2px solid white;\n      animation: 1s borders-slanted 0  linear infinite alternate-reverse; }\n      .project-wrapper:hover .slanted-special:hover {\n        transition-delay: unset;\n        transition: 0.2;\n        background: blue; }\n      .project-wrapper:hover .slanted-special:active {\n        transition: unset;\n        background: red; }\n    .project-wrapper:hover .grid-chess-container {\n      background: transparent;\n      transform: scale(2);\n      opacity: 0.2; }\n      .project-wrapper:hover .grid-chess-container > div {\n        border: 1px solid transparent; }\n\n.slanted-container {\n  overflow: hidden;\n  position: relative;\n  width: 33%;\n  height: 33vh;\n  border-radius: 5px;\n  transform: rotate(45deg);\n  box-sizing: border-box;\n  transition: 0.5s;\n  z-index: 59;\n  background: transparent; }\n  .slanted-container > .image-wrapper {\n    top: 25%;\n    height: 100vh;\n    width: 100%;\n    position: absolute;\n    overflow: hidden; }\n    .slanted-container > .image-wrapper > .single-wrapper {\n      transform: rotate(-45deg) scale(1.1); }\n    .slanted-container > .image-wrapper .slider-img {\n      filter: blur(1px);\n      transition: 1s; }\n\n.shadowy {\n  background: black;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  opacity: 0.0; }\n\n@keyframes on-load {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes re-appear {\n  0% { }\n  10% {\n    opacity: 0.5; }\n  30% {\n    opacity: 0; }\n  50% {\n    opacity: 0; }\n  70% {\n    width: 100%;\n    height: 100vh;\n    opacity: 0; }\n  100% {\n    width: 100%;\n    height: 100vh;\n    opacity: 1; } }\n\n@keyframes borders-slanted {\n  0% {\n    border: 2px solid white; }\n  100% {\n    border: 2px solid green; } }\n\n@keyframes borders {\n  0% {\n    border: 2px solid green; }\n  100% {\n    border: 2px solid white; } }\n\n@keyframes shine {\n  0% { }\n  100% {\n    background: blue; } }\n", ""]);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/ProjectStyles.scss":
-/*!**********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/ProjectStyles.scss ***!
-  \**********************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
-// Module
-exports.push([module.i, ".slanted-special {\n  width: 100%;\n  height: 0;\n  position: absolute;\n  z-index: 10;\n  background: black;\n  transition: 1s; }\n  .slanted-special.slanted-1 {\n    left: -400px;\n    top: 0;\n    transform: rotate(-45deg); }\n    .slanted-special.slanted-1h1 {\n      transform: rotate(-45deg); }\n  .slanted-special.slanted-2 {\n    right: -650px;\n    transform: rotate(-135deg); }\n  .slanted-special.slanted-3 {\n    left: -500px;\n    transform: rotate(-135deg); }\n  .slanted-special.slanted-4 {\n    left: 500px;\n    right: 0;\n    transform: rotate(-45deg); }\n\n.video-wrapper {\n  transition: 1s;\n  position: absolute;\n  opacity: 0; }\n\n.grid-chess-container {\n  background: rgba(0, 0, 0, 0.09);\n  position: relative;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-auto-rows: minmax(100%, auto);\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  transition: 1s; }\n  .grid-chess-container > div {\n    transition: 1s;\n    box-sizing: border-box;\n    position: relative;\n    top: 0;\n    border: 2px solid white;\n    display: block;\n    width: 100%;\n    height: 100%; }\n", ""]);
+exports.push([module.i, "html {\n  height: 100%; }\n\nbody {\n  overflow: hidden;\n  background: black;\n  height: 100%;\n  margin: 0; }\n\n.master-wrapper {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n  animation: on-load 1s forwards 0s ease; }\n\n.bgimageWrapper {\n  height: 100%;\n  position: absolute; }\n\n.bgPassive {\n  opacity: 0; }\n\n.mainBackgroundImage {\n  overflow: hidden;\n  transition: 1s;\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\n.projects-container {\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(2, minmax(200px, auto));\n  grid-template-rows: repeat(2, 1fr); }\n\n.image-wrapper {\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  overflow: hidden; }\n  .image-wrapper .slider-img {\n    filter: blur(1px); }\n\n.project-wrapper {\n  position: relative;\n  border-radius: 3px;\n  box-sizing: border-box;\n  height: 50vh;\n  border: 1px solid white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n  padding: 0; }\n  .project-wrapper > .curtain {\n    opacity: 0.73;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    animation: on-load 5s forwards 0s ease;\n    clip-path: polygon(0% 0%, 0% 100%, 52% 100%, 26.4% 50.5%, 50.5% 4%, 73.5% 49%, 50% 95%, 46% 100%, 100% 100%, 100% 0%);\n    z-index: 0; }\n    .project-wrapper > .curtain > img {\n      width: 100%;\n      height: 100%;\n      opacity: 0.8; }\n  .project-wrapper:hover {\n    opacity: 1; }\n    .project-wrapper:hover > .curtain {\n      display: none;\n      opacity: 0; }\n    .project-wrapper:hover .shadowy {\n      opacity: 0.6; }\n    .project-wrapper:hover .grid-chess-container {\n      background: transparent;\n      transform: scale(2);\n      opacity: 0.2; }\n      .project-wrapper:hover .grid-chess-container > div {\n        border: 1px solid transparent; }\n\n.passwordProvider {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  color: white;\n  z-index: 10;\n  margin-left: 10px; }\n\n.slanted-container {\n  overflow: hidden;\n  position: relative;\n  width: 33%;\n  height: 33vh;\n  border-radius: 5px;\n  transform: rotate(45deg);\n  box-sizing: border-box;\n  transition: 0.5s;\n  z-index: 59;\n  background: transparent; }\n  .slanted-container > .grid-chess-container {\n    background: rgba(0, 0, 0, 0.09);\n    position: relative;\n    padding: 0;\n    display: grid;\n    grid-template-columns: repeat(6, 1fr);\n    grid-auto-rows: minmax(100%, auto);\n    width: 100%;\n    height: 100%;\n    box-sizing: border-box;\n    transition: 0.4s; }\n    .slanted-container > .grid-chess-container > div {\n      transition: 1s;\n      box-sizing: border-box;\n      position: relative;\n      top: 0;\n      border: 2px solid white;\n      display: block;\n      width: 100%;\n      height: 100%; }\n\n.linkWrapper-type1 {\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  border-radius: 100px;\n  background: black;\n  top: 0;\n  left: 0;\n  margin: 1em; }\n\n.linkWrapper-type2 {\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  border-radius: 100px;\n  background: black;\n  right: 0;\n  top: 0;\n  margin: 1em; }\n\n.linkWrapper-type3 {\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  border-radius: 100px;\n  background: black;\n  left: 0;\n  bottom: 0;\n  margin: 1em; }\n\n.linkWrapper-type4 {\n  position: absolute;\n  width: 100px;\n  height: 100px;\n  border-radius: 100px;\n  background: black;\n  right: 0;\n  bottom: 0;\n  margin: 1em; }\n\n.linkWrapper {\n  background: black;\n  color: white;\n  z-index: 70;\n  transition: 0.5s;\n  color: black;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid white; }\n  .linkWrapper > a {\n    color: white; }\n  .linkWrapper:hover {\n    background: yellow;\n    border: 2px solid black; }\n    .linkWrapper:hover > a {\n      color: black; }\n\n.shadowy {\n  background: black;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  opacity: 0.0; }\n\n@keyframes on-load {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes re-appear {\n  0% { }\n  10% {\n    opacity: 0.5; }\n  30% {\n    opacity: 0; }\n  50% {\n    opacity: 0; }\n  70% {\n    width: 100%;\n    height: 100vh;\n    opacity: 0; }\n  100% {\n    width: 100%;\n    height: 100vh;\n    opacity: 1; } }\n\n@keyframes borders-slanted {\n  0% {\n    border: 2px solid white; }\n  100% {\n    border: 2px solid green; } }\n\n@keyframes borders {\n  0% {\n    border: 2px solid green; }\n  100% {\n    border: 2px solid white; } }\n\n@keyframes shine {\n  0% { }\n  100% {\n    background: blue; } }\n", ""]);
 
 
 /***/ }),
@@ -44417,16 +44405,11 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 exports.Master = (Props) => {
     React.useEffect(() => {
         Props.fetch();
-        document.body.addEventListener("wheel", e => {
-            if (e.ctrlKey) {
-                e.preventDefault();
-            }
-        });
     }, []);
     return (React.createElement("div", { className: "first-div" },
         React.createElement("div", { className: "master-wrapper" },
             Props.Data.map((el, index) => {
-                return (React.createElement("img", { key: index, src: el.image, className: `background-GG ${Props.Userinterface.active === index + 1
+                return (React.createElement("img", { key: index, src: el.image, className: `mainBackgroundImage ${Props.Userinterface.active === index + 1
                         ? "bgActive"
                         : "bgPassive"}`, alt: "" }));
             }),
@@ -44465,8 +44448,8 @@ const Centertext = (Props) => {
         Props.selectProject(5);
     };
     if (!Props.details) {
-        return (React.createElement("div", { className: "center-text" },
-            React.createElement("h4", { className: "loading-data" }, "Loading")));
+        return (React.createElement("div", { className: "center-text center-loading" },
+            React.createElement("h4", { className: "loading-data" }, "LOADING")));
     }
     console.log(Props.userInterface.active);
     const [counter, setCounter] = React.useState(0);
@@ -44545,7 +44528,6 @@ exports.default = react_redux_1.connect(null, mapDispatchToProps)(Centertext);
 Object.defineProperty(exports, "__esModule", { value: true });
 const Gridbg_1 = __webpack_require__(/*! ./components/Gridbg */ "./root/frontend/src/components/component_project/components/Gridbg.tsx");
 const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-__webpack_require__(/*! ../../styles/ProjectStyles.scss */ "./root/frontend/src/styles/ProjectStyles.scss");
 const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 const AllActions_1 = __webpack_require__(/*! ../../reducers/actions/AllActions */ "./root/frontend/src/reducers/actions/AllActions.tsx");
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -44559,19 +44541,27 @@ const ProjectComponent = (Props) => {
     const handleHover = () => {
         Props.selectProject(Props.index);
     };
-    return (React.createElement("div", null,
-        React.createElement("div", { className: "project-wrapper", onMouseOver: handleHover },
-            React.createElement("div", { className: "shadowy" }),
-            React.createElement("div", { className: "curtain" },
-                React.createElement("img", { src: "https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", alt: "" })),
-            React.createElement("div", { className: "slanted-container" },
-                Props.selectedProject === Props.index ? React.createElement("div", { className: "image-wrapper" },
-                    React.createElement(react_slick_1.default, { speed: 150, slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false, arrows: false, autoplay: true }, Props.Data.images.map(el => {
-                        return (React.createElement("img", { src: el.image, key: el.id, className: "slider-img" }));
-                    }))) :
-                    React.createElement("div", { className: "image-wrapper" },
-                        React.createElement("div", { className: "single-wrapper" })),
-                React.createElement(Gridbg_1.default, null)))));
+    return (React.createElement("div", { className: "project-wrapper", onMouseOver: handleHover },
+        (Props.index === Props.selectedProject) ?
+            React.createElement("div", { className: `linkWrapper linkWrapper-type${Props.index}` },
+                " ",
+                React.createElement("a", { href: Props.Data.url, rel: "noopener noreferrer", target: "_blank" }, "LINK"),
+                "   ") : null,
+        (Props.index === 1 && Props.index === Props.selectedProject) ?
+            React.createElement("div", { className: "passwordProvider" },
+                " ",
+                React.createElement("h1", null, "LOGIN: TEST | PASSWORD: 123 "))
+            :
+                null,
+        Props.selectedProject === Props.index ? React.createElement("div", { className: "image-wrapper" },
+            React.createElement(react_slick_1.default, { speed: 150, slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false, arrows: false, autoplay: true }, Props.Data.images.map(el => {
+                return (React.createElement("img", { src: el.image, key: el.id, className: "slider-img" }));
+            }))) : null,
+        React.createElement("div", { className: "shadowy" }),
+        React.createElement("div", { className: "curtain" },
+            React.createElement("img", { src: "https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", alt: "" })),
+        React.createElement("div", { className: "slanted-container" },
+            React.createElement(Gridbg_1.default, null))));
 };
 exports.default = react_redux_1.connect(null, mapDispatchToProps)(ProjectComponent);
 
@@ -44781,33 +44771,6 @@ if (content.locals) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./MasterStyles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/MasterStyles.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-
-/***/ "./root/frontend/src/styles/ProjectStyles.scss":
-/*!*****************************************************!*\
-  !*** ./root/frontend/src/styles/ProjectStyles.scss ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/dist/cjs.js!./ProjectStyles.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./root/frontend/src/styles/ProjectStyles.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
