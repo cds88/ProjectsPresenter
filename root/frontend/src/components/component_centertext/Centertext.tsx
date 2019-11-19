@@ -155,8 +155,7 @@ const Centertext=(Props:Props) =>{
 
     } as CSSProperties
      
-   
-  console.log(Props.assets);
+ 
     return (
         <CentertextdDiv onMouseEnter={Props.userInterface.active!==5?  handleClick : null  }>
         {/* <div className="center-text" onMouseOver={handleClick}> */}

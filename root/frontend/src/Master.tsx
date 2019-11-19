@@ -57,8 +57,10 @@ export const Master = (Props: Props) => {
         Props.fetch();
          
     }, []);
-    console.log(Props.Data.slice(0,3));
  
+ if(!Props.Assets || Props.Data.length===0){
+     return <h1>LOADING</h1>
+ }
  
     return (
         <div className="first-div">

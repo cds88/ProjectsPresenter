@@ -47528,7 +47528,9 @@ exports.Master = (Props) => {
     React.useEffect(() => {
         Props.fetch();
     }, []);
-    console.log(Props.Data.slice(0, 3));
+    if (!Props.Assets || Props.Data.length === 0) {
+        return React.createElement("h1", null, "LOADING");
+    }
     return (React.createElement("div", { className: "first-div" },
         Props.Data.map((el, index) => {
             return (React.createElement("img", { key: index, src: el.image, className: `mainBackgroundImage ${Props.Userinterface.active === index + 1
@@ -47652,7 +47654,6 @@ const Centertext = (Props) => {
         color: "white",
         zIndex: 60,
     };
-    console.log(Props.assets);
     return (React.createElement(CentertextdDiv, { onMouseEnter: Props.userInterface.active !== 5 ? handleClick : null },
         React.createElement("div", { className: "content-wrapper" },
             React.createElement("div", { className: "text-content" },

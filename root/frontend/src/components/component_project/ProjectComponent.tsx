@@ -67,7 +67,7 @@ const ProjectComponent=(Props: Props) =>{
     //   transform: "rotate(45deg)"
       transform: "rotate(45deg)"
   }
- 
+  
     return (
        
             <div className="project-wrapper" onMouseOver={Props.index!==Props.selectedProject?  handleHover : null}>
