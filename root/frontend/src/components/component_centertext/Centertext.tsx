@@ -5,7 +5,7 @@ import '../../styles/CentertextStyles.scss';
 
 import { connect } from 'react-redux';
 
- 
+import styled from 'styled-components'; 
 
 import { ThunkDispatch } from 'redux-thunk';
 
@@ -14,17 +14,20 @@ import {   bindActionCreators } from 'redux';
 import { UserInterface } from '../../reducers/reducer_userinterface/UserInterface';
  
 import { AllAppActions } from '../../reducers/actions/AllActionsTypes';
-import { Data } from '../../reducers/reducer_data/Data';
+import { Project, Assets } from '../../reducers/reducer_data/Data';
 import { selectActive } from '../../reducers/actions/AllActions';
  
 import Typist from 'react-typist';
+import { CSSProperties } from 'styled-components';
  
 export interface CentertextProps{
     
     isActivated: boolean;
     userInterface?: UserInterface;
     titles: string[];
-    details: Data
+    details: Project;
+    assets: Assets;
+    
  
 
 }
@@ -41,17 +44,87 @@ const mapDispatchToProps = (
 
     });
 
+
+const CentertextdDiv = styled('div')`
+          overflow:hidden;
+    position: fixed;
+    background: black;
+   color: white;
+         z-index:60;
+ 
+    height: 31vh;
+       width: 25vw;
+    left:50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid white;    
+    
+ 
+             font-family: 'Slabo 27px', serif;
+ &:hover{
+            background: #202020;
+  
+    }
+    &>.content-wrapper{
+      
+        position: relative;
+        
+      
+        &>.text-content{
+            width:100%;
+            height:100%;
+            
+            position: relative;
+            &>h3{
+               clear:both;
+                font-size: 3em;
+                margin:0;
+                position: fixed;
+                left: 50%;
+                top:0;
+                transform: translateX(-50%);
+                opacity: 0;
+            transition: 0.5s;            } 
+            &>h3.titleVisible{opacity:1;}    
+            &>p{
+                position: fixed;
+                top: 40%;
+                text-align: center;
+                font-size: calc(0.5vw + 0.5rem); 
+                opacity: 1; 
+                transition: 1s;     
+                margin: 0 30px;
+                
+
+
+            }
+            &>.paragraphVisible{
+
+                 opacity: 1;
+
+            }                                                 
+  
+        }
+
+        }
+    `
+
+
 type Props = CentertextProps & LinkDispatchProps;
 
 
 const Centertext=(Props:Props) =>{
     
+
     const handleClick = () => {
         Props.selectProject(5);
+           
+        
+        
     }
     
 
-    if(!Props.details){
+    if(!Props.details ){
         return(
             <div className="center-text center-loading"> 
             <h4 className="loading-data">LOADING 
@@ -59,7 +132,7 @@ const Centertext=(Props:Props) =>{
             </div>
         )
     }
-    console.log(Props.userInterface.active);
+   
     const [counter, setCounter ] = React.useState(0)
      const myParagraphs = Props.details.textcontent.split('.')
         const [paragraphIndex, setParagraphIndex] = React.useState(0);
@@ -72,13 +145,29 @@ const Centertext=(Props:Props) =>{
             }
             , [ Props.details] )
  
- 
+    const centerStyle = {
+        overflow: "hidden",
+        position: "fixed" as "fixed",
+        background: "black",
+        color: "white",
+        zIndex: 60,
+
+
+    } as CSSProperties
+     
+   
+  console.log(Props.assets);
     return (
-        <div className="center-text" onMouseOver={handleClick}>
+        <CentertextdDiv onMouseEnter={Props.userInterface.active!==5?  handleClick : null  }>
+        {/* <div className="center-text" onMouseOver={handleClick}> */}
             <div className="content-wrapper">
+              
+     
 
                 <div className="text-content">
-           
+
+             
+
                     {Props.titles.map(
                         (el, index)=>{return <h3 
                             key={index} className={(index+1)===Props.userInterface.active? 
@@ -88,7 +177,7 @@ const Centertext=(Props:Props) =>{
                         )
                         
                         }
-
+                
                     <p> 
         <Typist key={counter+"_"+paragraphIndex}
                             onTypingDone={()=>
@@ -106,12 +195,12 @@ const Centertext=(Props:Props) =>{
             </div>
             <div className="centerFooter">
                 <div className="email">
-                    <img src="https://www.stickpng.com/assets/images/584856b4e0bb315b0f7675ac.png" alt="" />
+                    <img src={Props.assets.mailLogo} alt="" />
                 </div>
-                <a href="https://github.com/cds88">
+                <a href={Props.assets.git} rel="noopener noreferrer" target="_blank">
                 <div className="github">
                    
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSM2zjm1dX5GI-hVrQBAKzB8YfNO8WSVbL_cWUTCwyq2oF98Ahvg&s" alt=""/>
+                    <img src={Props.assets.gitLogo} alt=""/>
                     
                 </div>
                 </a>
@@ -120,8 +209,8 @@ const Centertext=(Props:Props) =>{
 
           
 
-
-        </div>
+        </CentertextdDiv>
+        // </div>
     )
 
 

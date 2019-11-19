@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 
  
 
-import {Data} from '../../reducers/reducer_data/Data';
+import {Project} from '../../reducers/reducer_data/Data';
  
 
 import { ThunkDispatch } from 'redux-thunk';
@@ -21,7 +21,7 @@ import { AllAppActions } from '../../reducers/actions/AllActionsTypes';
 import { selectActive } from '../../reducers/actions/AllActions';
 import * as React from 'react';
 
- 
+import styled from 'styled-components';
 
 import Slider from 'react-slick'; 
 import "slick-carousel/slick/slick.css";
@@ -30,9 +30,9 @@ import "slick-carousel/slick/slick-theme.css";
 export interface ProjectProps{
     index:number;
     selectedProject: number;
-    image?: string;
-    video?: string;
-    Data?:Data
+  
+  
+    Project?: Project
 }
 
 interface LinkDispatchProps {
@@ -54,14 +54,27 @@ const ProjectComponent=(Props: Props) =>{
  
   
     const handleHover = () => {
-        Props.selectProject(Props.index);
+      
+         Props.selectProject(Props.index);
      
+         
     }   
+  const slantedSize = {
+   height: "66%",
+ //   height: "73%",
+      width: "33%",
+    //  width: "22%",
+    //   transform: "rotate(45deg)"
+      transform: "rotate(45deg)"
+  }
+ 
     return (
        
-            <div className="project-wrapper" onMouseOver={handleHover}>
+            <div className="project-wrapper" onMouseOver={Props.index!==Props.selectedProject?  handleHover : null}>
                 {(Props.index===Props.selectedProject)? 
-            <div className={`linkWrapper linkWrapper-type${Props.index}`}> <a href={Props.Data.url} rel="noopener noreferrer" target="_blank">LINK</a>   </div> : null}
+                <a href={Props.Project.url} rel="noopener noreferrer" target="_blank">
+                <div className={`linkWrapper linkWrapper-type${Props.index}`}> LINK   </div> </a>
+                : null}
                 
             {(Props.index===1 && Props.index===Props.selectedProject) ? 
                 <div className="passwordProvider"> <h1>LOGIN: TEST | PASSWORD: 123 </h1></div>
@@ -71,7 +84,7 @@ const ProjectComponent=(Props: Props) =>{
                 {Props.selectedProject === Props.index ? <div className="image-wrapper">
 
                     <Slider speed={150} slidesToShow={1} slidesToScroll={1} infinite={true} dots={false} arrows={false} autoplay={true}>
-                        {Props.Data.images.map(el => {
+                        {Props.Project.images.map(el => {
                             return (
                                 <img src={el.image} key={el.id} className="slider-img" />
 
@@ -85,13 +98,15 @@ const ProjectComponent=(Props: Props) =>{
                 
                 <div className="shadowy"></div>
                 <div className="curtain">
-                    <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=""/>
+                <img src={Props.Project.cover[0].cover} alt=""/>
                 </div>               
                 {/* <a href={Props.Data.url}> 
                 <div className={`slanted-special slanted-${Props.index}`}  />                                        
                                    
                 </a>              */}
-                <div className="slanted-container">
+                <div 
+                style={{...slantedSize}}
+                className="slanted-container">
 
                    
                     <Gridbg />

@@ -1,19 +1,19 @@
 .center-text{
-  
+  box-sizing: border-box;
        overflow:hidden;
     position: fixed;
     background: black;
    color: white;
          z-index:60;
-    width: 500px;
+
     height:350px;
-   
+       width: 500px;
     left:50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     border: 1px solid white;    
     
-    transition: 2s;
+  //  transition: 2s;
              font-family: 'Slabo 27px', serif;
  
  
@@ -26,7 +26,7 @@
         
         position: relative;
         
-        animation: on-load 1s linear;
+      //  animation: on-load 1s linear;
   
         &>.text-content{
             width:100%;
@@ -94,7 +94,12 @@
         margin-right:9px;
     }
 }
-
+.shader{
+    width:100%;
+    height:100%;
+    background: black;
+    z-index:30;
+}
 .github {
    
     height:30px;

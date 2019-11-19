@@ -1,32 +1,52 @@
-import { Data } from "./Data";
+import { Project, Assets } from "./Data";
 
 // action strings
 export const GET_DATA = "GET_DATA";
-export const FETCH_DATA_BEGIN = "FETCH_DATA_BEGIN"
-export const FETCH_DATA_SUCCESS = "FETCH_DATA_SUCCESS"
-export const FETCH_DATA_ERROR = "FETCH_DATA_ERROR"
+export const FETCH_PROJECTS_BEGIN = "FETCH_PROJECTS_BEGIN"
+export const FETCH_PROJECTS_SUCCESS = "FETCH_PROJECTS_SUCCESS"
+export const FETCH_PROJECTS_ERROR = "FETCH_PROJECTS_ERROR"
 
+export const FETCH_ASSETS_BEGIN = "FETCH_ASSETS_BEGIN"
+export const FETCH_ASSETS_SUCCESS = "FETCH_ASSETS_SUCCESS"
+export const FETCH_ASSETS_ERROR = "FETCH_ASSETS_ERROR"
  
 
-export interface FetchDataBegin{
-    type: typeof FETCH_DATA_BEGIN 
+export interface FetchProjectsBegin{
+    type: typeof FETCH_PROJECTS_BEGIN 
     
 }
 
 
-export interface FetchDataSuccess{
-    type: typeof FETCH_DATA_SUCCESS,
-     results: Data[]
+export interface FetchProjectsSuccess{
+    type: typeof FETCH_PROJECTS_SUCCESS,
+     results: Project[]
 
 }
 
-export interface FetchDataError {
-    type: typeof FETCH_DATA_ERROR
+export interface FetchProjectsError {
+    type: typeof FETCH_PROJECTS_ERROR
 
 }
+
+
+export interface FetchAssetsBegin{
+    type: typeof FETCH_ASSETS_BEGIN
+}
+export interface FetchAssetsSuccess{
+    type: typeof FETCH_ASSETS_SUCCESS
+    results: Assets[]
+}
+export interface FetchAssetsError{
+    type: typeof FETCH_ASSETS_ERROR
+}
+
+
 export type DataActionTypes =
-    | FetchDataBegin
-    | FetchDataSuccess
-    | FetchDataError
+    | FetchProjectsBegin
+    | FetchProjectsSuccess
+    | FetchProjectsError
+    | FetchAssetsBegin
+    | FetchAssetsSuccess
+    | FetchAssetsError
  
 export type AppActions = DataActionTypes;

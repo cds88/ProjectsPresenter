@@ -10,18 +10,36 @@ height:100%;
 margin:0;}
    
 // body{transition: 1s;}
+.first-div{
+    
+ //   box-sizing: border-box;
+    margin:0;
+    padding:0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+      height: 100vh;
+ 
+overflow: hidden;
+ 
 
+}
 .master-wrapper{
 //  background: yellow;
+ 
     box-sizing: border-box;
     margin:0;
     padding:0;
     position: relative;
     overflow: hidden;
-   width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    animation: on-load 1s forwards 0s ease;
+//     width: 100%;
+//    height: 100vh;
+
+height: calc(100vh - 20px);
+width: calc(100% - 20px);
+overflow: hidden;
+    margin:10px;
+   
 }
 
 .bgimageWrapper{
@@ -46,12 +64,17 @@ margin:0;}
 }
  
 .projects-container{
+//    width:calc(100% - 10px);
+// height: calc(100vh - 10px);
+    
+//     margin: 5px;
     box-sizing: border-box;
     width:100%;
     height:100%;
     margin:0;
     padding:0;
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(2, minmax(200px, auto));
     grid-template-rows: repeat(2, 1fr);
 }
@@ -77,32 +100,28 @@ margin:0;}
      }
  
 .project-wrapper{
+    
     position: relative;
     border-radius: 3px;
     box-sizing: border-box;
-    height:50vh;
- 
+    height:calc(50vh-margin);
+    z-index: 1;
     border: 1px solid white;
     display: flex;
     
     justify-content: center;
     align-items: center;
-     overflow: hidden;
- 
-    padding:0;
- 
- 
-  
+     overflow: hidden; 
+    padding:0;    
+     animation: on-load 1s forwards 0s ease;
     &>.curtain{
          opacity:0.73;
- 
+        z-index:1;
         position: absolute;
         width:100%;
         height:100%;
      
-     animation: on-load 5s forwards 0s ease;
-
-        
+     animation: on-load 5s forwards 0s ease;  
 clip-path: polygon(
      0% 0%,          
      0% 100%,
@@ -166,11 +185,13 @@ clip-path: polygon(
   
      overflow: hidden;
         position: relative;
-    width: 33%;
-    height: 33vh;
+    // width: 25%;
+    // height: 33vh;
+    //  width: 16vw;
+    // height: 33vh;
     border-radius: 5px;
     
-    transform: rotate(45deg);
+    
      box-sizing: border-box;
      transition: 0.5s;    
     z-index:59;
@@ -201,8 +222,9 @@ clip-path: polygon(
         top:0;
         border: 2px solid white;
         display: block;
-        width: 100%;
         height:100%;
+        width: 100%;
+        
     }
 }
  
@@ -213,9 +235,7 @@ clip-path: polygon(
 .linkWrapper-type1{
     position: absolute;
     
-    width:100px;
-    height:100px;
-    border-radius: 100px;
+
     background: black;
     top:0;
     left:0;
@@ -228,9 +248,7 @@ clip-path: polygon(
 .linkWrapper-type2{
     position: absolute;
     
-    width:100px;
-    height:100px;
-    border-radius: 100px;
+ 
     background: black;
     right:0;
     top:0;
@@ -240,9 +258,7 @@ clip-path: polygon(
 .linkWrapper-type3{
     position: absolute;
     
-    width:100px;
-    height:100px;
-    border-radius: 100px;
+     
     background: black;
     left:0;
     bottom:0;
@@ -251,9 +267,7 @@ clip-path: polygon(
 .linkWrapper-type4{
     position: absolute;
     
-    width:100px;
-    height:100px;
-    border-radius: 100px;
+     
     background: black;
     right: 0;
     bottom:0;
@@ -264,11 +278,14 @@ clip-path: polygon(
     color: white;
     z-index:70;
     transition: 0.5s;
-    color: black;
+     width:7%;
+        height: 7vh;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid white;
+    font-size: calc(0.5vh + 0.5rem);
     &>a{
         color: white;
     }
@@ -276,9 +293,8 @@ clip-path: polygon(
     &:hover{
         background: yellow;
         border: 2px solid black;
-        &>a{
-            color: black;
-        }
+        color: black;
+        
 
     }
  
@@ -290,9 +306,15 @@ clip-path: polygon(
     position: absolute;
     opacity: 0.0;
     
+} 
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg) ;   
+    }
+    100%{
+        transform: rotate(-359deg) ;
+    }
 }
- 
-
 @keyframes on-load{ 
     0%{
     

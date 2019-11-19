@@ -8,22 +8,25 @@ import { ThunkDispatch } from "redux-thunk";
 import { connect } from "react-redux";
 
 import { AppState } from "./reducers/ConfigureStore";
-import { Data } from "./reducers/reducer_data/Data";
+import { Project, Assets } from "./reducers/reducer_data/Data";
 import { UserInterface } from "./reducers/reducer_userinterface/UserInterface";
 import { AllAppActions } from "./reducers/actions/AllActionsTypes";
 import { fetchBeginDispatch } from "./reducers/actions/AllActions";
 import { bindActionCreators } from "redux";
 interface LinkStateProps {
-    Data: Data[];
+    Data: Project[];
     Userinterface: UserInterface;
+    Assets: Assets;
 }
 
 const mapStateToProps = (
     state: AppState,
     ownProps: MasterProps
 ): LinkStateProps => ({
-    Data: state.DataReducer,
-    Userinterface: state.InterfaceReducer
+    Data: state.DataReducer.Projects,
+    Userinterface: state.InterfaceReducer,
+    Assets: state.DataReducer.Assets
+    
 });
 interface LinkDispatchProps {
     fetch: () => void;
@@ -54,10 +57,12 @@ export const Master = (Props: Props) => {
         Props.fetch();
          
     }, []);
-
+    console.log(Props.Data.slice(0,3));
+ 
+ 
     return (
         <div className="first-div">
-            <div className="master-wrapper">
+     
                 {Props.Data.map((el, index) => {
                     return (
                         <img
@@ -72,15 +77,15 @@ export const Master = (Props: Props) => {
                         />
                     );
                 })}
-
+            <div className="master-wrapper">
                 <div className="projects-container">
-                    {Props.Data.map((el, index) => {
+                    {Props.Data.slice(0, 4).map((el, index) => {
                         return (
                             <ProjectComponent
                                 key={index}
                                 index={el.id}
                                 selectedProject={Props.Userinterface.active}
-                                Data={el}
+                                Project={el}
                             />
                         );
                     })}
@@ -89,10 +94,19 @@ export const Master = (Props: Props) => {
                         isActivated={true}
                         userInterface={Props.Userinterface}
                         details={Props.Data[Props.Userinterface.active - 1]}
-                        titles={Props.Data.reduce((result, el)=>{return [...result,el.title] }, [] )  }
+                        titles={Props.Data.reduce((result, el) => { return [...result, el.title] }, [])}  
+                        assets={Props.Assets}     
+            
+
+                  
+                         
+                  
                     />
                 </div>
             </div>
+
+                 
+ 
         </div>
     );
 };
