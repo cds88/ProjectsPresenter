@@ -13,6 +13,7 @@ import { UserInterface } from "./reducers/reducer_userinterface/UserInterface";
 import { AllAppActions } from "./reducers/actions/AllActionsTypes";
 import { fetchBeginDispatch } from "./reducers/actions/AllActions";
 import { bindActionCreators } from "redux";
+ 
 interface LinkStateProps {
     Data: Project[];
     Userinterface: UserInterface;
@@ -50,7 +51,11 @@ export interface Record {
     image: string;
     video: string;
 }
-
+export interface ScreenParameters {
+    height: number;
+    width: number;
+    ratio: number;
+}
 type Props = MasterProps & LinkStateProps & LinkDispatchProps;
 export const Master = (Props: Props) => {
     React.useEffect(() => {
@@ -58,9 +63,32 @@ export const Master = (Props: Props) => {
          
     }, []);
  
+    function useWindowSize() {
+        const [size, setSize] = React.useState<ScreenParameters>({
+            height: window.outerHeight,
+            width: window.outerWidth,
+            ratio: window.innerWidth / window.innerHeight
+        });
+        React.useLayoutEffect(() => {
+            function updateSize() {
+                setSize({
+                    height: window.outerHeight,
+                    width: window.outerWidth,
+                    ratio: window.innerWidth / window.innerHeight
+                })
+            }
+            window.addEventListener('resize', updateSize);
+
+        }, []);
+        return size
+    }
+
+    const screenSize: ScreenParameters = useWindowSize();
+
  if(!Props.Assets || Props.Data.length===0){
-     return <h1>LOADING</h1>
+     return <h1 style={{ position: "fixed", left: "50%", top: "50%", transform: "translateX(-50%) translateY(-50%)" }}>    LOADING   </h1>   
  }
+ 
  
     return (
         <div className="first-div">
@@ -88,6 +116,9 @@ export const Master = (Props: Props) => {
                                 index={el.id}
                                 selectedProject={Props.Userinterface.active}
                                 Project={el}
+                                screenHeight={screenSize.height }
+                                screenWidth={screenSize.width}
+                                ratio={screenSize.ratio}
                             />
                         );
                     })}
@@ -97,18 +128,10 @@ export const Master = (Props: Props) => {
                         userInterface={Props.Userinterface}
                         details={Props.Data[Props.Userinterface.active - 1]}
                         titles={Props.Data.reduce((result, el) => { return [...result, el.title] }, [])}  
-                        assets={Props.Assets}     
-            
-
-                  
-                         
-                  
+                        assets={Props.Assets}                                                                                               
                     />
                 </div>
-            </div>
-
-                 
- 
+            </div>                  
         </div>
     );
 };

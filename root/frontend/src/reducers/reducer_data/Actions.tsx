@@ -16,11 +16,9 @@ export interface FetchProjectsBegin{
     
 }
 
-
 export interface FetchProjectsSuccess{
     type: typeof FETCH_PROJECTS_SUCCESS,
-     results: Project[]
-
+    results: Project[]
 }
 
 export interface FetchProjectsError {

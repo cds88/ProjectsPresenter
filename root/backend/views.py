@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .models import Project, Image, Cover, Assets
 from .serializers import ProjectSerializer, ImageSerializer, CoverSerializer, AssetsSerializer
-# Create your views here.
+ 
 
 class coverViews(viewsets.ModelViewSet):
     queryset= Cover.objects.all()

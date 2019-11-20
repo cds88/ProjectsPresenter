@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Project(models.Model):
     title = models.TextField()
     image = models.ImageField(blank=True)
@@ -9,20 +9,15 @@ class Project(models.Model):
 
     
 
- 
-
 class Cover(models.Model):
     project = models.ForeignKey(Project, on_delete =models.CASCADE, blank= False, null=False, related_name="cover")
     cover = models.ImageField(blank=False)
     
  
- 
 
 class Image(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE, blank=False, null=False, related_name="images")
     image = models.ImageField(blank=False)
-
-
 
 
 class Assets(models.Model):

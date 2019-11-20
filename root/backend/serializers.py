@@ -18,18 +18,13 @@ class ImageSerializer(serializers.ModelSerializer):
 class ProjectSerializer(serializers.ModelSerializer):
     cover = CoverSerializer(many=True, read_only=True)
     images = ImageSerializer(many=True, read_only=True)
-    
-
     class Meta:
         model = Project
         fields =  '__all__'
         depth = 1
 
 
- 
 class AssetsSerializer(serializers.ModelSerializer):
- 
-
     class Meta:
         model = Assets
         fields = "__all__"

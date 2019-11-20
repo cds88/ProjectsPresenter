@@ -1,10 +1,8 @@
-import { UserInterface } from '../reducer_userinterface/UserInterface';
+ 
 import { FETCH_PROJECTS_BEGIN, FETCH_PROJECTS_SUCCESS, FETCH_PROJECTS_ERROR, FETCH_ASSETS_BEGIN, FETCH_ASSETS_SUCCESS, FETCH_ASSETS_ERROR } from '../reducer_data/Actions';
-import { AppActions, SELECT_ACTIVE } from '../reducer_userinterface/Actions';
+import {  SELECT_ACTIVE } from '../reducer_userinterface/Actions';
 import { AllAppActions} from './AllActionsTypes';
  
-import {DataActionTypes} from '../reducer_data/Actions';
-import { ThunkDispatch } from "redux-thunk";
 import { Dispatch, bindActionCreators } from "redux";
 import {AppState} from '../ConfigureStore';
 import {Project, Assets} from '../reducer_data/Data';
