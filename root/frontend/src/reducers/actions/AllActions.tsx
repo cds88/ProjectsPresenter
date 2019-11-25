@@ -2,11 +2,11 @@
 import { FETCH_PROJECTS_BEGIN, FETCH_PROJECTS_SUCCESS, FETCH_PROJECTS_ERROR, FETCH_ASSETS_BEGIN, FETCH_ASSETS_SUCCESS, FETCH_ASSETS_ERROR } from '../reducer_data/Actions';
 import {  SELECT_ACTIVE } from '../reducer_userinterface/Actions';
 import { AllAppActions} from './AllActionsTypes';
- 
+import axios from 'axios';
 import { Dispatch, bindActionCreators } from "redux";
 import {AppState} from '../ConfigureStore';
 import {Project, Assets} from '../reducer_data/Data';
-import axios from 'axios';
+
 export const selectActive = (active: number): AllAppActions => ({
     type: SELECT_ACTIVE,
     active
